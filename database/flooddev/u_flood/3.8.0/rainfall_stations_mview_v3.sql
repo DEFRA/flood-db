@@ -17,7 +17,8 @@ AS
 	v.*,
 	daysum.total as day_total,
 	sixhr.total as six_hr_total,
-	onehr.total as one_hr_total
+	onehr.total as one_hr_total,
+	'R' as type
 	From u_flood.sls_telemetry_station s
 	-- get latest Rainfall parent
 	inner join (select distinct on (station, region) station, region, telemetry_value_parent_id, data_type, period, units
