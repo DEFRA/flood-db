@@ -7,4 +7,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 	<changeSet author="tjmason" id="3.10.0-1">
 		<sqlFile path="./3.10.0/rivers_mview.sql" splitStatements="false"/>
 	</changeSet>
+	<changeSet author="tjmason" id="3.10.0-2">
+		<sqlFile path="./3.10.0/rivers_mview_v2.sql" splitStatements="false"/>
+	</changeSet>
 </databaseChangeLog>
