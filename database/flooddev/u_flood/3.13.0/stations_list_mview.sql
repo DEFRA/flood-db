@@ -36,7 +36,7 @@ AS
 	false as iswales,
 	value,
 	value_timestamp,
-	null as value_erred,
+	false as value_erred,
 	null as percentile_5,
 	null as percentile_95,
 	centroid,
