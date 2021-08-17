@@ -1,6 +1,6 @@
 -- View: u_flood.stations_list_mview
 
-DROP MATERIALIZED VIEW u_flood.stations_list_mview;
+-- DROP MATERIALIZED VIEW u_flood.stations_list_mview;
 
 CREATE MATERIALIZED VIEW u_flood.stations_list_mview
 TABLESPACE flood_tables
