@@ -7,4 +7,13 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 	<changeSet author="tjmason" id="4.0.0-1">
 		<sqlFile path="./4.0.0/new_indexes.sql" splitStatements="false"/>
 	</changeSet>
+		<changeSet author="tjmason" id="4.0.0-2">
+		<sqlFile path="./4.0.0/impact_mview.sql" splitStatements="false"/>
+	</changeSet>
+		<changeSet author="tjmason" id="4.0.0-3">
+		<sqlFile path="./4.0.0/rivers_mview.sql" splitStatements="false"/>
+	</changeSet>
+		<changeSet author="tjmason" id="4.0.0-4">
+		<sqlFile path="./4.0.0/stations_list_mview.sql" splitStatements="false"/>
+	</changeSet>
 </databaseChangeLog>
