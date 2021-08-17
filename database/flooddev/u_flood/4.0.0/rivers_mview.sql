@@ -6,7 +6,6 @@ CREATE MATERIALIZED VIEW u_flood.rivers_mview
 TABLESPACE flood_tables
 AS
  SELECT
- 		row_number() OVER () AS id,
         CASE
             WHEN rs.id IS NOT NULL THEN rs.id::text
             ELSE
@@ -59,7 +58,8 @@ AS
     so.percentile_95,
     ss.centroid,
     st_x(ss.centroid) AS lon,
-    st_y(ss.centroid) AS lat
+    st_y(ss.centroid) AS lat,
+    row_number() OVER () AS id
    FROM station_split_mview ss
      JOIN stations_overview_mview so ON ss.rloi_id = so.rloi_id AND ss.qualifier = so.direction
      LEFT JOIN ( SELECT rs1.id,
