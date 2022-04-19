@@ -62,3 +62,4 @@ CREATE INDEX idx_stations_list_mview_river_id
     ON u_flood.stations_list_mview USING btree
     (river_id COLLATE pg_catalog."default")
     TABLESPACE flood_indexes;
+	
