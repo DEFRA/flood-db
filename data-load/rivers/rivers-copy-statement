@@ -4,5 +4,5 @@ psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river;"
 ###### Import columns 1 to 3 from csv into river table
 psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name, river_id) from ./rivers.csv with delimiter as ',' CSV HEADER"
 
-###### refresh mview - TBC
-# psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
+###### refresh mview
+psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
