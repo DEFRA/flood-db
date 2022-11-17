@@ -2,7 +2,7 @@
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river_stations;"
 
 ###### Import data into river_stations
-psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(id, river_id, name, qualified_name, rloi_id, order) from ./river-stations.csv with delimiter as ',' CSV HEADER"
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(river_id, id, name, qualified_name, rloi_id, rank) from ./river-stations.csv with delimiter as ',' CSV HEADER"
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
