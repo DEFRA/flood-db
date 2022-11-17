@@ -36,10 +36,10 @@ FROM (
     NULL::numeric AS day_total,
     NULL::numeric AS six_hr_total,
     NULL::numeric AS one_hr_total,
-    river_display.local_name,
-	river_display.qualified_name
-    FROM rivers_mview left outer join river_display
-	ON rivers_mview.river_id = river_display.river_id
+    river.name,
+	river.qualified_name
+    FROM rivers_mview left outer join river
+	ON rivers_mview.river_id = river.river_id
 UNION
  SELECT 'rainfall-'::text || rainfall_stations_mview.region AS river_id,
     'Rainfall '::text || rainfall_stations_mview.region AS river_name,
