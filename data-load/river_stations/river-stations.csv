@@ -842,8 +842,6 @@ river_id,slug,local_name,qaulified_name,station_id,order
 1471,river-clyst,River Clyst,River Clyst,3249,1
 1471,river-clyst,River Clyst,River Clyst,3355,2
 1471,river-clyst,River Clyst,River Clyst,3250,3
-2034,"river-clyst,-clyst-st-mary-tributary","River Clyst, Clyst St Mary Tributary","River Clyst, Clyst St Mary Tributary",9454,1
-2034,"river-clyst,-clyst-st-mary-tributary","River Clyst, Clyst St Mary Tributary","River Clyst, Clyst St Mary Tributary",9455,2
 1472,river-clywedog,River Clywedog,River Clywedog,2054,1
 1473,river-cober,River Cober,River Cober,3392,1
 1473,river-cober,River Cober,River Cober,3160,2
@@ -1172,7 +1170,6 @@ river_id,slug,local_name,qaulified_name,station_id,order
 1574,river-harbourne,River Harbourne,River Harbourne,3210,1
 1574,river-harbourne,River Harbourne,River Harbourne,3217,2
 1574,river-harbourne,River Harbourne,River Harbourne,3360,3
-2035,"river-harbourne,-harbertonford-tributary","River Harbourne, Harbertonford Tributary","River Harbourne, Harbertonford Tributary",9439,1
 1575,river-hart,River Hart,River Hart,7148,1
 1575,river-hart,River Hart,River Hart,7147,2
 1575,river-hart,River Hart,River Hart,7146,3
