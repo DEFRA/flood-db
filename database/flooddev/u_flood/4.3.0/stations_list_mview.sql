@@ -38,7 +38,7 @@ AS
     row_number() OVER () AS id
    FROM ( SELECT rivers_mview.river_id,
             rivers_mview.river_name,
-		        rivers_mview.river_qualified_name,
+            rivers_mview.river_qualified_name,
             rivers_mview.navigable,
             rivers_mview.view_rank,
             rivers_mview.rank,
@@ -70,7 +70,7 @@ AS
         UNION
          SELECT 'rainfall-'::text || rainfall_stations_mview.region AS river_id,
             'Rainfall '::text || rainfall_stations_mview.region AS river_name,
-		    NULL::text AS river_qualified_name,
+            NULL::text AS river_qualified_name,
             false AS navigable,
             5 AS view_rank,
             NULL::bigint AS rank,
