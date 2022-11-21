@@ -2,7 +2,8 @@
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river_stations;"
 
 ###### Import data into river_stations omitting the name columns
-cut -f1,2,5,6 -d, ./river-stations.csv | psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(river_id, id, rloi_id, rank) from STDIN with delimiter as ',' CSV HEADER"
+cut -f2,5,6 -d, ./river-stations.csv | psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(id, rloi_id, rank) from STDIN with delimiter as ',' CSV HEADER"
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
+psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.stations_list_mview with data;"

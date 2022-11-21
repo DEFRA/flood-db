@@ -6,3 +6,4 @@ cut -f2,3,4 -d, ./rivers.csv | psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
+psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.stations_list_mview with data;"
