@@ -1,6 +1,6 @@
 -- View: u_flood.rivers_mview
 
--- DROP MATERIALIZED VIEW IF EXISTS u_flood.rivers_mview CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS u_flood.rivers_mview CASCADE;
 
 CREATE MATERIALIZED VIEW IF NOT EXISTS u_flood.rivers_mview
 TABLESPACE flood_tables
@@ -10,9 +10,6 @@ AS
               WHEN rs.id IS NOT NULL THEN rs.id::text
               ELSE
               CASE
-                  -- see comments below on the switch to an integer river dentifier
-                  -- if we switched to an integer river identifier need to determine why we are doing this
-                  -- and what impact the switch would have
                   WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
                   WHEN ss.station_type = 'G'::bpchar THEN 'Groundwater Levels'::text
                   ELSE 'orphaned-'::text || ss.wiski_river_name
@@ -42,7 +39,6 @@ AS
           END AS view_rank,
       rs.qualified_name AS river_qualified_name,
       rs.calc_rank AS rank,
-      rs.int_river_id, /* not currently using this, just here to show we can */
       ss.rloi_id,
       up.rloi_id AS up,
       down.rloi_id AS down,
@@ -70,18 +66,12 @@ AS
        LEFT JOIN ( SELECT rs1.id,
               r.name,
               r.qualified_name,
-              r.id AS int_river_id,
               rs1.rloi_id,
               rs1.rank,
               rank() OVER (PARTITION BY rs1.id ORDER BY rs1.rank) AS calc_rank
              FROM u_flood.river_stations rs1
                JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id
-               -- add join to river table to get name and qualified_name
-               -- note 1: the join is on the text identifier not the integer one. We could defer the switch to integer
-               -- identifiers for a later bit of work
-               -- note 2: because we are doing this join to the rivers table we no longer need the name and qualified name
-               -- in the river_stations table and would avoid the duplication
-               JOIN u_flood.river r ON rs1.id = r.river_id
+               JOIN u_flood.river r ON rs1.id = r.id
        ) rs ON rs.rloi_id = ss.rloi_id
        LEFT JOIN ( SELECT rs1.id,
               rs1.rloi_id,

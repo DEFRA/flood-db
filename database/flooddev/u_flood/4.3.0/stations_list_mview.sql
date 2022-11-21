@@ -1,8 +1,8 @@
 -- View: u_flood.stations_list_mview
 
-IF EXISTS DROP MATERIALIZED VIEW u_flood.stations_list_mview;
+DROP MATERIALIZED VIEW IF EXISTS u_flood.stations_list_mview;
 
-IF NOT EXISTS CREATE MATERIALIZED VIEW u_flood.stations_list_mview
+CREATE MATERIALIZED VIEW IF NOT EXISTS u_flood.stations_list_mview
 TABLESPACE flood_tables
 AS
 SELECT *,  row_number() OVER () AS id
@@ -37,7 +37,7 @@ FROM (
     NULL::numeric AS day_total,
     NULL::numeric AS six_hr_total,
     NULL::numeric AS one_hr_total
-   FROM rivers_mview
+   FROM u_flood.rivers_mview
 UNION
  SELECT 'rainfall-'::text || rainfall_stations_mview.region AS river_id,
     'Rainfall '::text || rainfall_stations_mview.region AS river_name,
@@ -69,7 +69,7 @@ UNION
     rainfall_stations_mview.day_total,
     rainfall_stations_mview.six_hr_total,
     rainfall_stations_mview.one_hr_total
-   FROM rainfall_stations_mview
+   FROM u_flood.rainfall_stations_mview
   WHERE rainfall_stations_mview.region <> 'Wales'::text
   ORDER BY 4, 1, 5, 13
 ) as list
