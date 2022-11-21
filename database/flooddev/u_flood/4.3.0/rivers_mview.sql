@@ -7,7 +7,7 @@ TABLESPACE flood_tables
 AS
   SELECT
           CASE
-              WHEN rs.id IS NOT NULL THEN rs.id::text
+              WHEN rs.river_id IS NOT NULL THEN rs.river_id::text
               ELSE
               CASE
                   WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
@@ -29,7 +29,7 @@ AS
               ELSE false
           END AS navigable,
           CASE
-              WHEN rs.id IS NOT NULL THEN 1
+              WHEN rs.river_id IS NOT NULL THEN 1
               ELSE
               CASE
                   WHEN ss.station_type = 'C'::bpchar THEN 2
@@ -63,32 +63,32 @@ AS
       row_number() OVER () AS id
      FROM u_flood.station_split_mview ss
        JOIN u_flood.stations_overview_mview so ON ss.rloi_id = so.rloi_id AND ss.qualifier = so.direction
-       LEFT JOIN ( SELECT rs1.id,
+       LEFT JOIN ( SELECT rs1.river_id,
               r.name,
               r.qualified_name,
               rs1.rloi_id,
               rs1.rank,
-              rank() OVER (PARTITION BY rs1.id ORDER BY rs1.rank) AS calc_rank
+              rank() OVER (PARTITION BY rs1.river_id ORDER BY rs1.rank) AS calc_rank
              FROM u_flood.river_stations rs1
                JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id
-               JOIN u_flood.river r ON rs1.id = r.id
+               JOIN u_flood.river r ON rs1.river_id = r.id
        ) rs ON rs.rloi_id = ss.rloi_id
-       LEFT JOIN ( SELECT rs1.id,
+       LEFT JOIN ( SELECT rs1.river_id,
               rs1.rloi_id,
               rs1.rank,
-              rank() OVER (PARTITION BY rs1.id ORDER BY rs1.rank) AS calc_rank
+              rank() OVER (PARTITION BY rs1.river_id ORDER BY rs1.rank) AS calc_rank
              FROM u_flood.river_stations rs1
-               JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id) up ON rs.id::text = up.id::text AND up.calc_rank = (rs.calc_rank - 1)
-       LEFT JOIN ( SELECT rs1.id,
+               JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id) up ON rs.river_id::text = up.river_id::text AND up.calc_rank = (rs.calc_rank - 1)
+       LEFT JOIN ( SELECT rs1.river_id,
               rs1.rloi_id,
               rs1.rank,
-              rank() OVER (PARTITION BY rs1.id ORDER BY rs1.rank) AS calc_rank
+              rank() OVER (PARTITION BY rs1.river_id ORDER BY rs1.rank) AS calc_rank
              FROM u_flood.river_stations rs1
-               JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id) down ON rs.id::text = down.id::text AND down.calc_rank = (rs.calc_rank + 1)
+               JOIN u_flood.telemetry_context tc ON rs1.rloi_id = tc.rloi_id) down ON rs.river_id::text = down.river_id::text AND down.calc_rank = (rs.calc_rank + 1)
     WHERE lower(ss.status) <> 'closed'::text AND (lower(ss.region) <> 'wales'::text OR (ss.catchment = ANY (ARRAY['Dee'::text, 'Severn Uplands'::text, 'Wye'::text])))
     ORDER BY (
           CASE
-              WHEN rs.id IS NOT NULL THEN 1
+              WHEN rs.river_id IS NOT NULL THEN 1
               ELSE
               CASE
                   WHEN ss.station_type = 'C'::bpchar THEN 2
@@ -97,7 +97,7 @@ AS
               END
           END), (
           CASE
-              WHEN rs.id IS NOT NULL THEN rs.id::text
+              WHEN rs.river_id IS NOT NULL THEN rs.river_id::text
               ELSE
               CASE
                   WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
