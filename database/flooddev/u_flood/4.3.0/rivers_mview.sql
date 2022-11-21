@@ -132,8 +132,4 @@ CREATE INDEX idx_rivers_mview_river_id
 CREATE UNIQUE INDEX idx_rivers_unique
     ON u_flood.rivers_mview USING btree
     (id)
-    TABLESPACE flood_indexes; 
-
-
-
-
+    TABLESPACE flood_indexes;
