@@ -1,7 +1,7 @@
 ####### If table already exists then we need to truncate the table (ie if this is not the first load)
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river_stations;"
 
-###### Import data into river_stations omitting the name columns
+###### Import data into river_stations
 psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(rloi_id, river_id, rank) from ./river-stations.csv with delimiter as ',' CSV HEADER"
 
 ###### refresh mview
