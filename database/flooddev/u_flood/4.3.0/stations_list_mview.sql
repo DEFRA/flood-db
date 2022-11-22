@@ -1,14 +1,15 @@
 -- View: u_flood.stations_list_mview
 
-IF EXISTS DROP MATERIALIZED VIEW u_flood.stations_list_mview;
+DROP MATERIALIZED VIEW IF EXISTS u_flood.stations_list_mview;
 
-IF NOT EXISTS CREATE MATERIALIZED VIEW u_flood.stations_list_mview
+CREATE MATERIALIZED VIEW IF NOT EXISTS u_flood.stations_list_mview
 TABLESPACE flood_tables
 AS
 SELECT *,  row_number() OVER () AS id
 FROM (
  SELECT rivers_mview.river_id,
     rivers_mview.river_name,
+    rivers_mview.river_qualified_name,
     rivers_mview.navigable,
     rivers_mview.view_rank,
     rivers_mview.rank,
@@ -35,14 +36,12 @@ FROM (
     rivers_mview.lat,
     NULL::numeric AS day_total,
     NULL::numeric AS six_hr_total,
-    NULL::numeric AS one_hr_total,
-    river.name,
-	river.qualified_name
-    FROM rivers_mview left outer join river
-	ON rivers_mview.river_id = river.river_id
+    NULL::numeric AS one_hr_total
+   FROM u_flood.rivers_mview
 UNION
  SELECT 'rainfall-'::text || rainfall_stations_mview.region AS river_id,
     'Rainfall '::text || rainfall_stations_mview.region AS river_name,
+    NULL::text AS river_qualified_name,
     false AS navigable,
     5 AS view_rank,
     NULL::bigint AS rank,
@@ -69,10 +68,8 @@ UNION
     st_y(rainfall_stations_mview.centroid) AS lat,
     rainfall_stations_mview.day_total,
     rainfall_stations_mview.six_hr_total,
-    rainfall_stations_mview.one_hr_total,
-    NULL::text AS local_name,
-	NULL::text AS qualified_name
-   FROM rainfall_stations_mview
+    rainfall_stations_mview.one_hr_total
+   FROM u_flood.rainfall_stations_mview
   WHERE rainfall_stations_mview.region <> 'Wales'::text
   ORDER BY 4, 1, 5, 13
 ) as list
