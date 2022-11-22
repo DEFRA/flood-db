@@ -1,2326 +1,2326 @@
-river_id,slug,local_name,qaulified_name,station_id,order
-1001,alconbury-brook,Alconbury Brook,Alconbury Brook,6075,1
-1001,alconbury-brook,Alconbury Brook,Alconbury Brook,6161,2
-1001,alconbury-brook,Alconbury Brook,Alconbury Brook,6150,3
-1002,aldford-brook,Aldford Brook,Aldford Brook,4174,1
-1003,aldingbourne-rife,Aldingbourne Rife,Aldingbourne Rife,9254,1
-1004,aller-brook,Aller Brook,Aller Brook,3204,1
-1005,allison-dike,Allison Dike,Allison Dike,9324,1
-1006,alverthorpe-beck,Alverthorpe Beck,Alverthorpe Beck,8311,1
-1006,alverthorpe-beck,Alverthorpe Beck,Alverthorpe Beck,8353,2
-1007,alwen,Alwen,Alwen,4166,1
-1008,alyn,Alyn,Alyn,4186,1
-1008,alyn,Alyn,Alyn,4242,2
-1008,alyn,Alyn,Alyn,4243,3
-1008,alyn,Alyn,Alyn,4182,4
-1008,alyn,Alyn,Alyn,4244,5
-1009,ampney-brook,Ampney Brook,Ampney Brook,7021,1
-1009,ampney-brook,Ampney Brook,Ampney Brook,7022,2
-1011,arkle-beck,Arkle Beck,Arkle Beck,8168,1
-1012,arrowe-brook,Arrowe Brook,Arrowe Brook,5002,1
-1013,ashbrooke,Ashbrooke,Ashbrooke,2199,1
-1014,atherfield-brook,Atherfield Brook,Atherfield Brook,9171,1
-1015,babingley-river,Babingley River,Babingley River,6248,1
-1016,back-delfin,Back Delfin,Back Delfin,9147,1
-1017,badsey-brook,Badsey Brook,Badsey Brook,2015,1
-1018,bagley-brook,Bagley Brook,Bagley Brook,2210,1
-1019,bagley-dike,Bagley Dike,Bagley Dike,9328,1
-1020,baguley-brook,Baguley Brook,Baguley Brook,5197,1
-1021,baildon-dike,Baildon Dike,Baildon Dike,9334,1
-1022,balne-beck,Balne Beck,Balne Beck,9046,1
-1022,balne-beck,Balne Beck,Balne Beck,9399,2
-1023,barbourne-brook,Barbourne Brook,Barbourne Brook,2235,1
-1023,barbourne-brook,Barbourne Brook,Barbourne Brook,2236,2
-1024,bardsey-beck,Bardsey Beck,Bardsey Beck,8236,1
-1025,barge-canal,Barge Canal,Barge Canal,9235,1
-1026,barlings-eau,Barlings Eau,Barlings Eau,6052,1
-1027,barmston-drain,Barmston Drain,Barmston Drain,9361,1
-1028,barnham-rife,Barnham Rife,Barnham Rife,9251,1
-1029,bartley-water,Bartley Water,Bartley Water,9170,1
-1029,bartley-water,Bartley Water,Bartley Water,9221,2
-1029,bartley-water,Bartley Water,Bartley Water,9264,3
-1029,bartley-water,Bartley Water,Bartley Water,9263,4
-1030,barton-haven,Barton Haven,Barton Haven,6242,1
-1031,batley-beck,Batley Beck,Batley Beck,9032,1
-1031,batley-beck,Batley Beck,Batley Beck,8348,2
-1031,batley-beck,Batley Beck,Batley Beck,8347,3
-1032,bear-brook,Bear Brook,Bear Brook,7091,1
-1033,beaulieu-river,Beaulieu River,Beaulieu River,9201,1
-1033,beaulieu-river,Beaulieu River,Beaulieu River,9239,2
-1033,beaulieu-river,Beaulieu River,Beaulieu River,9238,3
-1034,bechan-brook,Bechan Brook,Bechan Brook,4259,1
-1035,bedale-beck,Bedale Beck,Bedale Beck,9142,1
-1036,bedburn-beck,Bedburn Beck,Bedburn Beck,8018,1
-1037,beverley-brook,Beverley Brook,Beverley Brook,7292,1
-1037,beverley-brook,Beverley Brook,Beverley Brook,7293,2
-1037,beverley-brook,Beverley Brook,Beverley Brook,7297,3
-1037,beverley-brook,Beverley Brook,Beverley Brook,7298,4
-1037,beverley-brook,Beverley Brook,Beverley Brook,7299,5
-1038,bickerly-mill-stream,Bickerly Mill Stream,Bickerly Mill Stream,9227,1
-1039,bielby-beck,Bielby Beck,Bielby Beck,9145,1
-1040,billinghay-skirth,Billinghay Skirth,Billinghay Skirth,6071,1
-1040,billinghay-skirth,Billinghay Skirth,Billinghay Skirth,6227,2
-1041,bin-brook,Bin Brook,Bin Brook,6246,1
-1042,bishop-monkton-beck,Bishop Monkton Beck,Bishop Monkton Beck,8229,1
-1043,black-brook-leicestershire,Black Brook,Black Brook (Leicestershire),2161,1
-1999,black-brook-yorkshire,Black Brook,Black Brook (Yorkshire),9413,1
-1044,blackburn-brook,Blackburn Brook,Blackburn Brook,8341,1
-1044,blackburn-brook,Blackburn Brook,Blackburn Brook,8261,2
-1045,blackfoss-beck,Blackfoss Beck,Blackfoss Beck,9144,1
-1046,blacup-beck,Blacup Beck,Blacup Beck,8297,1
-1047,bloxham-brook,Bloxham Brook,Bloxham Brook,7061,1
-1048,blue-beck,Blue Beck,Blue Beck,8332,1
-1049,bodmin-town-leat,Bodmin Town Leat,Bodmin Town Leat,3395,1
-1050,bolingey-stream,Bolingey Stream,Bolingey Stream,3173,1
-1051,bosham-stream,Bosham Stream,Bosham Stream,9255,1
-1052,bottle-brook,Bottle Brook,Bottle Brook,2191,1
-1053,boundary-brook,Boundary Brook,Boundary Brook,9365,1
-1054,bourn-brook,Bourn Brook,Bourn Brook,6262,1
-1054,bourn-brook,Bourn Brook,Bourn Brook,6197,2
-1055,bourne-brook,Bourne Brook,Bourne Brook,9111,1
-1056,bourne-rivulet,Bourne Rivulet,Bourne Rivulet,9231,1
-1056,bourne-rivulet,Bourne Rivulet,Bourne Rivulet,9205,2
-1057,bow-brook,Bow Brook,Bow Brook,2224,1
-1057,bow-brook,Bow Brook,Bow Brook,2010,2
-1058,bowmont-water,Bowmont Water,Bowmont Water,8375,1
-1059,bradford-beck,Bradford Beck,Bradford Beck,9390,1
-1059,bradford-beck,Bradford Beck,Bradford Beck,9048,2
-1060,bradiford-water,Bradiford Water,Bradiford Water,3109,1
-1061,bradley-brook,Bradley Brook,Bradley Brook,3411,1
-1062,bramham-beck,Bramham Beck,Bramham Beck,8329,1
-2000,brampton-beck,Brampton Beck,Brampton Beck,9417,1
-1063,brampton-branch,Brampton Branch,Brampton Branch,6122,3
-1063,brampton-branch,Brampton Branch,Brampton Branch,6102,4
-1063,brampton-branch,Brampton Branch,Brampton Branch,6218,1
-1063,brampton-branch,Brampton Branch,Brampton Branch,6118,2
-1064,bridgehouse-beck,Bridgehouse Beck,Bridgehouse Beck,9039,1
-1065,brinkworth-brook,Brinkworth Brook,Brinkworth Brook,9122,1
-1065,brinkworth-brook,Brinkworth Brook,Brinkworth Brook,3419,2
-1066,brislington-brook,Brislington Brook,Brislington Brook,3032,1
-1068,broad-fleet,Broad Fleet,Broad Fleet,5110,1
-1069,brompton-beck,Brompton Beck,Brompton Beck,8188,1
-1071,brook-dike,Brook Dike,Brook Dike,8254,1
-1072,brough-beck,Brough Beck,Brough Beck,9344,2
-1072,brough-beck,Brough Beck,Brough Beck,8284,3
-1072,brough-beck,Brough Beck,Brough Beck,8283,1
-1073,broughton-beck,Broughton Beck,Broughton Beck,8035,1
-1074,broughton-brook,Broughton Brook,Broughton Brook,6164,1
-1075,browney-dyke,Browney Dyke,Browney Dyke,9386,1
-1076,brownwich-stream,Brownwich Stream,Brownwich Stream,9176,1
-1077,buck-beck,Buck Beck,Buck Beck,9304,1
-1078,budleigh-brook,Budleigh Brook,Budleigh Brook,3348,1
-1078,budleigh-brook,Budleigh Brook,Budleigh Brook,3236,2
-1079,bulstake-stream,Bulstake Stream,Bulstake Stream,7075,1
-1080,bumpstead-brook,Bumpstead Brook,Bumpstead Brook,6133,1
-2023,burn-valley-beck,Burn Valley Beck,Burn Valley Beck,9443,1
-1081,burrow-beck,Burrow Beck,Burrow Beck,5185,1
-1082,burstow-stream,Burstow Stream,Burstow Stream,7255,1
-1082,burstow-stream,Burstow Stream,Burstow Stream,7256,2
-1083,burstwick-drain,Burstwick Drain,Burstwick Drain,8239,1
-1084,bury-brook,Bury Brook,Bury Brook,6256,1
-1085,bushy-beck,Bushy Beck,Bushy Beck,9321,1
-1086,by-brook,By Brook,By Brook,3022,1
-1086,by-brook,By Brook,By Brook,3040,2
-1087,caker-stream,Caker Stream,Caker Stream,7228,1
-1088,camlad,Camlad,Camlad,4263,1
-1089,candover-stream,Candover Stream,Candover Stream,1050,1
-1090,canley-brook,Canley Brook,Canley Brook,9110,1
-1090,canley-brook,Canley Brook,Canley Brook,9097,2
-1091,cannington-brook,Cannington Brook,Cannington Brook,3378,1
-1092,cannon-brook,Cannon Brook,Cannon Brook,9307,1
-1093,canons-brook,Canons Brook,Canons Brook,7355,1
-1094,carnon-river,Carnon River,Carnon River,3161,1
-1095,carr-brook,Carr Brook,Carr Brook,9327,1
-1096,catcliffe-drain,Catcliffe Drain,Catcliffe Drain,8322,1
-1097,ceiriog,Ceiriog,Ceiriog,4162,1
-1098,chad-brook,Chad Brook,Chad Brook,6136,1
-1099,chalgrove-brook,Chalgrove Brook,Chalgrove Brook,7404,1
-1100,charlton-brook,Charlton Brook,Charlton Brook,8318,1
-1101,cheddar-yeo,Cheddar Yeo,Cheddar Yeo,3410,1
-1102,cheriton-stream,Cheriton Stream,Cheriton Stream,1057,1
-1104,chew-stoke-brook,Chew Stoke Brook,Chew Stoke Brook,3031,1
-1105,ching-brook,Ching Brook,Ching Brook,7008,1
-1105,ching-brook,Ching Brook,Ching Brook,7373,2
-1106,chitterne-brook,Chitterne Brook,Chitterne Brook,3321,1
-2015,church-beck,Church Beck,Church Beck,9409,1
-1107,clackers-brook,Clackers Brook,Clackers Brook,9279,1
-1108,clanfield-brook,Clanfield Brook,Clanfield Brook,7039,1
-1109,clay-coton-brook,Clay Coton Brook,Clay Coton Brook,9057,1
-2024,clennon-valley-watercourse,Clennon Valley Watercourse,Clennon Valley Watercourse,9457,1
-1110,clipstone-brook,Clipstone Brook,Clipstone Brook,6156,1
-1111,clow-beck,Clow Beck,Clow Beck,8362,1
-1112,coal-burn,Coal Burn,Coal Burn,5033,1
-1113,coastal-stream,Coastal Stream,Coastal Stream,3387,1
-1114,cobbins-brook,Cobbins Brook,Cobbins Brook,7363,1
-1114,cobbins-brook,Cobbins Brook,Cobbins Brook,7364,2
-1115,cock-beck,Cock Beck,Cock Beck,9350,1
-1116,cocker-beck,Cocker Beck,Cocker Beck,2215,1
-1117,cockers-dyke,Cockers Dyke,Cockers Dyke,5113,1
-1118,cockshaw-burn,Cockshaw Burn,Cockshaw Burn,8270,1
-1118,cockshaw-burn,Cockshaw Burn,Cockshaw Burn,8271,2
-1118,cockshaw-burn,Cockshaw Burn,Cockshaw Burn,8273,3
-1119,cod-beck,Cod Beck,Cod Beck,8286,1
-1119,cod-beck,Cod Beck,Cod Beck,8287,2
-1119,cod-beck,Cod Beck,Cod Beck,8063,3
-2025,cole-brook,Cole Brook,Cole Brook,9437,1
-1120,colliters-brook,Colliters Brook,Colliters Brook,3033,1
-1121,colne-brook,Colne Brook,Colne Brook,7199,1
-1121,colne-brook,Colne Brook,Colne Brook,9297,2
-1121,colne-brook,Colne Brook,Colne Brook,7212,3
-1121,colne-brook,Colne Brook,Colne Brook,7208,4
-1122,colne-water,Colne Water,Colne Water,5188,1
-1123,combe-haven,Combe Haven,Combe Haven,1166,1
-1124,coney-gut,Coney Gut,Coney Gut,3117,1
-1124,coney-gut,Coney Gut,Coney Gut,3108,2
-1125,congresbury-yeo,Congresbury Yeo,Congresbury Yeo,3060,1
-2001,costa-beck,Costa Beck,Costa Beck,9406,1
-1126,cove-brook,Cove Brook,Cove Brook,7400,2
-1126,cove-brook,Cove Brook,Cove Brook,9408,1
-1127,cragg-brook,Cragg Brook,Cragg Brook,8321,1
-1128,cranleigh-waters,Cranleigh Waters,Cranleigh Waters,7233,1
-1128,cranleigh-waters,Cranleigh Waters,Cranleigh Waters,7235,2
-1129,cripsey-brook,Cripsey Brook,Cripsey Brook,7377,1
-1129,cripsey-brook,Cripsey Brook,Cripsey Brook,7378,2
-1130,cuckmere-&-pevensey-levels,Cuckmere & Pevensey Levels,Cuckmere & Pevensey Levels,1167,1
-1131,cundall-beck,Cundall Beck,Cundall Beck,8016,1
-1132,cunsey-beck,Cunsey Beck,Cunsey Beck,5209,1
-1133,currymoor-drain,Currymoor Drain,Currymoor Drain,3064,1
-1134,dacre-beck,Dacre Beck,Dacre Beck,5040,1
-1135,danes-stream,Danes Stream,Danes Stream,9210,1
-1135,danes-stream,Danes Stream,Danes Stream,9208,2
-1136,daniels-brook,Daniels Brook,Daniels Brook,2183,1
-1136,daniels-brook,Daniels Brook,Daniels Brook,9416,2
-1137,dauntsey-brook,Dauntsey Brook,Dauntsey Brook,3030,1
-1138,dawlish-water,Dawlish Water,Dawlish Water,3404,1
-1139,day-brook,Day Brook,Day Brook,2231,1
-1140,de-lank-river,De Lank River,De Lank River,3136,1
-1141,dean,Dean,Dean,5133,1
-1142,dean-bottom-beck,Dean Bottom Beck,Dean Bottom Beck,8301,1
-2016,dean-burn,Dean Burn,Dean Burn,9431,1
-1143,deans-brook,Deans Brook,Deans Brook,7283,1
-1144,dimore-brook,Dimore Brook,Dimore Brook,2229,1
-1144,dimore-brook,Dimore Brook,Dimore Brook,2221,2
-1145,docken's-water,Docken's Water,Docken's Water,3313,1
-1146,dollis-brook,Dollis Brook,Dollis Brook,7278,1
-1146,dollis-brook,Dollis Brook,Dollis Brook,7279,2
-1147,doniford-stream,Doniford Stream,Doniford Stream,9261,1
-1147,doniford-stream,Doniford Stream,Doniford Stream,3087,2
-1147,doniford-stream,Doniford Stream,Doniford Stream,3090,3
-1148,dorcan-brook,Dorcan Brook,Dorcan Brook,7029,1
-1149,river-frome-dorset,River Frome,River Frome (Dorset),3278,1
-1149,river-frome-dorset,River Frome,River Frome (Dorset),3277,2
-1149,river-frome-dorset,River Frome,River Frome (Dorset),3272,3
-1149,river-frome-dorset,River Frome,River Frome (Dorset),3275,4
-1149,river-frome-dorset,River Frome,River Frome (Dorset),3280,5
-1150,dover-beck,Dover Beck,Dover Beck,2232,1
-1151,dovers-brook,Dovers Brook,Dovers Brook,5227,1
-1152,dowles-brook,Dowles Brook,Dowles Brook,2023,1
-1153,dragley-beck,Dragley Beck,Dragley Beck,9241,1
-2002,dulas-brook,Dulas Brook,Dulas Brook,9423,1
-1154,ea-beck,Ea Beck,Ea Beck,8243,1
-1154,ea-beck,Ea Beck,Ea Beck,8244,2
-1154,ea-beck,Ea Beck,Ea Beck,8151,3
-1155,eagley-brook,Eagley Brook,Eagley Brook,5200,1
-1156,earby-beck,Earby Beck,Earby Beck,8070,1
-1156,earby-beck,Earby Beck,Earby Beck,8250,2
-1157,east-clandon-stream,East Clandon Stream,East Clandon Stream,7238,1
-1158,east-dart-river,East Dart River,East Dart River,3215,1
-1159,east-fen-catchwater,East Fen Catchwater,East Fen Catchwater,6229,1
-1160,east-glen-river,East Glen River,East Glen River,6033,1
-1160,east-glen-river,East Glen River,East Glen River,6040,2
-1161,east-lyn-river,East Lyn River,East Lyn River,3099,1
-1162,east-okement-river,East Okement River,East Okement River,3407,1
-1163,east-stour-kent,East Stour,East Stour (Kent),1129,1
-1163,east-stour-kent,East Stour,East Stour (Kent),9140,2
-1164,east-wilder-brook,East Wilder Brook,East Wilder Brook,3359,1
-1165,eastburn-beck,Eastburn Beck,Eastburn Beck,8060,2
-1166,eastern-yar,Eastern Yar,Eastern Yar,9184,1
-1166,eastern-yar,Eastern Yar,Eastern Yar,9168,2
-1166,eastern-yar,Eastern Yar,Eastern Yar,9185,3
-1166,eastern-yar,Eastern Yar,Eastern Yar,9215,4
-1166,eastern-yar,Eastern Yar,Eastern Yar,1018,5
-1167,edgware-brook,Edgware Brook,Edgware Brook,7284,1
-1168,egginton-brook,Egginton Brook,Egginton Brook,9079,1
-1169,eller-beck,Eller Beck,Eller Beck,9315,1
-1169,eller-beck,Eller Beck,Eller Beck,9316,2
-1169,eller-beck,Eller Beck,Eller Beck,8187,3
-1169,eller-beck,Eller Beck,Eller Beck,9317,4
-1170,elvington-beck,Elvington Beck,Elvington Beck,9357,1
-1171,emm-brook,Emm Brook,Emm Brook,7153,1
-1172,emral-brook,Emral Brook,Emral Brook,4168,1
-1173,endon-brook,Endon Brook,Endon Brook,9105,1
-1174,eridge-stream,Eridge Stream,Eridge Stream,1076,1
-1175,ewelme-brook,Ewelme Brook,Ewelme Brook,7098,1
-1176,exminster-marshes,Exminster Marshes,Exminster Marshes,3253,1
-1176,exminster-marshes,Exminster Marshes,Exminster Marshes,3241,2
-1177,farnley-beck,Farnley Beck,Farnley Beck,8306,1
-1178,fenay-beck,Fenay Beck,Fenay Beck,8260,1
-1179,ferring-rife,Ferring Rife,Ferring Rife,9260,1
-1180,field-drain,Field Drain,Field Drain,2094,1
-1181,finham-brook,Finham Brook,Finham Brook,9056,1
-1182,fishlake-stream,Fishlake Stream,Fishlake Stream,9195,1
-1183,fleet-drain,Fleet Drain,Fleet Drain,8373,1
-1183,fleet-drain,Fleet Drain,Fleet Drain,8338,2
-1184,flood-channel,Flood Channel,Flood Channel,2096,1
-1185,ford-brook,Ford Brook,Ford Brook,9087,1
-2017,ford-stream,Ford Stream,Ford Stream,9424,1
-1186,ford-green-brook,Ford Green Brook,Ford Green Brook,9098,1
-1187,fosdyke-canal,Fosdyke Canal,Fosdyke Canal,6047,1
-1188,foston-beck,Foston Beck,Foston Beck,6066,1
-1189,foston-brook,Foston Brook,Foston Brook,9088,1
-1190,foudry-brook,Foudry Brook,Foudry Brook,7130,1
-1191,fowlea-brook,Fowlea Brook,Fowlea Brook,9086,1
-1192,fowler-bridge-drain,Fowler Bridge Drain,Fowler Bridge Drain,9288,1
-1193,frays-river,Frays River,Frays River,7197,1
-1193,frays-river,Frays River,Frays River,7205,2
-1194,frodingham-beck,Frodingham Beck,Frodingham Beck,9362,1
-1195,gaddesby-brook,Gaddesby Brook,Gaddesby Brook,2214,1
-1196,gatwick-stream,Gatwick Stream,Gatwick Stream,7251,1
-1196,gatwick-stream,Gatwick Stream,Gatwick Stream,7252,2
-1196,gatwick-stream,Gatwick Stream,Gatwick Stream,7253,3
-1197,gauze-brook,Gauze Brook,Gauze Brook,3018,1
-1198,gelyn,Gelyn,Gelyn,4164,1
-1199,gilwiskaw-brook,Gilwiskaw Brook,Gilwiskaw Brook,9092,1
-1200,ginge-brook,Ginge Brook,Ginge Brook,7082,1
-1201,glaze-brook,Glaze Brook,Glaze Brook,5228,1
-1202,glen-stream,Glen Stream,Glen Stream,3234,1
-1203,glenridding-beck,Glenridding Beck,Glenridding Beck,9113,1
-1204,glossop-brook,Glossop Brook,Glossop Brook,5079,1
-1165,eastburn-beck,Eastburn Beck,Eastburn Beck,8252,1
-1206,gowdall-ings,Gowdall Ings,Gowdall Ings,8344,1
-1207,grace-dieu-brook,Grace Dieu Brook,Grace Dieu Brook,2233,1
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1132,1
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1137,2
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1133,3
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1145,4
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1135,5
-1208,great-stour-kent,Great Stour,Great Stour (Kent),9274,6
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1143,7
-1208,great-stour-kent,Great Stour,Great Stour (Kent),9148,8
-1208,great-stour-kent,Great Stour,Great Stour (Kent),1134,9
-1208,great-stour-kent,Great Stour,Great Stour (Kent),9130,10
-1208,great-stour-kent,Great Stour,Great Stour (Kent),9083,11
-1209,green-dyke,Green Dyke,Green Dyke,9384,1
-1210,grimescar-dike,Grimescar Dike,Grimescar Dike,9323,1
-1211,gurnard-luck,Gurnard Luck,Gurnard Luck,1046,1
-1212,gwyle,Gwyle,Gwyle,3421,1
-1213,gypsey-race,Gypsey Race,Gypsey Race,8029,1
-1214,hagnaby-beck,Hagnaby Beck,Hagnaby Beck,6231,1
-2026,halford-stream,Halford Stream,Halford Stream,9440,1
-1215,halse-water,Halse Water,Halse Water,3081,1
-1216,harpers-brook,Harpers Brook,Harpers Brook,6105,2
-1216,harpers-brook,Harpers Brook,Harpers Brook,9396,1
-1217,hart-burn,Hart Burn,Hart Burn,8092,1
-1218,hartburn-beck,Hartburn Beck,Hartburn Beck,8363,1
-1219,harwood-beck,Harwood Beck,Harwood Beck,8093,1
-1220,hatherley-brook,Hatherley Brook,Hatherley Brook,2207,1
-1220,hatherley-brook,Hatherley Brook,Hatherley Brook,2208,2
-1221,haweswater-beck,Haweswater Beck,Haweswater Beck,5025,1
-1221,haweswater-beck,Haweswater Beck,Haweswater Beck,5211,2
-1222,hawkcombe-stream,Hawkcombe Stream,Hawkcombe Stream,3396,1
-1223,heacham-river,Heacham River,Heacham River,6268,1
-1224,hebble-brook,Hebble Brook,Hebble Brook,9319,1
-1225,hebden-water,Hebden Water,Hebden Water,8152,1
-1226,heighington-beck,Heighington Beck,Heighington Beck,6061,1
-2027,hele-stream,Hele Stream,Hele Stream,9458,1
-1227,hellifield-beck,Hellifield Beck,Hellifield Beck,5191,1
-1228,henmore-brook,Henmore Brook,Henmore Brook,9069,1
-1228,henmore-brook,Henmore Brook,Henmore Brook,2126,2
-1229,hermitage-stream,Hermitage Stream,Hermitage Stream,9202,1
-1771,river-thurne,River Thurne,River Thurne,6210,1
-2028,higher-brixham-watercourse,Higher Brixham Watercourse,Higher Brixham Watercourse,9451,1
-1231,hillfarrance-brook,Hillfarrance Brook,Hillfarrance Brook,3084,1
-1232,hilton-brook,Hilton Brook,Hilton Brook,9101,1
-1233,hinksey-stream,Hinksey Stream,Hinksey Stream,9120,1
-1233,hinksey-stream,Hinksey Stream,Hinksey Stream,7076,2
-1234,hodge-beck,Hodge Beck,Hodge Beck,8045,1
-1235,hoe-stream,Hoe Stream,Hoe Stream,7241,1
-1236,hogsmill-river,Hogsmill River,Hogsmill River,7264,1
-1236,hogsmill-river,Hogsmill River,Hogsmill River,7265,2
-1236,hogsmill-river,Hogsmill River,Hogsmill River,7266,3
-1237,hol-beck,Hol Beck,Hol Beck,9153,1
-1238,holderness-drain,Holderness Drain,Holderness Drain,8383,1
-1238,holderness-drain,Holderness Drain,Holderness Drain,9389,2
-1238,holderness-drain,Holderness Drain,Holderness Drain,8382,3
-1239,holgate-beck,Holgate Beck,Holgate Beck,8234,1
-1240,holme-brook,Holme Brook,Holme Brook,9033,1
-1241,honddu,Honddu,Honddu,4031,1
-1242,horner-water,Horner Water,Horner Water,3091,1
-1243,horsbere-brook,Horsbere Brook,Horsbere Brook,2179,1
-1243,horsbere-brook,Horsbere Brook,Horsbere Brook,9028,2
-1243,horsbere-brook,Horsbere Brook,Horsbere Brook,2222,3
-1243,horsbere-brook,Horsbere Brook,Horsbere Brook,9294,4
-1243,horsbere-brook,Horsbere Brook,Horsbere Brook,2180,5
-1244,hovingham-beck,Hovingham Beck,Hovingham Beck,8230,1
-1245,hughenden-stream,Hughenden Stream,Hughenden Stream,7159,1
-1246,huish-level-rhyne,Huish Level Rhyne,Huish Level Rhyne,3065,1
-1247,huntingfield-watercourse,Huntingfield Watercourse,Huntingfield Watercourse,6090,1
-1248,ifield-brook,Ifield Brook,Ifield Brook,7249,1
-2003,illey-brook,Illey Brook,Illey Brook,9428,1
-1249,ings-beck,Ings Beck,Ings Beck,8312,1
-1249,ings-beck,Ings Beck,Ings Beck,8065,2
-1250,irfon,Irfon,Irfon,4001,1
-1250,irfon,Irfon,Irfon,4010,2
-1251,ithon,Ithon,Ithon,4018,1
-1251,ithon,Ithon,Ithon,4012,2
-1252,jubilee-river,Jubilee River,Jubilee River,7164,1
-1253,kelbrook-beck,Kelbrook Beck,Kelbrook Beck,9313,1
-1254,kenwith-stream,Kenwith Stream,Kenwith Stream,3405,1
-1255,kielder-burn,Kielder Burn,Kielder Burn,8111,1
-1256,killhope-burn,Killhope Burn,Killhope Burn,8212,1
-1257,kilton-beck,Kilton Beck,Kilton Beck,8185,1
-2018,kingsbridge-north-watercourse,Kingsbridge North Watercourse,Kingsbridge North Watercourse,9425,1
-1259,kingsclere-brook,Kingsclere Brook,Kingsclere Brook,7127,1
-2004,knoll-beck,Knoll Beck,Knoll Beck,9402,1
-2029,knowle-stream,Knowle Stream,Knowle Stream,9438,1
-1260,kyd-brook,Kyd Brook,Kyd Brook,7322,1
-1260,kyd-brook,Kyd Brook,Kyd Brook,7323,2
-1260,kyd-brook,Kyd Brook,Kyd Brook,7324,3
-1260,kyd-brook,Kyd Brook,Kyd Brook,7325,4
-1260,kyd-brook,Kyd Brook,Kyd Brook,7326,5
-1261,kyd-brook-east-branch,Kyd Brook (East Branch),Kyd Brook (East Branch),7321,1
-1262,kyre-brook,Kyre Brook,Kyre Brook,2198,1
-1262,kyre-brook,Kyre Brook,Kyre Brook,2197,2
-1263,laceby-beck,Laceby Beck,Laceby Beck,6243,1
-1263,laceby-beck,Laceby Beck,Laceby Beck,6244,2
-1264,landkey-brook,Landkey Brook,Landkey Brook,3107,1
-1265,lands-beck,Lands Beck,Lands Beck,8302,1
-1266,langford-brook,Langford Brook,Langford Brook,7069,1
-1267,lariggan-river,Lariggan River,Lariggan River,3390,1
-1268,law-brook,Law Brook,Law Brook,7237,1
-1269,ledwyche-brook,Ledwyche Brook,Ledwyche Brook,2088,1
-1270,leigh-brook,Leigh Brook,Leigh Brook,2070,1
-1271,letcombe-brook,Letcombe Brook,Letcombe Brook,7004,1
-1271,letcombe-brook,Letcombe Brook,Letcombe Brook,7080,2
-1271,letcombe-brook,Letcombe Brook,Letcombe Brook,7079,3
-1272,levisham-beck,Levisham Beck,Levisham Beck,8125,1
-1273,lilley-brook,Lilley Brook,Lilley Brook,2209,1
-1274,limey-water,Limey Water,Limey Water,5116,1
-1275,little-avon-river,Little Avon River,Little Avon River,9370,1
-1276,little-dart-river,Little Dart River,Little Dart River,3118,1
-1277,little-salt-moor-rhyne,Little Salt Moor Rhyne,Little Salt Moor Rhyne,3400,1
-1278,little-stour,Little Stour,Little Stour,1139,1
-1279,littlemead-brook,Littlemead Brook,Littlemead Brook,7234,1
-1280,litton-cheney-stream,Litton Cheney Stream,Litton Cheney Stream,3288,1
-1281,lledan-brook,Lledan Brook,Lledan Brook,2089,1
-1282,llynfi,Llynfi,Llynfi,4032,1
-1283,lochinvar-beck,Lochinvar Beck,Lochinvar Beck,5213,1
-1284,long-brook,Long brook,Long brook,3198,1
-1285,longload-main-drain,Longload Main Drain,Longload Main Drain,3379,1
-1286,longwood-brook,Longwood Brook,Longwood Brook,9322,1
-1287,low-moor-beck,Low Moor Beck,Low Moor Beck,9391,1
-1288,lukely-brook,Lukely Brook,Lukely Brook,9186,1
-1288,lukely-brook,Lukely Brook,Lukely Brook,9204,2
-1289,lustrum-beck,Lustrum Beck,Lustrum Beck,8275,1
-1290,lyme-brook,Lyme Brook,Lyme Brook,9099,1
-1291,lymington,Lymington,Lymington,1062,1
-1291,lymington,Lymington,Lymington,1060,2
-1291,lymington,Lymington,Lymington,9262,3
-1291,lymington,Lymington,Lymington,1024,4
-1292,maidenhead-ditch,Maidenhead Ditch,Maidenhead Ditch,7168,1
-1293,manacan-river,Manacan River,Manacan River,3388,1
-1294,mangerton-brook,Mangerton Brook,Mangerton Brook,3284,1
-1295,marchington-brook,Marchington Brook,Marchington Brook,9103,1
-2030,marsh-water,Marsh Water,Marsh Water,9452,1
-1296,marston-meysey-brook,Marston Meysey Brook,Marston Meysey Brook,7023,1
-1297,marton-west-beck,Marton West Beck,Marton West Beck,9018,1
-1297,marton-west-beck,Marton West Beck,Marton West Beck,9351,2
-1298,maud-foster/stonebridge-drain,Maud Foster/Stonebridge Drain,Maud Foster/Stonebridge Drain,6230,1
-1299,meadlake-ditch,Meadlake Ditch,Meadlake Ditch,7408,1
-1300,meanwood-beck,Meanwood Beck,Meanwood Beck,8327,1
-1301,mearley-brook,Mearley Brook,Mearley Brook,5222,1
-1302,medbourne-brook,Medbourne Brook,Medbourne Brook,6038,1
-1302,medbourne-brook,Medbourne Brook,Medbourne Brook,6032,2
-1303,meece-brook,Meece Brook,Meece Brook,9112,1
-2031,meers-brook,Meers Brook,Meers Brook,9441,1
-1304,mells-river,Mells River,Mells River,3024,1
-1304,mells-river,Mells River,Mells River,3050,2
-1305,merrow-common-stream,Merrow Common Stream,Merrow Common Stream,7236,1
-1306,mevagissey-stream,Mevagissey Stream,Mevagissey Stream,3393,1
-1307,mickley-dyke,Mickley Dyke,Mickley Dyke,9378,1
-1308,midford-brook,Midford Brook,Midford Brook,3045,1
-1309,mill-beck-back-delphin,Mill Beck,Mill Beck (Back Delphin),9359,1
-1310,mill-beck-derwent,Mill Beck,Mill Beck (Derwent),9343,1
-1311,mill-bourne,Mill Bourne,Mill Bourne,7223,1
-1312,mill-brook-oxfordshire,Mill Brook,Mill Brook (Oxfordshire),7103,1
-2005,mill-brook-herefordshire,Mill Brook,Mill Brook (Herefordshire),9421,1
-2006,mill-brook-devon,Mill Brook,Mill Brook (Devon),9426,1
-1313,mimmshall-brook,Mimmshall Brook,Mimmshall Brook,7176,1
-1313,mimmshall-brook,Mimmshall Brook,Mimmshall Brook,7177,2
-1314,mires-beck,Mires Beck,Mires Beck,8238,1
-1315,monk-dyke,Monk Dyke,Monk Dyke,9383,1
-1316,monks-brook,Monks Brook,Monks Brook,1051,1
-1316,monks-brook,Monks Brook,Monks Brook,1058,2
-1317,monksilver-stream,Monksilver Stream,Monksilver Stream,3086,1
-1318,monktonmead-brook,Monktonmead Brook,Monktonmead Brook,9217,1
-1318,monktonmead-brook,Monktonmead Brook,Monktonmead Brook,9209,2
-1319,monnow,Monnow,Monnow,4015,1
-1319,monnow,Monnow,Monnow,4049,2
-1319,monnow,Monnow,Monnow,4024,3
-1320,moors-burn,Moors Burn,Moors Burn,8274,1
-1321,moors-river,Moors River,Moors River,3301,3
-1321,moors-river,Moors River,Moors River,9398,2
-1321,moors-river,Moors River,Moors River,9397,1
-1322,mutton-brook,Mutton Brook,Mutton Brook,7281,1
-1323,nailbourne,Nailbourne,Nailbourne,1131,1
-1324,nazeing-brook,Nazeing Brook,Nazeing Brook,7360,1
-1325,netherley-brook,Netherley Brook,Netherley Brook,5203,1
-1326,nettleham-beck,Nettleham Beck,Nettleham Beck,9287,1
-1327,new-cut,New Cut,New Cut,2095,1
-1328,norbury-brook,Norbury Brook,Norbury Brook,7306,1
-1329,north-drain,North Drain,North Drain,3053,1
-1330,northmoor-main-drain,Northmoor Main Drain,Northmoor Main Drain,3415,1
-1330,northmoor-main-drain,Northmoor Main Drain,Northmoor Main Drain,3061,2
-1331,nunney-brook,Nunney Brook,Nunney Brook,3005,1
-1332,oakenshaw-beck,Oakenshaw Beck,Oakenshaw Beck,8255,1
-1333,oakington-brook,Oakington Brook,Oakington Brook,6295,1
-1334,oakley-cross-beck,Oakley Cross Beck,Oakley Cross Beck,8155,1
-1335,ogden-brook,Ogden Brook,Ogden Brook,5082,1
-2007,oil-mill-beck,Oil Mill Beck,Oil Mill Beck,9403,1
-1336,old-bedford-river,Old Bedford River,Old Bedford River,6252,1
-1336,old-bedford-river,Old Bedford River,Old Bedford River,6261,2
-1336,old-bedford-river,Old Bedford River,Old Bedford River,6245,3
-1337,old-mill-stream,Old Mill Stream,Old Mill Stream,1130,1
-1338,oldbury-naite-rhyne,Oldbury Naite Rhyne,Oldbury Naite Rhyne,9291,1
-1339,ormesby-beck,Ormesby Beck,Ormesby Beck,8374,1
-2019,otterton-brook,Otterton Brook,Otterton Brook,9433,1
-1340,oulton-beck,Oulton Beck,Oulton Beck,8075,2
-1340,oulton-beck,Oulton Beck,Oulton Beck,9400,1
-1341,ouse-burn,Ouse Burn,Ouse Burn,8222,1
-1341,ouse-burn,Ouse Burn,Ouse Burn,8085,2
-1341,ouse-burn,Ouse Burn,Ouse Burn,8058,3
-2020,ouse-dyke,Ouse Dyke,Ouse Dyke,9434,1
-1342,ousemere-lode,Ousemere Lode,Ousemere Lode,6224,1
-1343,oxlease-drain,Oxlease Drain,Oxlease Drain,9174,1
-1344,par-river,Par River,Par River,3159,1
-1344,par-river,Par River,Par River,3167,2
-2032,parham-beck,Parham Beck,Parham Beck,9462,1
-2033,pearl-brook,Pearl Brook,Pearl Brook,9446,1
-1345,penberth-stream,Penberth Stream,Penberth Stream,3339,1
-1346,pendle-water,Pendle Water,Pendle Water,5118,1
-1346,pendle-water,Pendle Water,Pendle Water,5087,2
-1346,pendle-water,Pendle Water,Pendle Water,5011,3
-1347,pent-stream,Pent Stream,Pent Stream,9022,1
-1348,perrancombe-stream,Perrancombe Stream,Perrancombe Stream,3175,1
-1348,perrancombe-stream,Perrancombe Stream,Perrancombe Stream,3168,2
-1348,perrancombe-stream,Perrancombe Stream,Perrancombe Stream,3391,3
-1349,petersfield-stream,Petersfield Stream,Petersfield Stream,9234,1
-1349,petersfield-stream,Petersfield Stream,Petersfield Stream,9233,2
-1350,petty's-brook,Petty's Brook,Petty's Brook,7135,1
-1351,pickering-beck,Pickering Beck,Pickering Beck,8126,1
-1351,pickering-beck,Pickering Beck,Pickering Beck,9005,2
-1351,pickering-beck,Pickering Beck,Pickering Beck,8161,3
-1351,pickering-beck,Pickering Beck,Pickering Beck,8330,4
-1352,picknall-brook,Picknall Brook,Picknall Brook,9104,1
-1353,piddle-brook,Piddle Brook,Piddle Brook,2223,1
-1354,pillhill-brook,Pillhill Brook,Pillhill Brook,9222,1
-1355,pimlico-brook,Pimlico Brook,Pimlico Brook,5192,1
-1356,pincey-brook,Pincey Brook,Pincey Brook,7352,1
-1357,pishiobury-brook,Pishiobury Brook,Pishiobury Brook,7354,1
-1358,pocklington-beck,Pocklington Beck,Pocklington Beck,8279,1
-1359,pointon-lode,Pointon Lode,Pointon Lode,6222,1
-1360,porter-brook,Porter Brook,Porter Brook,8339,1
-1360,porter-brook,Porter Brook,Porter Brook,8340,2
-1361,poyle-channel,Poyle Channel,Poyle Channel,7206,1
-1362,poynton-brook,Poynton Brook,Poynton Brook,5201,1
-1363,praze-stream,Praze Stream,Praze Stream,3158,1
-1364,priorpot-beck,Priorpot Beck,Priorpot Beck,9340,1
-1365,pyl-brook,Pyl Brook,Pyl Brook,7294,1
-1365,pyl-brook,Pyl Brook,Pyl Brook,7295,2
-1365,pyl-brook,Pyl Brook,Pyl Brook,7296,3
-1366,pymmes-brook,Pymmes Brook,Pymmes Brook,7370,1
-1366,pymmes-brook,Pymmes Brook,Pymmes Brook,7371,2
-1366,pymmes-brook,Pymmes Brook,Pymmes Brook,7372,3
-1367,quy-water,Quy Water,Quy Water,6272,1
-1368,radlett-brook,Radlett Brook,Radlett Brook,7175,1
-1368,radlett-brook,Radlett Brook,Radlett Brook,7006,2
-1369,rags-brook,Rags Brook,Rags Brook,7359,1
-1370,rattlesden-river,Rattlesden River,Rattlesden River,6091,1
-1371,rea-brook,Rea Brook,Rea Brook,2013,1
-1372,red-cornwall,Red,Red (Cornwall),3389,1
-1373,red-hertfordshire,Red,Red (Hertfordshire),7181,1
-1374,redhill-brook,Redhill Brook,Redhill Brook,7258,1
-1375,ridings-brook,Ridings Brook,Ridings Brook,9107,1
-1609,river-kym,River Kym,River Kym,6160,1
-1377,rising-brook,Rising Brook,Rising Brook,9084,1
-1378,river-adur,River Adur,River Adur,1006,1
-1378,river-adur,River Adur,River Adur,1001,2
-1378,river-adur,River Adur,River Adur,1032,3
-1379,river-aire,River Aire,River Aire,8083,1
-1379,river-aire,River Aire,River Aire,8189,2
-1379,river-aire,River Aire,River Aire,8054,3
-1379,river-aire,River Aire,River Aire,8112,4
-1379,river-aire,River Aire,River Aire,8199,5
-1379,river-aire,River Aire,River Aire,8345,6
-1379,river-aire,River Aire,River Aire,8056,7
-1379,river-aire,River Aire,River Aire,8346,8
-1379,river-aire,River Aire,River Aire,9017,9
-1379,river-aire,River Aire,River Aire,8120,10
-1379,river-aire,River Aire,River Aire,8009,11
-1379,river-aire,River Aire,River Aire,8061,12
-1379,river-aire,River Aire,River Aire,9151,13
-1379,river-aire,River Aire,River Aire,9152,14
-1379,river-aire,River Aire,River Aire,8079,15
-1379,river-aire,River Aire,River Aire,9310,16
-1379,river-aire,River Aire,River Aire,9309,17
-1379,river-aire,River Aire,River Aire,9311,18
-1379,river-aire,River Aire,River Aire,8320,19
-1379,river-aire,River Aire,River Aire,8042,20
-1379,river-aire,River Aire,River Aire,9312,21
-1379,river-aire,River Aire,River Aire,8077,22
-1379,river-aire,River Aire,River Aire,8122,23
-1379,river-aire,River Aire,River Aire,9042,24
-1379,river-aire,River Aire,River Aire,8017,25
-1379,river-aire,River Aire,River Aire,8350,26
-1379,river-aire,River Aire,River Aire,8294,27
-1379,river-aire,River Aire,River Aire,8041,28
-1379,river-aire,River Aire,River Aire,8003,29
-1380,river-alde,River Alde,River Alde,6085,1
-1380,river-alde,River Alde,River Alde,6298,2
-1380,river-alde,River Alde,River Alde,6296,3
-1382,river-allen-cornwall-north,River Allen,River Allen (Cornwall North),3145,1
-1383,river-allen-cornwall-south,River Allen,River Allen (Cornwall South),3171,1
-1381,river-allen-dorset,River Allen,River Allen (Dorset),9007,1
-1381,river-allen-dorset,River Allen,River Allen (Dorset),3299,2
-1384,river-aller,River Aller,River Aller,3092,1
-1385,river-alne,River Alne,River Alne,2083,1
-1385,river-alne,River Alne,River Alne,2048,2
-1386,river-alre,River Alre,River Alre,1053,1
-1386,river-alre,River Alre,River Alre,9193,2
-1387,river-alt,River Alt,River Alt,5078,1
-1388,river-alver,River Alver,River Alver,9175,1
-1389,river-amber,River Amber,River Amber,2120,1
-1390,river-ancholme,River Ancholme,River Ancholme,6239,1
-1390,river-ancholme,River Ancholme,River Ancholme,6241,2
-1390,river-ancholme,River Ancholme,River Ancholme,6016,3
-1391,river-anker,River Anker,River Anker,9064,1
-1391,river-anker,River Anker,River Anker,9063,2
-1391,river-anker,River Anker,River Anker,2112,3
-1392,river-ant,River Ant,River Ant,6216,1
-1393,river-anton,River Anton,River Anton,9169,1
-1393,river-anton,River Anton,River Anton,9198,2
-1393,river-anton,River Anton,River Anton,9199,3
-1394,river-arrow-herefordshire,River Arrow,River Arrow (Herefordshire),4020,1
-1394,river-arrow-herefordshire,River Arrow,River Arrow (Herefordshire),4035,2
-1394,river-arrow-herefordshire,River Arrow,River Arrow (Herefordshire),2195,3
-1395,river-arrow-warwickshire,River Arrow,River Arrow (Warwickshire),2047,1
-1395,river-arrow-warwickshire,River Arrow,River Arrow (Warwickshire),2052,2
-1396,river-arun,River Arun,River Arun,9243,1
-1396,river-arun,River Arun,River Arun,1165,2
-1396,river-arun,River Arun,River Arun,1168,3
-1396,river-arun,River Arun,River Arun,1014,4
-1396,river-arun,River Arun,River Arun,1017,5
-1396,river-arun,River Arun,River Arun,9245,6
-1396,river-arun,River Arun,River Arun,1011,7
-1396,river-arun,River Arun,River Arun,9248,8
-1396,river-arun,River Arun,River Arun,1162,9
-1397,river-ash-hertfordshire,River Ash,River Ash (Hertfordshire),7345,1
-1397,river-ash-hertfordshire,River Ash,River Ash (Hertfordshire),7346,2
-1397,river-ash-hertfordshire,River Ash,River Ash (Hertfordshire),7347,3
-1398,river-ash-middlesex,River Ash,River Ash (Middlesex),7247,1
-1398,river-ash-middlesex,River Ash,River Ash (Middlesex),7248,2
-1399,river-ashburn,River Ashburn,River Ashburn,3221,1
-1399,river-ashburn,River Ashburn,River Ashburn,3222,2
-1400,river-asker,River Asker,River Asker,3290,1
-1400,river-asker,River Asker,River Asker,3283,2
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3027,1
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3016,2
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3041,3
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3042,4
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3043,5
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3416,6
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3414,7
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3037,8
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3013,9
-1404,river-avon-bristol,River Avon,River Avon (Bristol),3014,10
-1405,river-avon-corsham,River Avon,River Avon (Corsham),9123,1
-1403,river-avon-devon,River Avon,River Avon (Devon),3220,1
-1403,river-avon-devon,River Avon,River Avon (Devon),3218,2
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3323,1
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3324,2
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3325,3
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3374,4
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3375,5
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3370,6
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3315,7
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3314,8
-1401,river-avon-hampshire,River Avon,River Avon (Hampshire),3320,9
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2042,1
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2043,2
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),9072,3
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2044,4
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2046,5
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2234,6
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2002,7
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2049,8
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),9025,9
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2056,10
-1402,river-avon-warwickshire,River Avon,River Avon (Warwickshire),2050,11
-1407,river-axe-devon,River Axe,River Axe (Devon),3227,1
-1407,river-axe-devon,River Axe,River Axe (Devon),3350,2
-1407,river-axe-devon,River Axe,River Axe (Devon),3229,3
-1407,river-axe-devon,River Axe,River Axe (Devon),3238,4
-1406,river-axe-somerset,River Axe,River Axe (Somerset),3059,1
-1408,river-bain,River Bain,River Bain,6063,1
-1408,river-bain,River Bain,River Bain,6060,2
-1408,river-bain,River Bain,River Bain,6041,3
-1409,river-banwy,River Banwy,River Banwy,2062,1
-1410,river-barle,River Barle,River Barle,3242,1
-1410,river-barle,River Barle,River Barle,3257,2
-1411,river-batherm,River Batherm,River Batherm,3345,1
-1412,river-beal,River Beal,River Beal,5229,1
-1412,river-beal,River Beal,River Beal,5134,2
-1413,river-beam,River Beam,River Beam,7383,1
-1414,river-beane,River Beane,River Beane,7337,1
-1414,river-beane,River Beane,River Beane,7340,2
-1414,river-beane,River Beane,River Beane,7339,3
-1414,river-beane,River Beane,River Beane,7341,4
-1415,river-beult,River Beult,River Beult,1086,1
-1415,river-beult,River Beult,River Beult,1085,2
-1416,river-bela,River Bela,River Bela,5163,1
-1417,river-birket,River Birket,River Birket,5041,1
-1417,river-birket,River Birket,River Birket,5053,2
-1418,river-biss,River Biss,River Biss,3047,1
-1418,river-biss,River Biss,River Biss,9121,1
-1420,river-blackwater-essex,River Blackwater,River Blackwater (Essex),6142,1
-1420,river-blackwater-essex,River Blackwater,River Blackwater (Essex),6143,2
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7150,6
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7149,5
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7143,4
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7142,3
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7140,2
-1421,river-blackwater-loddon,River Blackwater,River Blackwater (Loddon),7137,1
-1419,river-blackwater-new-forest,River Blackwate,River Blackwater (New Forest),9212,1
-1422,river-blakewater,River Blakewater,River Blakewater,5064,1
-1422,river-blakewater,River Blakewater,River Blakewater,9445,2
-1423,river-blithe,River Blithe,River Blithe,9089,1
-1423,river-blithe,River Blithe,River Blithe,9090,2
-1423,river-blithe,River Blithe,River Blithe,9081,3
-1424,river-blyth,River Blyth,River Blyth,8291,1
-1424,river-blyth,River Blyth,River Blyth,8026,2
-1425,river-blythe,River Blythe,River Blythe,2151,1
-1425,river-blythe,River Blythe,River Blythe,2143,2
-1426,river-bollin,River Bollin,River Bollin,5102,1
-1426,river-bollin,River Bollin,River Bollin,5114,2
-1426,river-bollin,River Bollin,River Bollin,5153,3
-1426,river-bollin,River Bollin,River Bollin,5016,4
-1000,river-bourne-addlestone,River Bourne,River Bourne (Addlestone),7224,1
-1000,river-bourne-addlestone,River Bourne,River Bourne (Addlestone),7225,2
-1103,river-bourne-chertsey,River Bourne,River Bourne (Chertsey),7219,3
-1103,river-bourne-chertsey,River Bourne,River Bourne (Chertsey),7220,4
-1103,river-bourne-chertsey,River Bourne,River Bourne (Chertsey),7217,1
-1103,river-bourne-chertsey,River Bourne,River Bourne (Chertsey),7218,2
-1428,river-bourne-kent,River Bourne,River Bourne (Kent),1073,1
-1427,river-bourne-wiltshire,River Bourne,River Bourne (Wiltshire),3309,4
-1427,river-bourne-wiltshire,River Bourne,River Bourne (Wiltshire),3311,1
-1427,river-bourne-wiltshire,River Bourne,River Bourne (Wiltshire),3310,2
-1427,river-bourne-wiltshire,River Bourne,River Bourne (Wiltshire),3319,3
-1429,river-bovey,River Bovey,River Bovey,3225,1
-1429,river-bovey,River Bovey,River Bovey,3207,2
-2008,river-bovey-wifford-tributary,River Bovey Wifford Tributary,River Bovey Wifford Tributary,9420,1
-1430,river-box,River Box,River Box,6080,1
-1430,river-box,River Box,River Box,6081,2
-1431,river-boyd,River Boyd,River Boyd,3021,1
-1431,river-boyd,River Boyd,River Boyd,3039,2
-1432,river-brain,River Brain,River Brain,6144,1
-1433,river-brant,River Brant,River Brant,6053,1
-1433,river-brant,River Brant,River Brant,6221,2
-1434,river-brathay,River Brathay,River Brathay,5161,1
-1435,river-bray,River Bray,River Bray,9339,1
-1435,river-bray,River Bray,River Bray,3112,2
-1436,river-brede,River Brede,River Brede,1127,1
-1436,river-brede,River Brede,River Brede,1120,2
-1437,river-brent,River Brent,River Brent,7282,1
-1437,river-brent,River Brent,River Brent,7289,2
-1437,river-brent,River Brent,River Brent,7290,3
-1437,river-brent,River Brent,River Brent,7291,4
-1437,river-brent,River Brent,River Brent,7007,5
-1438,river-brett,River Brett,River Brett,6079,1
-1438,river-brett,River Brett,River Brett,6082,2
-1439,river-bride,River Bride,River Bride,3285,1
-1440,river-brit,River Brit,River Brit,3281,1
-1440,river-brit,River Brit,River Brit,3293,2
-1440,river-brit,River Brit,River Brit,3294,3
-1441,river-brock,River Brock,River Brock,5022,1
-1441,river-brock,River Brock,River Brock,5120,2
-1442,river-browney,River Browney,River Browney,8038,1
-1443,river-brue,River Brue,River Brue,3056,1
-1443,river-brue,River Brue,River Brue,3055,2
-1443,river-brue,River Brue,River Brue,3057,3
-1443,river-brue,River Brue,River Brue,3058,4
-1444,river-brun,River Brun,River Brun,5224,1
-1445,river-bulbourne,River Bulbourne,River Bulbourne,7186,1
-1445,river-bulbourne,River Bulbourne,River Bulbourne,7187,2
-1446,river-bull,River Bull,River Bull,1156,1
-1446,river-bull,River Bull,River Bull,1154,2
-1447,river-bure,River Bure,River Bure,6094,1
-1447,river-bure,River Bure,River Bure,6099,2
-1447,river-bure,River Bure,River Bure,6211,3
-1447,river-bure,River Bure,River Bure,6215,4
-1447,river-bure,River Bure,River Bure,6203,5
-1447,river-bure,River Bure,River Bure,6202,6
-1448,river-burn,River Burn,River Burn,6093,1
-1449,river-dudwell,River Dudwell,River Dudwell,1122,1
-1450,river-caen,River Caen,River Caen,3351,1
-1450,river-caen,River Caen,River Caen,3346,2
-1450,river-caen,River Caen,River Caen,3119,3
-1451,river-cain,River Cain,River Cain,4261,1
-1451,river-cain,River Cain,River Cain,4262,2
-1453,river-calder-cumbria,River Calder,River Calder (Cumbria),5027,1
-1454,river-calder-lancashire,River Calder,River Calder (Lancashire),5104,1
-1454,river-calder-lancashire,River Calder,River Calder (Lancashire),5189,2
-1454,river-calder-lancashire,River Calder,River Calder (Lancashire),5105,3
-1454,river-calder-lancashire,River Calder,River Calder (Lancashire),5150,4
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8305,1
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8205,2
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),9318,3
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8343,4
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8097,5
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),9167,6
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8048,7
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),9031,8
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8191,9
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8298,10
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8073,11
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8032,12
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8096,13
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8124,14
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8066,15
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8100,16
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8209,17
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),9320,18
-1452,river-calder-yorkshire,River Calder,River Calder (Yorkshire),8134,19
-1455,river-caldew,River Caldew,River Caldew,5125,1
-1455,river-caldew,River Caldew,River Caldew,5039,2
-1455,river-caldew,River Caldew,River Caldew,5042,3
-1455,river-caldew,River Caldew,River Caldew,5173,4
-1456,river-cale,River Cale,River Cale,3298,1
-1458,river-cam-cambridgeshire,River Cam,River Cam (Cambridgeshire),6189,1
-1458,river-cam-cambridgeshire,River Cam,River Cam (Cambridgeshire),6190,2
-1458,river-cam-cambridgeshire,River Cam,River Cam (Cambridgeshire),6192,3
-1458,river-cam-cambridgeshire,River Cam,River Cam (Cambridgeshire),6193,4
-1458,river-cam-cambridgeshire,River Cam,River Cam (Cambridgeshire),6198,5
-1457,river-cam-severn,River Cam,River Cam (Severn),2074,1
-1457,river-cam-severn,River Cam,River Cam (Severn),2077,2
-1459,river-cam-somerset,River Cam,River Cam (Somerset),3078,1
-1460,river-camel,River Camel,River Camel,3134,1
-1460,river-camel,River Camel,River Camel,9303,2
-1460,river-camel,River Camel,River Camel,9149,3
-1460,river-camel,River Camel,River Camel,3153,4
-1460,river-camel,River Camel,River Camel,3132,5
-1461,river-can,River Can,River Can,6149,1
-1462,river-char,River Char,River Char,3286,1
-1463,river-chater,River Chater,River Chater,6034,1
-1464,river-chelmer,River Chelmer,River Chelmer,6145,1
-1464,river-chelmer,River Chelmer,River Chelmer,6146,2
-1464,river-chelmer,River Chelmer,River Chelmer,6147,3
-1465,river-chelt,River Chelt,River Chelt,2170,1
-1465,river-chelt,River Chelt,River Chelt,2172,2
-1465,river-chelt,River Chelt,River Chelt,2171,3
-1465,river-chelt,River Chelt,River Chelt,2173,4
-1465,river-chelt,River Chelt,River Chelt,2174,5
-1466,river-cherwell,River Cherwell,River Cherwell,7058,1
-1466,river-cherwell,River Cherwell,River Cherwell,7059,2
-1466,river-cherwell,River Cherwell,River Cherwell,7060,3
-1466,river-cherwell,River Cherwell,River Cherwell,7063,4
-1466,river-cherwell,River Cherwell,River Cherwell,7064,5
-1466,river-cherwell,River Cherwell,River Cherwell,7066,6
-1466,river-cherwell,River Cherwell,River Cherwell,9082,7
-1466,river-cherwell,River Cherwell,River Cherwell,7071,8
-1466,river-cherwell,River Cherwell,River Cherwell,9119,9
-1467,river-chess,River Chess,River Chess,7189,1
-1467,river-chess,River Chess,River Chess,7190,2
-1468,river-chew,River Chew,River Chew,3044,1
-1469,river-churn,River Churn,River Churn,7015,1
-1469,river-churn,River Churn,River Churn,7016,2
-1469,river-churn,River Churn,River Churn,7017,3
-1470,river-churnet,River Churnet,River Churnet,2154,1
-1470,river-churnet,River Churnet,River Churnet,9073,2
-1470,river-churnet,River Churnet,River Churnet,2127,3
-1470,river-churnet,River Churnet,River Churnet,9074,4
-1470,river-churnet,River Churnet,River Churnet,2153,5
-1471,river-clyst,River Clyst,River Clyst,3249,1
-1471,river-clyst,River Clyst,River Clyst,3355,2
-1471,river-clyst,River Clyst,River Clyst,3250,3
-1472,river-clywedog,River Clywedog,River Clywedog,2054,1
-1473,river-cober,River Cober,River Cober,3392,1
-1473,river-cober,River Cober,River Cober,3160,2
-1473,river-cober,River Cober,River Cober,3338,3
-1473,river-cober,River Cober,River Cober,3169,4
-1474,river-cocker,River Cocker,River Cocker,5123,1
-1474,river-cocker,River Cocker,River Cocker,5129,2
-1474,river-cocker,River Cocker,River Cocker,5128,3
-1475,river-cole-staffordshire,River Cole,River Cole (Staffordshire),2157,1
-1475,river-cole-staffordshire,River Cole,River Cole (Staffordshire),2129,2
-1475,river-cole-staffordshire,River Cole,River Cole (Staffordshire),9065,3
-1476,river-cole-wiltshire,River Cole,River Cole (Wiltshire),7028,1
-1476,river-cole-wiltshire,River Cole,River Cole (Wiltshire),7030,2
-1476,river-cole-wiltshire,River Cole,River Cole (Wiltshire),7031,3
-1477,river-coln,River Coln,River Coln,7025,1
-1477,river-coln,River Coln,River Coln,7026,2
-1477,river-coln,River Coln,River Coln,7406,3
-1480,river-colne-essex,River Colne,River Colne (Essex),6138,1
-1480,river-colne-essex,River Colne,River Colne (Essex),6139,2
-1480,river-colne-essex,River Colne,River Colne (Essex),6140,3
-1480,river-colne-essex,River Colne,River Colne (Essex),6003,4
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7179,1
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7184,2
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),9296,3
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7192,4
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7196,5
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7198,6
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),9298,7
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7200,8
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),9436,9
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7207,10
-1478,river-colne-hertfordshire,River Colne,River Colne (Hertfordshire),7211,11
-1479,river-colne-yorkshire,River Colne,River Colne (Yorkshire),8258,1
-1479,river-colne-yorkshire,River Colne,River Colne (Yorkshire),8317,2
-1479,river-colne-yorkshire,River Colne,River Colne (Yorkshire),8105,3
-1479,river-colne-yorkshire,River Colne,River Colne (Yorkshire),8053,4
-1481,river-coly,River Coly,River Coly,3232,1
-1482,river-conder,River Conder,River Conder,5054,1
-1483,river-coquet,River Coquet,River Coquet,8008,1
-1483,river-coquet,River Coquet,River Coquet,8173,2
-1483,river-coquet,River Coquet,River Coquet,8143,3
-1483,river-coquet,River Coquet,River Coquet,8369,4
-1484,river-corve,River Corve,River Corve,2065,1
-1485,river-crake,River Crake,River Crake,5165,1
-1485,river-crake,River Crake,River Crake,5092,2
-1486,river-crane,River Crane,River Crane,7276,1
-1486,river-crane,River Crane,River Crane,7277,2
-1487,river-cray,River Cray,River Cray,1037,1
-1487,river-cray,River Cray,River Cray,1036,2
-1488,river-creedy,River Creedy,River Creedy,3245,1
-1488,river-creedy,River Creedy,River Creedy,3261,2
-1489,river-crimple,River Crimple,River Crimple,8023,2
-1489,river-crimple,River Crimple,River Crimple,9410,1
-1490,river-croal,River Croal,River Croal,5049,1
-1491,river-crouch,River Crouch,River Crouch,6129,1
-1491,river-crouch,River Crouch,River Crouch,6127,2
-1492,river-cuckmere,River Cuckmere,River Cuckmere,1153,1
-1493,river-culm,River Culm,River Culm,3347,1
-1493,river-culm,River Culm,River Culm,3259,2
-1493,river-culm,River Culm,River Culm,9430,3
-1493,river-culm,River Culm,River Culm,3247,4
-1494,river-dane,River Dane,River Dane,5073,1
-1494,river-dane,River Dane,River Dane,5036,2
-1494,river-dane,River Dane,River Dane,5121,3
-1495,river-darent,River Darent,River Darent,9300,1
-1495,river-darent,River Darent,River Darent,9301,2
-1495,river-darent,River Darent,River Darent,9136,3
-1495,river-darent,River Darent,River Darent,1040,4
-1495,river-darent,River Darent,River Darent,9137,5
-1495,river-darent,River Darent,River Darent,1038,6
-1496,river-dart,River Dart,River Dart,3216,1
-1496,river-dart,River Dart,River Dart,3406,2
-1496,river-dart,River Dart,River Dart,3363,3
-1497,river-darwen,River Darwen,River Darwen,9463,1
-1497,river-darwen,River Darwen,River Darwen,5061,2
-1497,river-darwen,River Darwen,River Darwen,5048,3
-1497,river-darwen,River Darwen,River Darwen,9448,3
-1497,river-darwen,River Darwen,River Darwen,5015,4
-1498,river-dearne,River Dearne,River Dearne,9329,1
-1498,river-dearne,River Dearne,River Dearne,8240,2
-1498,river-dearne,River Dearne,River Dearne,8062,3
-1498,river-dearne,River Dearne,River Dearne,8015,4
-1498,river-dearne,River Dearne,River Dearne,8101,5
-1498,river-dearne,River Dearne,River Dearne,8064,6
-1498,river-dearne,River Dearne,River Dearne,8027,7
-1498,river-dearne,River Dearne,River Dearne,8002,8
-1498,river-dearne,River Dearne,River Dearne,9333,9
-1498,river-dearne,River Dearne,River Dearne,9332,10
-1499,river-deben,River Deben,River Deben,6087,1
-1499,river-deben,River Deben,River Deben,6297,2
-1500,river-dee,River Dee,River Dee,4178,1
-1500,river-dee,River Dee,River Dee,4165,2
-1500,river-dee,River Dee,River Dee,4152,3
-1500,river-dee,River Dee,River Dee,4163,4
-1500,river-dee,River Dee,River Dee,4176,5
-1500,river-dee,River Dee,River Dee,4241,6
-1500,river-dee,River Dee,River Dee,4170,7
-1500,river-dee,River Dee,River Dee,4173,8
-1502,river-dene-gloucestershire,River Dene,River Dene (Gloucestershire),9029,1
-1501,river-dene-warwickshire,River Dene,River Dene (Warwickshire),9078,1
-1501,river-dene-warwickshire,River Dene,River Dene (Warwickshire),2029,2
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5178,1
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5174,2
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5179,3
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5103,4
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5181,5
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5180,6
-1506,river-derwent-cumbria,River Derwent,River Derwent (Cumbria),5155,7
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2097,1
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2230,2
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2118,3
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2103,4
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2138,5
-1505,river-derwent-derbyshire,River Derwent,River Derwent (Derbyshire),2130,6
-1504,river-derwent-northumberland,River Derwent,River Derwent (Northumberland),8376,1
-1504,river-derwent-northumberland,River Derwent,River Derwent (Northumberland),8272,2
-1504,river-derwent-northumberland,River Derwent,River Derwent (Northumberland),8292,3
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),9355,1
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8214,2
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8132,3
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8131,4
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8130,5
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),9356,6
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8039,7
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8280,8
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8074,9
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),8037,10
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),9358,11
-1503,river-derwent-yorkshire,River Derwent,River Derwent (Yorkshire),9388,12
-1507,river-dever,River Dever,River Dever,9173,1
-1508,river-devon,River Devon,River Devon,2190,1
-1509,river-dikler,River Dikler,River Dikler,7041,1
-1510,river-doe-lea,River Doe Lea,River Doe Lea,8197,1
-1511,river-don,River Don,River Don,8247,1
-1511,river-don,River Don,River Don,9326,2
-1511,river-don,River Don,River Don,8323,3
-1511,river-don,River Don,River Don,8248,4
-1511,river-don,River Don,River Don,8090,5
-1511,river-don,River Don,River Don,8174,6
-1511,river-don,River Don,River Don,8175,7
-1511,river-don,River Don,River Don,9375,8
-1511,river-don,River Don,River Don,8135,9
-1511,river-don,River Don,River Don,8349,10
-1511,river-don,River Don,River Don,8067,11
-1511,river-don,River Don,River Don,8242,12
-1511,river-don,River Don,River Don,8259,13
-1512,river-dore,River Dore,River Dore,4027,1
-1513,river-douglas,River Douglas,River Douglas,5117,1
-1513,river-douglas,River Douglas,River Douglas,5152,2
-1513,river-douglas,River Douglas,River Douglas,5006,3
-1513,river-douglas,River Douglas,River Douglas,5106,4
-1513,river-douglas,River Douglas,River Douglas,5147,5
-1514,river-dour,River Dour,River Dour,9019,1
-1515,river-dove-north-yorkshire,River Dove,River Dove (North Yorkshire),8117,1
-1517,river-dove-south-yorkshire,River Dove,River Dove (South Yorkshire),8241,1
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),2119,1
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),9070,2
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),2101,3
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),2133,4
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),2150,5
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),9059,6
-1516,river-dove-staffordshire,River Dove,River Dove (Staffordshire),2107,7
-1518,river-drone,River Drone,River Drone,9338,1
-1518,river-drone,River Drone,River Drone,8069,2
-1519,river-duddon,River Duddon,River Duddon,5142,1
-1519,river-duddon,River Duddon,River Duddon,5044,2
-1520,river-darwell,River Darwell,River Darwell,1121,1
-1521,river-dulas,River Dulas,River Dulas,2017,1
-1523,river-dun-berkshire,River Dun,River Dun (Berkshire),7120,1
-1522,river-dun-hampshire,River Dun,River Dun (Hampshire),9232,1
-1524,river-eamont,River Eamont,River Eamont,5206,1
-1524,river-eamont,River Eamont,River Eamont,5168,2
-1524,river-eamont,River Eamont,River Eamont,5046,3
-1524,river-eamont,River Eamont,River Eamont,5141,4
-1525,river-east-allen,River East Allen,River East Allen,8005,1
-1526,river-eau,River Eau,River Eau,2211,1
-1527,river-ebble,River Ebble,River Ebble,3371,1
-1527,river-ebble,River Ebble,River Ebble,3318,2
-1528,river-ecclesbourne,River Ecclesbourne,River Ecclesbourne,2124,1
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5157,1
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5059,2
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5005,3
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5138,4
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5058,5
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5081,6
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5171,7
-1529,river-eden-cumbria,River Eden,River Eden (Cumbria),5127,8
-1530,river-eden-kent,River Eden,River Eden (Kent),1081,1
-1530,river-eden-kent,River Eden,River Eden (Kent),1071,2
-1530,river-eden-kent,River Eden,River Eden (Kent),1091,3
-1530,river-eden-kent,River Eden,River Eden (Kent),1084,4
-1531,river-ehen,River Ehen,River Ehen,5014,1
-1531,river-ehen,River Ehen,River Ehen,5047,2
-1531,river-ehen,River Ehen,River Ehen,5018,3
-1532,river-elan,River Elan,River Elan,4008,1
-1533,river-ellen,River Ellen,River Ellen,5024,1
-1534,river-ems,River Ems,River Ems,1155,1
-1535,river-enborne,River Enborne,River Enborne,7128,1
-1536,river-erewash,River Erewash,River Erewash,2155,1
-1536,river-erewash,River Erewash,River Erewash,2159,2
-1536,river-erewash,River Erewash,River Erewash,2164,3
-1537,river-erme,River Erme,River Erme,3208,1
-1537,river-erme,River Erme,River Erme,3219,2
-1538,river-esk-north-cumbria,River Esk,River Esk (North Cumbria),5207,1
-1540,river-esk-west-cumbria,River Esk,River Esk (West Cumbria),5037,1
-1539,river-esk-yorkshire,River Esk,River Esk (Yorkshire),8331,1
-1539,river-esk-yorkshire,River Esk,River Esk (Yorkshire),8232,2
-1539,river-esk-yorkshire,River Esk,River Esk (Yorkshire),8233,3
-1539,river-esk-yorkshire,River Esk,River Esk (Yorkshire),8216,4
-1541,river-etherow,River Etherow,River Etherow,5154,1
-1541,river-etherow,River Etherow,River Etherow,5035,2
-1542,river-evenlode,River Evenlode,River Evenlode,7002,1
-1542,river-evenlode,River Evenlode,River Evenlode,7050,2
-1542,river-evenlode,River Evenlode,River Evenlode,9050,3
-1542,river-evenlode,River Evenlode,River Evenlode,7051,4
-1542,river-evenlode,River Evenlode,River Evenlode,7053,5
-1542,river-evenlode,River Evenlode,River Evenlode,7054,6
-1543,river-exe,River Exe,River Exe,3254,1
-1543,river-exe,River Exe,River Exe,3256,2
-1543,river-exe,River Exe,River Exe,3258,3
-1543,river-exe,River Exe,River Exe,3246,4
-1543,river-exe,River Exe,River Exe,3260,5
-1543,river-exe,River Exe,River Exe,9427,6
-1543,river-exe,River Exe,River Exe,3251,7
-1543,river-exe,River Exe,River Exe,9010,8
-1543,river-exe,River Exe,River Exe,3094,9
-1544,river-fal,River Fal,River Fal,3174,1
-1544,river-fal,River Fal,River Fal,3164,2
-1545,river-flit,River Flit,River Flit,6077,1
-1546,river-font,River Font,River Font,8154,1
-1547,river-foss,River Foss,River Foss,9305,1
-1547,river-foss,River Foss,River Foss,8235,2
-1547,river-foss,River Foss,River Foss,9387,3
-1548,river-foulness,River Foulness,River Foulness,9141,1
-1548,river-foulness,River Foulness,River Foulness,8282,2
-1549,river-fowey,River Fowey,River Fowey,3142,1
-1549,river-fowey,River Fowey,River Fowey,3139,2
-1549,river-fowey,River Fowey,River Fowey,3152,3
-1549,river-fowey,River Fowey,River Fowey,3386,4
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3009,1
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3023,2
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3029,3
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3036,4
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3413,5
-1067,river-frome-bristol,River Frome,River Frome (Bristol),3412,6
-1550,river-frome-severn,River Frome,River Frome (Severn),2175,1
-1550,river-frome-severn,River Frome,River Frome (Severn),2176,2
-1550,river-frome-severn,River Frome,River Frome (Severn),2019,3
-1550,river-frome-severn,River Frome,River Frome (Severn),2177,4
-1551,river-frome-wye,River Frome,River Frome (Wye),4223,1
-1551,river-frome-wye,River Frome,River Frome (Wye),4003,2
-1551,river-frome-wye,River Frome,River Frome (Wye),4036,3
-1552,river-fromus,River Fromus,River Fromus,6092,1
-1553,river-gade,River Gade,River Gade,7185,1
-1553,river-gade,River Gade,River Gade,7188,2
-1554,river-gannel,River Gannel,River Gannel,3135,1
-1555,river-gaunless,River Gaunless,River Gaunless,8055,1
-1555,river-gaunless,River Gaunless,River Gaunless,8128,2
-1555,river-gaunless,River Gaunless,River Gaunless,8361,3
-1555,river-gaunless,River Gaunless,River Gaunless,8192,4
-1555,river-gaunless,River Gaunless,River Gaunless,8360,5
-1555,river-gaunless,River Gaunless,River Gaunless,8068,6
-1555,river-gaunless,River Gaunless,River Gaunless,8198,7
-1556,river-gelt,River Gelt,River Gelt,5074,1
-1557,river-gipping,River Gipping,River Gipping,6086,1
-1558,river-glem,River Glem,River Glem,6135,1
-1559,river-glen,River Glen,River Glen,6035,1
-1559,river-glen,River Glen,River Glen,6022,2
-1560,river-glenderamackin,River Glenderamackin,River Glenderamackin,5140,1
-1561,river-glyme,River Glyme,River Glyme,7052,1
-1562,river-gowan,River Gowan,River Gowan,9131,1
-1563,river-gowy,River Gowy,River Gowy,5019,1
-1564,river-goyt,River Goyt,River Goyt,5232,1
-1564,river-goyt,River Goyt,River Goyt,5096,2
-1565,river-granta,River Granta,River Granta,6074,1
-1565,river-granta,River Granta,River Granta,6194,2
-1565,river-granta,River Granta,River Granta,6195,3
-1566,river-graveney,River Graveney,River Graveney,7307,1
-1566,river-graveney,River Graveney,River Graveney,7308,2
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6158,1
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6183,2
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6159,3
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6274,4
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6185,5
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6163,6
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6387,7
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6162,8
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6276,9
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6166,10
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6167,11
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6168,12
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6291,13
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6169,14
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6289,15
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6171,16
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6172,17
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6173,18
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6174,19
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6078,20
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6264,21
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6175,22
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6176,23
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6177,24
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6178,25
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6179,26
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6180,27
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6278,28
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6254,29
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6290,30
-1567,river-great-ouse,River Great Ouse,River Great Ouse,9380,31
-1567,river-great-ouse,River Great Ouse,River Great Ouse,6009,32
-1568,river-greet,River Greet,River Greet,2216,1
-1569,river-greta-cumbria,River Greta,River Greta (Cumbria),9419,1
-1569,river-greta-cumbria,River Greta,River Greta (Cumbria),5060,2
-1569,river-greta-cumbria,River Greta,River Greta (Cumbria),5175,3
-1570,river-greta-durham,River Greta,River Greta (Durham),8177,1
-1571,river-haddeo,River Haddeo,River Haddeo,9354,1
-1571,river-haddeo,River Haddeo,River Haddeo,9353,2
-1571,river-haddeo,River Haddeo,River Haddeo,9342,3
-1571,river-haddeo,River Haddeo,River Haddeo,9352,4
-1572,river-hamble,River Hamble,River Hamble,9211,1
-1572,river-hamble,River Hamble,River Hamble,9197,2
-1572,river-hamble,River Hamble,River Hamble,9203,3
-1572,river-hamble,River Hamble,River Hamble,9200,4
-1573,river-hamps,River Hamps,River Hamps,2117,1
-1574,river-harbourne,River Harbourne,River Harbourne,3210,1
-1574,river-harbourne,River Harbourne,River Harbourne,3217,2
-1574,river-harbourne,River Harbourne,River Harbourne,3360,3
-1575,river-hart,River Hart,River Hart,7148,1
-1575,river-hart,River Hart,River Hart,7147,2
-1575,river-hart,River Hart,River Hart,7146,3
-1575,river-hart,River Hart,River Hart,7145,4
-1576,river-hayle,River Hayle,River Hayle,3166,1
-1576,river-hayle,River Hayle,River Hayle,3165,2
-1576,river-hayle,River Hayle,River Hayle,3172,3
-1577,river-hindburn,River Hindburn,River Hindburn,5156,1
-1578,river-hipper,River Hipper,River Hipper,8300,1
-1578,river-hipper,River Hipper,River Hipper,8047,2
-1578,river-hipper,River Hipper,River Hipper,8295,3
-1579,river-hiz,River Hiz,River Hiz,6076,1
-1580,river-hodder,River Hodder,River Hodder,5071,1
-1581,river-holme,River Holme,River Holme,8342,1
-1581,river-holme,River Holme,River Holme,8165,2
-1582,river-hooke,River Hooke,River Hooke,3271,1
-1583,river-hull,River Hull,River Hull,9367,8
-1583,river-hull,River Hull,River Hull,9385,6
-1583,river-hull,River Hull,River Hull,8381,4
-1583,river-hull,River Hull,River Hull,9364,2
-1583,river-hull,River Hull,River Hull,8103,10
-1583,river-hull,River Hull,River Hull,8335,9
-1583,river-hull,River Hull,River Hull,9366,7
-1583,river-hull,River Hull,River Hull,8281,5
-1583,river-hull,River Hull,River Hull,8385,3
-1583,river-hull,River Hull,River Hull,9146,1
-1584,river-hyndburn,River Hyndburn,River Hyndburn,5223,1
-2036,river-idle,River Idle,River Idle,2156,1
-2036,river-idle,River Idle,River Idle,2106,2
-1585,river-ingrebourne,River Ingrebourne,River Ingrebourne,7384,1
-1585,river-ingrebourne,River Ingrebourne,River Ingrebourne,9325,2
-1586,river-inny,River Inny,River Inny,3181,1
-1587,river-irk,River Irk,River Irk,5034,1
-1588,river-irt,River Irt,River Irt,5182,1
-1589,river-irthing,River Irthing,River Irthing,5183,1
-1590,river-irwell,River Irwell,River Irwell,5195,1
-1590,river-irwell,River Irwell,River Irwell,5075,2
-1590,river-irwell,River Irwell,River Irwell,5136,3
-1590,river-irwell,River Irwell,River Irwell,5115,4
-1590,river-irwell,River Irwell,River Irwell,5026,5
-1590,river-irwell,River Irwell,River Irwell,5230,6
-1590,river-irwell,River Irwell,River Irwell,5076,7
-1590,river-irwell,River Irwell,River Irwell,5095,8
-1590,river-irwell,River Irwell,River Irwell,5003,9
-1591,river-isbourne,River Isbourne,River Isbourne,2193,1
-1591,river-isbourne,River Isbourne,River Isbourne,2194,2
-1591,river-isbourne,River Isbourne,River Isbourne,2024,3
-1592,river-ise,River Ise,River Ise,6109,1
-1592,river-ise,River Ise,River Ise,6113,2
-1592,river-ise,River Ise,River Ise,6104,3
-1593,river-isle,River Isle,River Isle,3076,1
-1593,river-isle,River Isle,River Isle,3077,2
-1593,river-isle,River Isle,River Isle,3380,3
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1054,1
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),9194,2
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1052,3
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1059,4
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1055,5
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1048,6
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),9220,7
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1049,8
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1056,9
-1594,river-itchen-hampshire,River Itchen,River Itchen (Hampshire),1034,10
-1595,river-itchen-warwickshire,River Itchen,River Itchen (Warwickshire),2080,1
-1596,river-ivel,River Ivel,River Ivel,6182,1
-1596,river-ivel,River Ivel,River Ivel,6181,2
-1597,river-jordan,River Jordan,River Jordan,6021,1
-1597,river-jordan,River Jordan,River Jordan,6019,2
-1598,river-keekle,River Keekle,River Keekle,5131,1
-1599,river-keer,River Keer,River Keer,5068,1
-1600,river-kenn-tributary,River Kenn Tributary,River Kenn Tributary,3356,1
-1601,river-kennall,River Kennall,River Kennall,3385,1
-1602,river-kennet,River Kennet,River Kennet,7112,1
-1602,river-kennet,River Kennet,River Kennet,7113,2
-1602,river-kennet,River Kennet,River Kennet,7118,3
-1602,river-kennet,River Kennet,River Kennet,7117,4
-1602,river-kennet,River Kennet,River Kennet,7122,5
-1602,river-kennet,River Kennet,River Kennet,9395,6
-1602,river-kennet,River Kennet,River Kennet,7131,7
-1603,river-kennett,River Kennett,River Kennett,6249,1
-1603,river-kennett,River Kennett,River Kennett,6253,2
-1604,river-kensey,River Kensey,River Kensey,3192,1
-1604,river-kensey,River Kensey,River Kensey,3337,2
-1605,river-kent,River Kent,River Kent,5017,1
-1605,river-kent,River Kent,River Kent,5225,2
-1605,river-kent,River Kent,River Kent,5126,3
-1606,river-kenwyn,River Kenwyn,River Kenwyn,3163,1
-1607,river-key,River Key,River Key,7013,1
-1608,river-kyle,River Kyle,River Kyle,9143,1
-1609,river-kym,River Kym,River Kym,6153,2
-1609,river-kym,River Kym,River Kym,6155,3
-1610,river-lambourn,River Lambourn,River Lambourn,7123,1
-1610,river-lambourn,River Lambourn,River Lambourn,9020,2
-1610,river-lambourn,River Lambourn,River Lambourn,7126,3
-1610,river-lambourn,River Lambourn,River Lambourn,9292,4
-1611,river-lark,River Lark,River Lark,6251,1
-1611,river-lark,River Lark,River Lark,6255,2
-1611,river-lark,River Lark,River Lark,6279,3
-1611,river-lark,River Lark,River Lark,6260,4
-1611,river-lark,River Lark,River Lark,6271,5
-1613,river-lavant-hampshire,River Lavant,River Lavant (Hampshire),9191,1
-1613,river-lavant-hampshire,River Lavant,River Lavant (Hampshire),9223,2
-1612,river-lavant-sussex,River Lavant,River Lavant (Sussex),1163,1
-1612,river-lavant-sussex,River Lavant,River Lavant (Sussex),9244,2
-1614,river-laver,River Laver,River Laver,9346,1
-1614,river-laver,River Laver,River Laver,8171,2
-1618,river-lea,River Lea,River Lea,7329,1
-1618,river-lea,River Lea,River Lea,7330,2
-1618,river-lea,River Lea,River Lea,9289,3
-1618,river-lea,River Lea,River Lea,7332,4
-1618,river-lea,River Lea,River Lea,7333,5
-1618,river-lea,River Lea,River Lea,7357,7
-1618,river-lea,River Lea,River Lea,7374,10
-1618,river-lea,River Lea,River Lea,7361,8
-1618,river-lea,River Lea,River Lea,7375,11
-1618,river-lea,River Lea,River Lea,7365,9
-1618,river-lea,River Lea,River Lea,9047,6
-1615,river-leach,River Leach,River Leach,7033,1
-1616,river-leadon,River Leadon,River Leadon,2205,1
-1616,river-leadon,River Leadon,River Leadon,2012,2
-1617,river-leam,River Leam,River Leam,2079,1
-1617,river-leam,River Leam,River Leam,2184,2
-1619,river-leen,River Leen,River Leen,2165,1
-1619,river-leen,River Leen,River Leen,2163,2
-1620,river-lemon,River Lemon,River Lemon,3209,1
-1620,river-lemon,River Lemon,River Lemon,3223,2
-1620,river-lemon,River Lemon,River Lemon,3205,3
-1620,river-lemon,River Lemon,River Lemon,3354,4
-1620,river-lemon,River Lemon,River Lemon,9009,5
-1621,river-leven-cumbria,River Leven,River Leven (Cumbria),5160,1
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8071,1
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8088,2
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8364,3
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8200,4
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8365,5
-1622,river-leven-yorkshire,River Leven,River Leven (Yorkshire),8082,6
-1623,river-lew,River Lew,River Lew,3121,1
-1624,river-lim,River Lim,River Lim,3420,1
-1625,river-lin,River Lin,River Lin,9016,1
-1626,river-little-ouse,River Little Ouse,River Little Ouse,6270,1
-1626,river-little-ouse,River Little Ouse,River Little Ouse,6247,2
-1626,river-little-ouse,River Little Ouse,River Little Ouse,6257,3
-1627,river-lod,River Lod,River Lod,1009,1
-1628,river-loddon,River Loddon,River Loddon,7154,7
-1628,river-loddon,River Loddon,River Loddon,7152,6
-1628,river-loddon,River Loddon,River Loddon,7151,5
-1628,river-loddon,River Loddon,River Loddon,7138,4
-1628,river-loddon,River Loddon,River Loddon,7139,3
-1628,river-loddon,River Loddon,River Loddon,7136,2
-1628,river-loddon,River Loddon,River Loddon,7134,1
-1629,river-lostock,River Lostock,River Lostock,5010,1
-1629,river-lostock,River Lostock,River Lostock,5083,2
-1630,river-lowman,River Lowman,River Lowman,3248,1
-1630,river-lowman,River Lowman,River Lowman,9008,2
-1631,river-lowther,River Lowther,River Lowther,5170,1
-1631,river-lowther,River Lowther,River Lowther,5169,2
-1632,river-lox,River Lox,River Lox,9256,1
-1632,river-lox,River Lox,River Lox,9259,2
-1633,river-loxley,River Loxley,River Loxley,8249,1
-1633,river-loxley,River Loxley,River Loxley,9038,2
-1634,river-lud,River Lud,River Lud,6017,1
-1635,river-lugg,River Lugg,River Lugg,4022,1
-1635,river-lugg,River Lugg,River Lugg,4007,2
-1635,river-lugg,River Lugg,River Lugg,4006,3
-1635,river-lugg,River Lugg,River Lugg,4019,4
-1636,river-lune,River Lune,River Lune,5094,1
-1636,river-lune,River Lune,River Lune,5077,2
-1636,river-lune,River Lune,River Lune,5029,3
-1636,river-lune,River Lune,River Lune,9127,4
-1636,river-lune,River Lune,River Lune,5080,5
-1638,river-lyd-devon,River Lyd,River Lyd (Devon),3202,1
-1637,river-lyd-gloucestershire,River Lyd,River Lyd (Gloucestershire),2055,1
-1637,river-lyd-gloucestershire,River Lyd,River Lyd (Gloucestershire),2087,2
-2044,river-loddon-dorset,River Loddon,River Loddon (Dorset),3307,1
-1640,river-lymn,River Lymn,River Lymn,6112,1
-1641,river-lynher,River Lynher,River Lynher,3184,1
-1642,river-manifold,River Manifold,River Manifold,2113,1
-1643,river-marden,River Marden,River Marden,3383,1
-1643,river-marden,River Marden,River Marden,3038,2
-1644,river-mardle,River Mardle,River Mardle,9015,1
-1645,river-maun,River Maun,River Maun,2212,1
-1645,river-maun,River Maun,River Maun,2146,2
-1645,river-maun,River Maun,River Maun,2147,3
-1646,river-mease,River Mease,River Mease,9106,1
-1647,river-meden,River Meden,River Meden,2186,1
-1647,river-meden,River Meden,River Meden,2148,2
-1648,river-medina,River Medina,River Medina,1047,1
-1648,river-medina,River Medina,River Medina,1020,2
-1649,river-medlock,River Medlock,River Medlock,5194,1
-1649,river-medlock,River Medlock,River Medlock,5088,2
-1650,river-medway,River Medway,River Medway,1072,1
-1650,river-medway,River Medway,River Medway,1088,2
-1650,river-medway,River Medway,River Medway,1066,3
-1650,river-medway,River Medway,River Medway,1067,4
-1650,river-medway,River Medway,River Medway,1080,5
-1650,river-medway,River Medway,River Medway,1090,6
-1650,river-medway,River Medway,River Medway,1074,7
-1650,river-medway,River Medway,River Medway,9124,8
-1650,river-medway,River Medway,River Medway,1069,9
-1650,river-medway,River Medway,River Medway,1089,10
-1650,river-medway,River Medway,River Medway,1083,11
-1650,river-medway,River Medway,River Medway,1064,12
-1650,river-medway,River Medway,River Medway,1063,13
-1650,river-medway,River Medway,River Medway,1029,14
-1651,river-meese,River Meese,River Meese,2027,1
-1652,river-meon,River Meon,River Meon,9177,1
-1652,river-meon,River Meon,River Meon,9181,2
-1652,river-meon,River Meon,River Meon,9178,3
-1652,river-meon,River Meon,River Meon,9182,4
-1652,river-meon,River Meon,River Meon,9179,5
-1652,river-meon,River Meon,River Meon,9180,6
-1653,river-mersey,River Mersey,River Mersey,5021,1
-1653,river-mersey,River Mersey,River Mersey,5101,2
-1653,river-mersey,River Mersey,River Mersey,5008,3
-1653,river-mersey,River Mersey,River Mersey,5052,4
-1653,river-mersey,River Mersey,River Mersey,5149,5
-1653,river-mersey,River Mersey,River Mersey,5050,6
-1653,river-mersey,River Mersey,River Mersey,5084,7
-1654,river-mimram,River Mimram,River Mimram,7334,1
-1654,river-mimram,River Mimram,River Mimram,7335,2
-1654,river-mimram,River Mimram,River Mimram,7336,3
-1655,river-mint,River Mint,River Mint,5098,1
-1656,river-misbourne,River Misbourne,River Misbourne,7194,1
-1656,river-misbourne,River Misbourne,River Misbourne,7407,2
-1657,river-mole-devon,River Mole,River Mole (Devon),3110,1
-1657,river-mole-devon,River Mole,River Mole (Devon),3096,2
-1657,river-mole-devon,River Mole,River Mole (Devon),3127,3
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7399,1
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7250,2
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7254,3
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7257,4
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7260,5
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7261,6
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7262,7
-1658,river-mole-surrey,River Mole,River Mole (Surrey),7263,8
-1659,river-nadder,River Nadder,River Nadder,3330,1
-1659,river-nadder,River Nadder,River Nadder,3329,2
-1660,river-nar,River Nar,River Nar,6288,1
-1660,river-nar,River Nar,River Nar,6277,2
-1661,river-neet,River Neet,River Neet,3131,1
-1661,river-neet,River Neet,River Neet,3151,2
-1662,river-nene,River Nene,River Nene,6101,1
-1662,river-nene,River Nene,River Nene,6120,2
-1662,river-nene,River Nene,River Nene,6117,3
-1662,river-nene,River Nene,River Nene,6108,4
-1662,river-nene,River Nene,River Nene,6115,5
-1662,river-nene,River Nene,River Nene,9374,6
-1662,river-nene,River Nene,River Nene,6116,7
-1662,river-nene,River Nene,River Nene,6110,8
-1662,river-nene,River Nene,River Nene,6111,9
-1662,river-nene,River Nene,River Nene,6107,10
-1662,river-nene,River Nene,River Nene,6286,11
-1662,river-nene,River Nene,River Nene,6121,12
-1662,river-nene,River Nene,River Nene,6014,13
-1663,river-nidd,River Nidd,River Nidd,8086,1
-1663,river-nidd,River Nidd,River Nidd,8160,2
-1663,river-nidd,River Nidd,River Nidd,8021,3
-1663,river-nidd,River Nidd,River Nidd,8121,4
-1663,river-nidd,River Nidd,River Nidd,8104,5
-1663,river-nidd,River Nidd,River Nidd,8186,6
-1664,river-north-lew,River North Lew,River North Lew,3111,1
-1665,river-north-tyne,River North Tyne,River North Tyne,8368,1
-1665,river-north-tyne,River North Tyne,River North Tyne,8262,2
-1665,river-north-tyne,River North Tyne,River North Tyne,8370,3
-1665,river-north-tyne,River North Tyne,River North Tyne,8019,4
-1665,river-north-tyne,River North Tyne,River North Tyne,8166,5
-1665,river-north-tyne,River North Tyne,River North Tyne,8355,6
-1666,river-ock,River Ock,River Ock,7077,1
-1666,river-ock,River Ock,River Ock,7078,2
-1666,river-ock,River Ock,River Ock,7081,3
-1666,river-ock,River Ock,River Ock,7402,4
-1667,river-og,River Og,River Og,7114,1
-1668,river-okement,River Okement,River Okement,3122,1
-1669,river-onny,River Onny,River Onny,2030,1
-1670,river-ore,River Ore,River Ore,6089,1
-1671,river-otter,River Otter,River Otter,3239,1
-1671,river-otter,River Otter,River Otter,3237,2
-1672,river-ottery,River Ottery,River Ottery,3384,1
-1672,river-ottery,River Ottery,River Ottery,3191,2
-1672,river-ottery,River Ottery,River Ottery,3341,3
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1152,1
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1110,2
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1106,3
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1107,4
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),9246,5
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1100,6
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),9250,7
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),9249,8
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1109,9
-1673,river-ouse-sussex,River Ouse,River Ouse (Sussex),1026,10
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8140,1
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8184,2
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),9347,3
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8208,4
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8081,5
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8145,6
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8044,7
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8180,8
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8179,9
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8084,10
-1674,river-ouse-yorkshire,River Ouse,River Ouse (Yorkshire),8024,11
-1675,river-ouzel,River Ouzel,River Ouzel,6152,1
-1675,river-ouzel,River Ouzel,River Ouzel,6154,2
-1675,river-ouzel,River Ouzel,River Ouzel,6165,3
-1675,river-ouzel,River Ouzel,River Ouzel,6258,4
-1676,river-pang,River Pang,River Pang,7104,1
-1676,river-pang,River Pang,River Pang,7105,2
-1676,river-pang,River Pang,River Pang,7106,3
-1676,river-pang,River Pang,River Pang,7107,4
-1677,river-pant,River Pant,River Pant,6141,1
-1677,river-pant,River Pant,River Pant,6130,2
-1678,river-parrett,River Parrett,River Parrett,3075,1
-1678,river-parrett,River Parrett,River Parrett,3072,2
-1678,river-parrett,River Parrett,River Parrett,3397,3
-1679,river-penk,River Penk,River Penk,9067,1
-1679,river-penk,River Penk,River Penk,2123,2
-1680,river-perry,River Perry,River Perry,2014,1
-1681,river-petteril,River Petteril,River Petteril,5100,1
-1681,river-petteril,River Petteril,River Petteril,5159,2
-1681,river-petteril,River Petteril,River Petteril,5172,3
-1681,river-petteril,River Petteril,River Petteril,5214,4
-1682,river-piddle,River Piddle,River Piddle,3276,1
-1682,river-piddle,River Piddle,River Piddle,3270,2
-1682,river-piddle,River Piddle,River Piddle,3269,3
-1683,river-pinn,River Pinn,River Pinn,7397,1
-1683,river-pinn,River Pinn,River Pinn,7201,2
-1683,river-pinn,River Pinn,River Pinn,7173,3
-1683,river-pinn,River Pinn,River Pinn,7174,4
-1683,river-pinn,River Pinn,River Pinn,7005,5
-1683,river-pinn,River Pinn,River Pinn,7202,6
-1683,river-pinn,River Pinn,River Pinn,7203,7
-1683,river-pinn,River Pinn,River Pinn,7183,8
-1683,river-pinn,River Pinn,River Pinn,7204,9
-1684,river-plym,River Plym,River Plym,3197,1
-1685,river-pol,River Pol,River Pol,3144,1
-1686,river-pont,River Pont,River Pont,8195,1
-1686,river-pont,River Pont,River Pont,8098,2
-1686,river-pont,River Pont,River Pont,8162,3
-1687,river-pool,River Pool,River Pool,7319,1
-1688,river-poulter,River Poulter,River Poulter,2114,1
-1689,river-quaggy,River Quaggy,River Quaggy,7327,1
-1689,river-quaggy,River Quaggy,River Quaggy,7328,2
-1690,river-quin,River Quin,River Quin,7343,1
-1691,river-rase,River Rase,River Rase,6238,1
-1692,river-ravensbourne,River Ravensbourne,River Ravensbourne,7311,1
-1692,river-ravensbourne,River Ravensbourne,River Ravensbourne,7310,2
-1692,river-ravensbourne,River Ravensbourne,River Ravensbourne,7314,3
-1692,river-ravensbourne,River Ravensbourne,River Ravensbourne,7320,4
-1692,river-ravensbourne,River Ravensbourne,River Ravensbourne,7315,5
-1693,river-ravensbourne-east-branch,River Ravensbourne (East branch),River Ravensbourne (East branch),7312,1
-1693,river-ravensbourne-east-branch,River Ravensbourne (East branch),River Ravensbourne (East branch),7313,2
-1694,river-rawthey,River Rawthey,River Rawthey,5020,1
-1695,river-ray,River Ray,River Ray,7067,1
-1695,river-ray,River Ray,River Ray,7068,2
-1695,river-ray,River Ray,River Ray,7018,3
-1695,river-ray,River Ray,River Ray,7019,4
-1695,river-ray,River Ray,River Ray,7020,5
-1697,river-rea-shropshire,River Rea,River Rea (Shropshire),2026,1
-1696,river-rea-west-midlands,River Rea,River Rea (West Midlands),9066,1
-1696,river-rea-west-midlands,River Rea,River Rea (West Midlands),9055,2
-1696,river-rea-west-midlands,River Rea,River Rea (West Midlands),2115,3
-1698,river-rede,River Rede,River Rede,8158,1
-1698,river-rede,River Rede,River Rede,8157,2
-1698,river-rede,River Rede,River Rede,8167,3
-1699,river-rhee,River Rhee,River Rhee,6196,1
-1699,river-rhee,River Rhee,River Rhee,6199,2
-1699,river-rhee,River Rhee,River Rhee,6191,3
-1700,river-rib,River Rib,River Rib,7342,1
-1700,river-rib,River Rib,River Rib,7344,2
-1701,river-ribble,River Ribble,River Ribble,5086,1
-1701,river-ribble,River Ribble,River Ribble,5109,2
-1701,river-ribble,River Ribble,River Ribble,5056,3
-1701,river-ribble,River Ribble,River Ribble,5091,4
-1701,river-ribble,River Ribble,River Ribble,5066,5
-1701,river-ribble,River Ribble,River Ribble,5099,6
-1701,river-ribble,River Ribble,River Ribble,5119,7
-1701,river-ribble,River Ribble,River Ribble,5122,8
-1701,river-ribble,River Ribble,River Ribble,5146,9
-1702,river-riccal,River Riccal,River Riccal,8153,1
-1703,river-roch,River Roch,River Roch,5199,1
-1703,river-roch,River Roch,River Roch,5004,2
-1703,river-roch,River Roch,River Roch,5231,3
-1703,river-roch,River Roch,River Roch,5013,4
-1704,river-roden,River Roden,River Roden,2011,1
-1705,river-roding,River Roding,River Roding,7376,1
-1705,river-roding,River Roding,River Roding,7379,2
-1705,river-roding,River Roding,River Roding,7009,3
-1705,river-roding,River Roding,River Roding,7380,4
-1705,river-roding,River Roding,River Roding,7381,5
-1706,river-rom,River Rom,River Rom,9282,1
-1706,river-rom,River Rom,River Rom,7382,2
-1707,river-rothay,River Rothay,River Rothay,5162,2
-1707,river-rothay,River Rothay,River Rothay,9418,1
-1708,river-rother-kent,River Rother,River Rother (Kent),1126,1
-1708,river-rother-kent,River Rother,River Rother (Kent),1030,2
-1710,river-rother-sussex,River Rother,River Rother (Sussex),1164,1
-1710,river-rother-sussex,River Rother,River Rother (Sussex),1169,2
-1710,river-rother-sussex,River Rother,River Rother (Sussex),1013,3
-1710,river-rother-sussex,River Rother,River Rother (Sussex),1010,4
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9335,1
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9034,2
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),8091,3
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),8296,4
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),8217,5
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),8114,6
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9045,7
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9382,8
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9345,9
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9044,10
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),8253,11
-1709,river-rother-yorkshire,River Rother,River Rother (Yorkshire),9336,12
-1711,river-ryburn,River Ryburn,River Ryburn,8172,1
-1711,river-ryburn,River Ryburn,River Ryburn,8309,2
-1712,river-rye,River Rye,River Rye,8033,1
-1712,river-rye,River Rye,River Rye,8147,2
-1712,river-rye,River Rye,River Rye,8102,3
-1713,river-ryton,River Ryton,River Ryton,2121,1
-1713,river-ryton,River Ryton,River Ryton,2141,2
-1714,river-salwarpe,River Salwarpe,River Salwarpe,9295,1
-1714,river-salwarpe,River Salwarpe,River Salwarpe,2075,2
-1714,river-salwarpe,River Salwarpe,River Salwarpe,2007,3
-1715,river-seaton,River Seaton,River Seaton,3133,1
-1716,river-sence-leicestershire,River Sence,River Sence (Leicestershire),2139,1
-1716,river-sence-leicestershire,River Sence,River Sence (Leicestershire),2188,2
-1717,river-sence-west-leicestershire,River Sence,River Sence (West Leicestershire),9080,1
-1718,river-seven,River Seven,River Seven,8183,1
-1718,river-seven,River Seven,River Seven,8148,2
-1719,river-severn,River Severn,River Severn,2033,1
-1719,river-severn,River Severn,River Severn,4260,2
-1719,river-severn,River Severn,River Severn,2034,3
-1719,river-severn,River Severn,River Severn,4235,4
-1719,river-severn,River Severn,River Severn,2009,5
-1719,river-severn,River Severn,River Severn,2072,6
-1719,river-severn,River Severn,River Severn,2068,7
-1719,river-severn,River Severn,River Severn,2061,8
-1719,river-severn,River Severn,River Severn,2067,9
-1719,river-severn,River Severn,River Severn,9308,10
-1719,river-severn,River Severn,River Severn,2004,11
-1719,river-severn,River Severn,River Severn,2036,12
-1719,river-severn,River Severn,River Severn,2058,13
-1719,river-severn,River Severn,River Severn,2069,14
-1719,river-severn,River Severn,River Severn,2001,15
-1719,river-severn,River Severn,River Severn,2092,16
-1719,river-severn,River Severn,River Severn,2039,17
-1719,river-severn,River Severn,River Severn,2081,18
-1719,river-severn,River Severn,River Severn,2022,19
-1719,river-severn,River Severn,River Severn,2041,20
-1719,river-severn,River Severn,River Severn,2078,21
-1719,river-severn,River Severn,River Severn,2031,22
-1719,river-severn,River Severn,River Severn,2166,23
-1719,river-severn,River Severn,River Severn,2167,24
-1719,river-severn,River Severn,River Severn,9030,25
-1719,river-severn,River Severn,River Severn,2063,26
-1719,river-severn,River Severn,River Severn,2051,27
-1719,river-severn,River Severn,River Severn,2059,28
-1719,river-severn,River Severn,River Severn,2071,29
-1720,river-shalbourne,River Shalbourne,River Shalbourne,7121,1
-1721,river-sheaf,River Sheaf,River Sheaf,8299,1
-1721,river-sheaf,River Sheaf,River Sheaf,8308,2
-1721,river-sheaf,River Sheaf,River Sheaf,8099,3
-1721,river-sheaf,River Sheaf,River Sheaf,9040,4
-1722,river-sheppey,River Sheppey,River Sheppey,3054,1
-1723,river-sherbourne,River Sherbourne,River Sherbourne,9085,1
-1723,river-sherbourne,River Sherbourne,River Sherbourne,9096,2
-1723,river-sherbourne,River Sherbourne,River Sherbourne,9109,3
-1724,river-shuttle,River Shuttle,River Shuttle,1039,1
-1725,river-sid,River Sid,River Sid,3240,1
-1725,river-sid,River Sid,River Sid,3233,2
-1726,river-skell,River Skell,River Skell,8006,1
-1727,river-skerne,River Skerne,River Skerne,8030,1
-1727,river-skerne,River Skerne,River Skerne,8164,2
-1727,river-skerne,River Skerne,River Skerne,8108,3
-1727,river-skerne,River Skerne,River Skerne,8190,4
-1728,river-slea,River Slea,River Slea,6069,1
-1728,river-slea,River Slea,River Slea,6070,2
-1728,river-slea,River Slea,River Slea,6064,3
-1729,river-smite,River Smite,River Smite,2213,1
-1730,river-snail,River Snail,River Snail,6267,1
-1731,river-soar,River Soar,River Soar,2187,1
-1731,river-soar,River Soar,River Soar,2136,2
-1731,river-soar,River Soar,River Soar,2158,3
-1731,river-soar,River Soar,River Soar,2142,4
-1731,river-soar,River Soar,River Soar,2132,5
-1732,river-south-tyne,River South Tyne,River South Tyne,8007,1
-1732,river-south-tyne,River South Tyne,River South Tyne,8076,2
-1732,river-south-tyne,River South Tyne,River South Tyne,8356,3
-1732,river-south-tyne,River South Tyne,River South Tyne,9283,4
-1732,river-south-tyne,River South Tyne,River South Tyne,8095,5
-1733,river-sow,River Sow,River Sow,2122,1
-1733,river-sow,River Sow,River Sow,9076,2
-1733,river-sow,River Sow,River Sow,2105,3
-1734,river-sowe,River Sowe,River Sowe,9094,1
-1734,river-sowe,River Sowe,River Sowe,9095,2
-1735,river-sowy,River Sowy,River Sowy,3399,1
-1736,river-sprint,River Sprint,River Sprint,5130,1
-1737,river-steeping,River Steeping,River Steeping,9373,1
-1738,river-stennack,River Stennack,River Stennack,3418,1
-1739,river-stert,River Stert,River Stert,7003,1
-1740,river-stiffkey,River Stiffkey,River Stiffkey,6100,1
-1741,river-stort,River Stort,River Stort,7348,1
-1741,river-stort,River Stort,River Stort,7350,2
-1741,river-stort,River Stort,River Stort,7351,3
-1741,river-stort,River Stort,River Stort,7353,4
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3297,1
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3296,2
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3306,3
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3305,4
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3302,5
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3295,6
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3303,7
-1743,river-stour-dorset,River Stour,River Stour (Dorset),3300,8
-1744,river-stour-essex,River Stour,River Stour (Essex),6131,1
-1744,river-stour-essex,River Stour,River Stour (Essex),6134,2
-1744,river-stour-essex,River Stour,River Stour (Essex),6126,3
-1744,river-stour-essex,River Stour,River Stour (Essex),6128,4
-1744,river-stour-essex,River Stour,River Stour (Essex),6137,5
-1745,river-stour-warwickshire,River Stour,River Stour (Warwickshire),2045,1
-1745,river-stour-warwickshire,River Stour,River Stour (Warwickshire),9407,2
-1745,river-stour-warwickshire,River Stour,River Stour (Warwickshire),2006,3
-1742,river-stour-worcestershire,River Stour,River Stour (Worcestershire),9429,1
-1742,river-stour-worcestershire,River Stour,River Stour (Worcestershire),2076,2
-1742,river-stour-worcestershire,River Stour,River Stour (Worcestershire),2037,3
-1742,river-stour-worcestershire,River Stour,River Stour (Worcestershire),2038,4
-1742,river-stour-worcestershire,River Stour,River Stour (Worcestershire),9023,5
-1746,river-strat,River Strat,River Strat,3149,1
-1747,river-strine,River Strine,River Strine,2066,1
-1748,river-swale,River Swale,River Swale,8159,1
-1748,river-swale,River Swale,River Swale,8089,2
-1748,river-swale,River Swale,River Swale,8169,3
-1748,river-swale,River Swale,River Swale,8043,4
-1748,river-swale,River Swale,River Swale,8371,5
-1748,river-swale,River Swale,River Swale,8059,6
-1748,river-swale,River Swale,River Swale,8144,7
-1749,river-swarbourne,River Swarbourne,River Swarbourne,9091,1
-1751,river-swift-hampshire,River Swift,River Swift (Hampshire),9216,1
-1750,river-swift-warwickshire,River Swift,River Swift (Warwickshire),9100,1
-1752,river-tale,River Tale,River Tale,3235,1
-1753,river-tamar,River Tamar,River Tamar,3334,1
-1753,river-tamar,River Tamar,River Tamar,3336,2
-1753,river-tamar,River Tamar,River Tamar,3187,3
-1753,river-tamar,River Tamar,River Tamar,3203,4
-1753,river-tamar,River Tamar,River Tamar,3195,5
-1753,river-tamar,River Tamar,River Tamar,3201,6
-1755,river-tame-greater-manchester,River Tame,River Tame (Greater Manchester),5196,1
-1755,river-tame-greater-manchester,River Tame,River Tame (Greater Manchester),5143,2
-1755,river-tame-greater-manchester,River Tame,River Tame (Greater Manchester),5145,3
-1755,river-tame-greater-manchester,River Tame,River Tame (Greater Manchester),5023,4
-1755,river-tame-greater-manchester,River Tame,River Tame (Greater Manchester),5112,5
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),9071,1
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),9062,2
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),2135,3
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),2140,4
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),9061,5
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),2098,6
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),2134,7
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),2131,8
-1754,river-tame-west-midlands,River Tame,River Tame (West Midlands),9060,9
-1756,river-tanat,River Tanat,River Tanat,2025,1
-1757,river-tavy,River Tavy,River Tavy,3185,1
-1757,river-tavy,River Tavy,River Tavy,3340,2
-1757,river-tavy,River Tavy,River Tavy,3196,3
-1758,river-taw,River Taw,River Taw,3100,1
-1758,river-taw,River Taw,River Taw,3123,2
-1758,river-taw,River Taw,River Taw,3113,3
-1758,river-taw,River Taw,River Taw,3106,4
-1759,river-team,River Team,River Team,8359,1
-1759,river-team,River Team,River Team,8203,2
-1760,river-tean,River Tean,River Tean,2149,1
-1760,river-tean,River Tean,River Tean,9075,2
-1761,river-tees,River Tees,River Tees,8138,1
-1761,river-tees,River Tees,River Tees,8014,2
-1761,river-tees,River Tees,River Tees,8034,3
-1761,river-tees,River Tees,River Tees,8315,4
-1761,river-tees,River Tees,River Tees,8129,5
-1761,river-tees,River Tees,River Tees,8223,6
-1761,river-tees,River Tees,River Tees,8366,7
-1761,river-tees,River Tees,River Tees,8372,8
-1762,river-teign,River Teign,River Teign,9459,1
-1762,river-teign,River Teign,River Teign,3214,2
-1762,river-teign,River Teign,River Teign,3206,3
-1762,river-teign,River Teign,River Teign,3226,4
-1762,river-teign,River Teign,River Teign,3361,5
-1763,river-teise,River Teise,River Teise,1170,1
-1763,river-teise,River Teise,River Teise,1078,2
-1763,river-teise,River Teise,River Teise,1087,3
-1764,river-teme,River Teme,River Teme,2090,1
-1764,river-teme,River Teme,River Teme,2053,2
-1764,river-teme,River Teme,River Teme,2057,3
-1764,river-teme,River Teme,River Teme,2086,4
-1764,river-teme,River Teme,River Teme,2005,5
-1764,river-teme,River Teme,River Teme,2178,6
-1764,river-teme,River Teme,River Teme,2021,7
-1764,river-teme,River Teme,River Teme,2040,8
-1765,river-tern,River Tern,River Tern,2008,1
-1766,river-test,River Test,River Test,9229,1
-1766,river-test,River Test,River Test,9230,2
-1766,river-test,River Test,River Test,1161,3
-1766,river-test,River Test,River Test,9188,4
-1766,river-test,River Test,River Test,9190,5
-1766,river-test,River Test,River Test,9218,6
-1766,river-test,River Test,River Test,9219,7
-1766,river-test,River Test,River Test,9213,8
-1766,river-test,River Test,River Test,9236,9
-1766,river-test,River Test,River Test,9207,10
-1766,river-test,River Test,River Test,9189,11
-1767,river-thame,River Thame,River Thame,7087,1
-1767,river-thame,River Thame,River Thame,7089,2
-1767,river-thame,River Thame,River Thame,7092,3
-1767,river-thame,River Thame,River Thame,7094,4
-1767,river-thame,River Thame,River Thame,7095,5
-1767,river-thame,River Thame,River Thame,7097,6
-1767,river-thame,River Thame,River Thame,7403,7
-1768,river-thames,River Thames,River Thames,7010,1
-1768,river-thames,River Thames,River Thames,7011,2
-1768,river-thames,River Thames,River Thames,7014,3
-1768,river-thames,River Thames,River Thames,7024,4
-1768,river-thames,River Thames,River Thames,7027,5
-1768,river-thames,River Thames,River Thames,7034,6
-1768,river-thames,River Thames,River Thames,7035,7
-1768,river-thames,River Thames,River Thames,7036,8
-1768,river-thames,River Thames,River Thames,7037,9
-1768,river-thames,River Thames,River Thames,7038,10
-1768,river-thames,River Thames,River Thames,7046,11
-1768,river-thames,River Thames,River Thames,7047,12
-1768,river-thames,River Thames,River Thames,7048,13
-1768,river-thames,River Thames,River Thames,7049,14
-1768,river-thames,River Thames,River Thames,7055,15
-1768,river-thames,River Thames,River Thames,7056,16
-1768,river-thames,River Thames,River Thames,7057,17
-1768,river-thames,River Thames,River Thames,7072,18
-1768,river-thames,River Thames,River Thames,7405,19
-1768,river-thames,River Thames,River Thames,7073,20
-1768,river-thames,River Thames,River Thames,7083,21
-1768,river-thames,River Thames,River Thames,7084,22
-1768,river-thames,River Thames,River Thames,7085,23
-1768,river-thames,River Thames,River Thames,7086,24
-1768,river-thames,River Thames,River Thames,7099,25
-1768,river-thames,River Thames,River Thames,7100,26
-1768,river-thames,River Thames,River Thames,7101,27
-1768,river-thames,River Thames,River Thames,7102,28
-1768,river-thames,River Thames,River Thames,7109,29
-1768,river-thames,River Thames,River Thames,7110,30
-1768,river-thames,River Thames,River Thames,7111,31
-1768,river-thames,River Thames,River Thames,7132,32
-1768,river-thames,River Thames,River Thames,7133,33
-1768,river-thames,River Thames,River Thames,7155,34
-1768,river-thames,River Thames,River Thames,7156,35
-1768,river-thames,River Thames,River Thames,7396,36
-1768,river-thames,River Thames,River Thames,7162,37
-1768,river-thames,River Thames,River Thames,7163,38
-1768,river-thames,River Thames,River Thames,7165,39
-1768,river-thames,River Thames,River Thames,7166,40
-1768,river-thames,River Thames,River Thames,7169,41
-1768,river-thames,River Thames,River Thames,7170,42
-1768,river-thames,River Thames,River Thames,7172,43
-1768,river-thames,River Thames,River Thames,7171,44
-1768,river-thames,River Thames,River Thames,7213,45
-1768,river-thames,River Thames,River Thames,7214,46
-1768,river-thames,River Thames,River Thames,7215,47
-1768,river-thames,River Thames,River Thames,7216,48
-1768,river-thames,River Thames,River Thames,7244,49
-1768,river-thames,River Thames,River Thames,7245,50
-1768,river-thames,River Thames,River Thames,7395,51
-1768,river-thames,River Thames,River Thames,7246,52
-1768,river-thames,River Thames,River Thames,7267,53
-1768,river-thames,River Thames,River Thames,7269,54
-1768,river-thames,River Thames,River Thames,7268,55
-1768,river-thames,River Thames,River Thames,7393,56
-1768,river-thames,River Thames,River Thames,7392,57
-1768,river-thames,River Thames,River Thames,7389,58
-1768,river-thames,River Thames,River Thames,7391,59
-1768,river-thames,River Thames,River Thames,7390,60
-1768,river-thames,River Thames,River Thames,7388,61
-1768,river-thames,River Thames,River Thames,9154,62
-1768,river-thames,River Thames,River Thames,7394,63
-1768,river-thames,River Thames,River Thames,7386,64
-1769,river-thet,River Thet,River Thet,6250,1
-1769,river-thet,River Thet,River Thet,6265,2
-1769,river-thet,River Thet,River Thet,6273,3
-1769,river-thet,River Thet,River Thet,6280,4
-1770,river-thrushel,River Thrushel,River Thrushel,3194,1
-1770,river-thrushel,River Thrushel,River Thrushel,3178,2
-1771,river-thurne,River Thurne,River Thurne,6217,2
-1772,river-tiddy,River Tiddy,River Tiddy,3179,1
-1774,river-till-lincolnshire,River Till,River Till (Lincolnshire),6114,1
-1773,river-till-northumberland,River Till,River Till (Northumberland),9277,1
-1773,river-till-northumberland,River Till,River Till (Northumberland),9278,2
-1773,river-till-northumberland,River Till,River Till (Northumberland),8290,3
-1775,river-tillingbourne,River Tillingbourne,River Tillingbourne,7239,1
-1776,river-tillingham,River Tillingham,River Tillingham,1125,1
-1777,river-tone,River Tone,River Tone,3083,1
-1777,river-tone,River Tone,River Tone,3082,2
-1777,river-tone,River Tone,River Tone,3364,3
-1777,river-tone,River Tone,River Tone,9126,4
-1777,river-tone,River Tone,River Tone,9125,5
-1777,river-tone,River Tone,River Tone,3073,6
-1778,river-torridge,River Torridge,River Torridge,3124,1
-1778,river-torridge,River Torridge,River Torridge,3125,2
-1778,river-torridge,River Torridge,River Torridge,3126,3
-1778,river-torridge,River Torridge,River Torridge,3103,4
-1779,river-tove,River Tove,River Tove,6157,1
-1779,river-tove,River Tove,River Tove,6151,2
-1780,river-trent,River Trent,River Trent,9068,1
-1780,river-trent,River Trent,River Trent,2116,2
-1780,river-trent,River Trent,River Trent,9077,3
-1780,river-trent,River Trent,River Trent,2137,4
-1780,river-trent,River Trent,River Trent,2099,5
-1780,river-trent,River Trent,River Trent,2104,6
-1780,river-trent,River Trent,River Trent,2108,7
-1780,river-trent,River Trent,River Trent,2152,8
-1780,river-trent,River Trent,River Trent,2100,9
-1780,river-trent,River Trent,River Trent,2217,10
-1780,river-trent,River Trent,River Trent,2102,11
-1780,river-trent,River Trent,River Trent,2185,12
-1780,river-trent,River Trent,River Trent,2109,13
-1780,river-trent,River Trent,River Trent,2128,14
-1780,river-trent,River Trent,River Trent,2145,15
-1780,river-trent,River Trent,River Trent,2144,16
-1781,river-tud,River Tud,River Tud,6096,1
-1782,river-tutt,River Tutt,River Tutt,8227,1
-1783,river-tweed,River Tweed,River Tweed,8264,1
-1783,river-tweed,River Tweed,River Tweed,8263,2
-1783,river-tweed,River Tweed,River Tweed,8020,3
-1784,river-twyver,River Twyver,River Twyver,9024,1
-1784,river-twyver,River Twyver,River Twyver,2181,2
-1784,river-twyver,River Twyver,River Twyver,2219,3
-1784,river-twyver,River Twyver,River Twyver,9027,4
-1785,river-tyne,River Tyne,River Tyne,8357,1
-1785,river-tyne,River Tyne,River Tyne,9006,2
-1785,river-tyne,River Tyne,River Tyne,8354,3
-1785,river-tyne,River Tyne,River Tyne,8170,4
-1785,river-tyne,River Tyne,River Tyne,8040,5
-1785,river-tyne,River Tyne,River Tyne,8150,6
-1786,river-uck,River Uck,River Uck,9257,1
-1786,river-uck,River Uck,River Uck,1119,2
-1786,river-uck,River Uck,River Uck,1108,3
-1787,river-umber,River Umber,River Umber,3357,1
-1788,river-ure,River Ure,River Ure,8011,1
-1788,river-ure,River Ure,River Ure,8113,2
-1788,river-ure,River Ure,River Ure,8133,3
-1788,river-ure,River Ure,River Ure,8176,4
-1788,river-ure,River Ure,River Ure,8215,5
-1788,river-ure,River Ure,River Ure,8028,6
-1788,river-ure,River Ure,River Ure,8004,7
-1789,river-valency,River Valency,River Valency,3401,1
-1789,river-valency,River Valency,River Valency,3402,2
-1789,river-valency,River Valency,River Valency,3138,3
-1790,river-ver,River Ver,River Ver,7178,1
-1790,river-ver,River Ver,River Ver,7180,2
-1790,river-ver,River Ver,River Ver,7182,3
-1791,river-vyrnwy,River Vyrnwy,River Vyrnwy,2020,1
-1791,river-vyrnwy,River Vyrnwy,River Vyrnwy,2035,2
-1791,river-vyrnwy,River Vyrnwy,River Vyrnwy,2060,3
-1791,river-vyrnwy,River Vyrnwy,River Vyrnwy,2003,4
-1792,river-waldon,River Waldon,River Waldon,3102,1
-1793,river-walkham,River Walkham,River Walkham,3200,1
-1795,river-wallington-cambridgeshire,River Wallington,River Wallington (Cambridgeshire),6269,1
-1794,river-wallington-hampshire,River Wallington,River Wallington (Hampshire),9192,1
-1794,river-wallington-hampshire,River Wallington,River Wallington (Hampshire),1044,2
-1796,river-wandle,River Wandle,River Wandle,7300,1
-1796,river-wandle,River Wandle,River Wandle,7301,2
-1796,river-wandle,River Wandle,River Wandle,7303,4
-1796,river-wandle,River Wandle,River Wandle,7305,5
-1796,river-wandle,River Wandle,River Wandle,7304,6
-1796,river-wandle,River Wandle,River Wandle,7309,7
-1797,river-wansbeck,River Wansbeck,River Wansbeck,8137,1
-1797,river-wansbeck,River Wansbeck,River Wansbeck,8139,2
-1797,river-wansbeck,River Wansbeck,River Wansbeck,8293,3
-1798,river-waring,River Waring,River Waring,6046,1
-1799,river-waveney,River Waveney,River Waveney,6088,1
-1799,river-waveney,River Waveney,River Waveney,6083,2
-1799,river-waveney,River Waveney,River Waveney,6204,3
-1799,river-waveney,River Waveney,River Waveney,6209,4
-1799,river-waveney,River Waveney,River Waveney,6207,5
-1799,river-waveney,River Waveney,River Waveney,6206,6
-1799,river-waveney,River Waveney,River Waveney,6212,7
-1800,river-wear,River Wear,River Wear,8196,1
-1800,river-wear,River Wear,River Wear,8219,2
-1800,river-wear,River Wear,River Wear,8201,3
-1800,river-wear,River Wear,River Wear,8288,4
-1800,river-wear,River Wear,River Wear,8046,5
-1801,river-weaver,River Weaver,River Weaver,5009,1
-1801,river-weaver,River Weaver,River Weaver,5202,2
-1801,river-weaver,River Weaver,River Weaver,5007,3
-1801,river-weaver,River Weaver,River Weaver,5065,4
-1801,river-weaver,River Weaver,River Weaver,5198,5
-1802,river-welland,River Welland,River Welland,6023,1
-1802,river-welland,River Welland,River Welland,6025,2
-1802,river-welland,River Welland,River Welland,6024,3
-1802,river-welland,River Welland,River Welland,6030,4
-1802,river-welland,River Welland,River Welland,6020,5
-1802,river-welland,River Welland,River Welland,6028,6
-1802,river-welland,River Welland,River Welland,6029,7
-1802,river-welland,River Welland,River Welland,6018,8
-1802,river-welland,River Welland,River Welland,6006,9
-1803,river-wenning,River Wenning,River Wenning,5012,1
-1803,river-wenning,River Wenning,River Wenning,5184,2
-1803,river-wenning,River Wenning,River Wenning,5148,3
-1803,river-wenning,River Wenning,River Wenning,5072,4
-1804,river-wensum,River Wensum,River Wensum,6098,1
-1804,river-wensum,River Wensum,River Wensum,6125,2
-1805,river-went,River Went,River Went,8245,1
-1805,river-went,River Went,River Went,8210,2
-1805,river-went,River Went,River Went,9041,3
-1805,river-went,River Went,River Went,8246,4
-1806,river-west-allen,River West Allen,River West Allen,8367,1
-1807,river-wey-dorset,River Wey,River Wey (Dorset),3377,1
-1807,river-wey-dorset,River Wey,River Wey (Dorset),3287,2
-1807,river-wey-dorset,River Wey,River Wey (Dorset),3291,3
-1807,river-wey-dorset,River Wey,River Wey (Dorset),3353,4
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7226,1
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7227,2
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7230,3
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7229,4
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7231,5
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7232,6
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7240,7
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7401,8
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7409,9
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7242,10
-1808,river-wey-surrey,River Wey,River Wey (Surrey),7243,11
-1809,river-wharfe,River Wharfe,River Wharfe,8110,1
-1809,river-wharfe,River Wharfe,River Wharfe,8276,2
-1809,river-wharfe,River Wharfe,River Wharfe,8277,3
-1809,river-wharfe,River Wharfe,River Wharfe,8001,4
-1809,river-wharfe,River Wharfe,River Wharfe,8106,5
-1809,river-wharfe,River Wharfe,River Wharfe,8156,6
-1809,river-wharfe,River Wharfe,River Wharfe,8163,7
-1809,river-wharfe,River Wharfe,River Wharfe,8010,8
-1809,river-wharfe,River Wharfe,River Wharfe,8052,9
-1809,river-wharfe,River Wharfe,River Wharfe,8080,10
-1809,river-wharfe,River Wharfe,River Wharfe,8202,11
-1809,river-wharfe,River Wharfe,River Wharfe,9053,12
-1809,river-wharfe,River Wharfe,River Wharfe,8050,13
-1809,river-wharfe,River Wharfe,River Wharfe,8278,14
-1809,river-wharfe,River Wharfe,River Wharfe,8078,15
-1810,river-whitewater,River Whitewater,River Whitewater,7144,1
-1811,river-whitting,River Whitting,River Whitting,8181,1
-1812,river-whittle,River Whittle,River Whittle,6275,1
-1813,river-wid,River Wid,River Wid,6148,1
-1813,river-wid,River Wid,River Wid,6201,2
-1813,river-wid,River Wid,River Wid,6200,3
-1814,river-windrush,River Windrush,River Windrush,7040,1
-1814,river-windrush,River Windrush,River Windrush,7042,2
-1814,river-windrush,River Windrush,River Windrush,7043,3
-1814,river-windrush,River Windrush,River Windrush,7044,4
-1814,river-windrush,River Windrush,River Windrush,7045,5
-1815,river-winterbourne,River Winterbourne,River Winterbourne,3376,1
-1816,river-wiske,River Wiske,River Wiske,8207,1
-1816,river-wiske,River Wiske,River Wiske,8116,2
-1817,river-wissey,River Wissey,River Wissey,6259,1
-1818,river-witham,River Witham,River Witham,6219,1
-1818,river-witham,River Witham,River Witham,6051,2
-1818,river-witham,River Witham,River Witham,6055,3
-1818,river-witham,River Witham,River Witham,6067,4
-1818,river-witham,River Witham,River Witham,6057,5
-1818,river-witham,River Witham,River Witham,6044,6
-1818,river-witham,River Witham,River Witham,6049,7
-1818,river-witham,River Witham,River Witham,6056,8
-1818,river-witham,River Witham,River Witham,6045,9
-1818,river-witham,River Witham,River Witham,6050,10
-1818,river-witham,River Witham,River Witham,6058,11
-1818,river-witham,River Witham,River Witham,6073,12
-1818,river-witham,River Witham,River Witham,6042,13
-1818,river-witham,River Witham,River Witham,6068,14
-1818,river-witham,River Witham,River Witham,6043,15
-1819,river-wolf,River Wolf,River Wolf,3343,1
-1820,river-worfe,River Worfe,River Worfe,2016,1
-1821,river-worth,River Worth,River Worth,8303,1
-1821,river-worth,River Worth,River Worth,8109,2
-1821,river-worth,River Worth,River Worth,9037,3
-1822,river-wreake,River Wreake,River Wreake,2192,1
-1822,river-wreake,River Wreake,River Wreake,2218,2
-1822,river-wreake,River Wreake,River Wreake,2111,3
-1823,river-wriggle,River Wriggle,River Wriggle,3063,1
-1796,river-wandle,River Wandle,River Wandle,7302,3
-1827,river-wye,River Wye,River Wye,4026,1
-1827,river-wye,River Wye,River Wye,4011,2
-1827,river-wye,River Wye,River Wye,4005,3
-1827,river-wye,River Wye,River Wye,4013,4
-1827,river-wye,River Wye,River Wye,4014,5
-1827,river-wye,River Wye,River Wye,4016,6
-1827,river-wye,River Wye,River Wye,4004,7
-1827,river-wye,River Wye,River Wye,4002,8
-1827,river-wye,River Wye,River Wye,4017,9
-1827,river-wye,River Wye,River Wye,4025,10
-1827,river-wye,River Wye,River Wye,4029,11
-1827,river-wye,River Wye,River Wye,2196,12
-1827,river-wye,River Wye,River Wye,4023,13
-1827,river-wye,River Wye,River Wye,4028,14
-1825,river-wye-buckinghamshire,River Wye,River Wye (Buckinghamshire),7158,1
-1825,river-wye-buckinghamshire,River Wye,River Wye (Buckinghamshire),7161,2
-1826,river-wye-derbyshire,River Wye,River Wye (Derbyshire),2162,1
-1826,river-wye-derbyshire,River Wye,River Wye (Derbyshire),2110,2
-1828,river-wylye,River Wylye,River Wylye,3322,1
-1828,river-wylye,River Wylye,River Wylye,3326,2
-1828,river-wylye,River Wylye,River Wylye,3327,3
-1829,river-wyre,River Wyre,River Wyre,5001,1
-1829,river-wyre,River Wyre,River Wyre,5186,2
-1829,river-wyre,River Wyre,River Wyre,5055,3
-1829,river-wyre,River Wyre,River Wyre,9132,4
-1829,river-wyre,River Wyre,River Wyre,5030,5
-1829,river-wyre,River Wyre,River Wyre,5132,6
-1830,river-yare,River Yare,River Yare,6095,1
-1830,river-yare,River Yare,River Yare,6205,2
-1830,river-yare,River Yare,River Yare,6214,3
-1830,river-yare,River Yare,River Yare,6208,4
-1830,river-yare,River Yare,River Yare,6213,5
-1831,river-yarrow,River Yarrow,River Yarrow,5111,1
-1831,river-yarrow,River Yarrow,River Yarrow,9114,2
-1831,river-yarrow,River Yarrow,River Yarrow,5038,3
-1831,river-yarrow,River Yarrow,River Yarrow,9115,4
-1832,river-yarty,River Yarty,River Yarty,3231,1
-1833,river-yealm,River Yealm,River Yealm,3188,1
-1833,river-yealm,River Yealm,River Yealm,3193,2
-1836,river-yeo-creedy,River Yeo,River Yeo (Creedy),3244,1
-1835,river-yeo-lapford,River Yeo,River Yeo (Lapford),3128,1
-1835,river-yeo-lapford,River Yeo,River Yeo (Lapford),3104,2
-1835,river-yeo-lapford,River Yeo,River Yeo (Lapford),3098,3
-1834,river-yeo-somerset,River Yeo,River Yeo (Somerset),3070,1
-1834,river-yeo-somerset,River Yeo,River Yeo (Somerset),3074,2
-1834,river-yeo-somerset,River Yeo,River Yeo (Somerset),3079,3
-1834,river-yeo-somerset,River Yeo,River Yeo (Somerset),3071,4
-1837,roall-dyke,Roall Dyke,Roall Dyke,8352,1
-1838,roe-beck,Roe Beck,Roe Beck,5135,1
-1839,rolleston-brook,Rolleston Brook,Rolleston Brook,9102,1
-1840,rookhope-burn,Rookhope Burn,Rookhope Burn,8072,1
-1841,rothley-brook,Rothley Brook,Rothley Brook,2189,1
-1841,rothley-brook,Rothley Brook,Rothley Brook,2125,2
-1842,rudhall-brook,Rudhall Brook,Rudhall Brook,2225,1
-1843,ruskington-beck,Ruskington Beck,Ruskington Beck,6299,1
-1844,rye-meads-effluent-channel,Rye Meads Effluent Channel,Rye Meads Effluent Channel,7358,1
-1844,rye-meads-effluent-channel,Rye Meads Effluent Channel,Rye Meads Effluent Channel,7356,2
-2037,sabden-brook,Sabden Brook,Sabden Brook,9460,1
-1846,salfords-stream-kent,Salfords Stream,Salfords Stream (Kent),7259,1
-1845,salfords-stream-sussex,Salfords Stream,Salfords Stream (Sussex),1118,1
-1847,salmon-brook,Salmon Brook,Salmon Brook,7368,1
-1847,salmon-brook,Salmon Brook,Salmon Brook,7369,2
-1848,salt-haven,Salt Haven,Salt Haven,1027,1
-1849,sampford-brett-stream,Sampford Brett Stream,Sampford Brett Stream,9273,1
-1850,sandon-brook,Sandon Brook,Sandon Brook,6188,1
-1851,sandy-brook,Sandy Brook,Sandy Brook,9116,1
-1852,sandyford-brook,Sandyford Brook,Sandyford Brook,9093,1
-1853,sankey-brook,Sankey Brook,Sankey Brook,5031,1
-1853,sankey-brook,Sankey Brook,Sankey Brook,5069,2
-1853,sankey-brook,Sankey Brook,Sankey Brook,5085,3
-1854,saredon-brook,Saredon Brook,Saredon Brook,9108,1
-1855,scurf-dyke,Scurf Dyke,Scurf Dyke,9363,1
-1856,sea-cut,Sea Cut,Sea Cut,9330,1
-1856,sea-cut,Sea Cut,Sea Cut,9331,2
-1856,sea-cut,Sea Cut,Sea Cut,8178,3
-1857,seacourt-stream,Seacourt Stream,Seacourt Stream,7074,1
-1858,selby-dam,Selby Dam,Selby Dam,9349,1
-1859,semington-brook,Semington Brook,Semington Brook,3046,1
-2009,setting-dyke,Setting Dyke,Setting Dyke,9405,1
-2009,setting-dyke,Setting Dyke,Setting Dyke,9404,2
-1860,shaw-brook-tributary,Shaw Brook Tributary,Shaw Brook Tributary,5043,1
-1861,sherston-avon,Sherston Avon,Sherston Avon,3035,1
-1861,sherston-avon,Sherston Avon,Sherston Avon,3408,2
-1862,shill-brook,Shill Brook,Shill Brook,7001,1
-1863,shreen-water,Shreen Water,Shreen Water,3308,1
-1863,shreen-water,Shreen Water,Shreen Water,3372,2
-2038,shutterton-brook,Shutterton Brook,Shutterton Brook,9453,1
-1864,silk-stream,Silk Stream,Silk Stream,7285,1
-1864,silk-stream,Silk Stream,Silk Stream,7286,2
-1865,silsden-beck,Silsden Beck,Silsden Beck,8326,1
-1866,sincil-dyke,Sincil Dyke,Sincil Dyke,6054,1
-1867,sinderland-brook,Sinderland Brook,Sinderland Brook,5107,1
-1868,skeffling-drain,Skeffling Drain,Skeffling Drain,9377,1
-1869,skirting-beck,Skirting Beck,Skirting Beck,9372,1
-1869,skirting-beck,Skirting Beck,Skirting Beck,9371,2
-1870,slad-brook,Slad Brook,Slad Brook,2203,1
-1870,slad-brook,Slad Brook,Slad Brook,2204,2
-1870,slad-brook,Slad Brook,Slad Brook,9415,3
-1871,smallhope-burn,Smallhope Burn,Smallhope Burn,8123,1
-1872,smestow-brook,Smestow Brook,Smestow Brook,2091,1
-1872,smestow-brook,Smestow Brook,Smestow Brook,2032,2
-1873,snaith-ings,Snaith Ings,Snaith Ings,8351,1
-1874,snaizeholme-beck,Snaizeholme Beck,Snaizeholme Beck,8127,1
-1875,somborne-stream,Somborne Stream,Somborne Stream,9228,1
-1876,river-frome-somerset,River Frome,River Frome (Somerset),3004,1
-1876,river-frome-somerset,River Frome,River Frome (Somerset),3382,2
-1876,river-frome-somerset,River Frome,River Frome (Somerset),3049,3
-1877,sor-brook,Sor Brook,Sor Brook,7062,1
-1879,south-brook,South Brook,South Brook,9280,1
-2010,south-cave-beck,South Cave Beck,South Cave Beck,9401,1
-1880,south-forty-foot-drain,South Forty Foot Drain,South Forty Foot Drain,6223,1
-1880,south-forty-foot-drain,South Forty Foot Drain,South Forty Foot Drain,6226,2
-1880,south-forty-foot-drain,South Forty Foot Drain,South Forty Foot Drain,6293,3
-1881,southcourt-brook,Southcourt Brook,Southcourt Brook,7093,1
-1882,spen-beck,Spen Beck,Spen Beck,8256,1
-1882,spen-beck,Spen Beck,Spen Beck,8149,2
-1883,spratford-stream,Spratford Stream,Spratford Stream,9014,1
-1884,spring-brook,Spring Brook,Spring Brook,7316,1
-1885,st-austell-river,St Austell River,St Austell River,3155,1
-1885,st-austell-river,St Austell River,St Austell River,3157,2
-1886,st-blazey-stream,St Blazey Stream,St Blazey Stream,3394,1
-1887,st-james-stream,St James Stream,St James Stream,7317,1
-1888,st-johns-beck,St Johns Beck,St Johns Beck,5210,1
-1888,st-johns-beck,St Johns Beck,St Johns Beck,5139,2
-1889,st-neot-river,St Neot River,St Neot River,3147,1
-1890,stainfield-beck,Stainfield Beck,Stainfield Beck,6062,1
-1891,stansted-brook,Stansted Brook,Stansted Brook,7349,1
-1892,stevenage-brook,Stevenage Brook,Stevenage Brook,7338,1
-1893,stock-beck,Stock Beck,Stock Beck,5226,1
-1893,stock-beck,Stock Beck,Stock Beck,5215,2
-1893,stock-beck,Stock Beck,Stock Beck,5233,3
-2039,stock-ghyll,Stock Ghyll,Stock Ghyll,9447,1
-1894,stonham-watercourse,Stonham Watercourse,Stonham Watercourse,6084,1
-1895,stour-brook,Stour Brook,Stour Brook,6132,1
-1896,sud-brook,Sud Brook,Sud Brook,9026,1
-1896,sud-brook,Sud Brook,Sud Brook,2182,2
-1897,sulham-brook,Sulham Brook,Sulham Brook,7108,1
-1898,sutton-beck,Sutton Beck,Sutton Beck,9268,1
-1899,swalecliffe-brook,Swalecliffe Brook,Swalecliffe Brook,9276,1
-1900,swan-brook,Swan Brook,Swan Brook,3263,1
-1900,swan-brook,Swan Brook,Swan Brook,3333,2
-1901,swavesey-drain,Swavesey Drain,Swavesey Drain,6186,1
-1902,swill-brook,Swill Brook,Swill Brook,7012,1
-1903,swinney-beck,Swinney Beck,Swinney Beck,8228,1
-2040,syd-brook,Syd Brook,Syd Brook,,
-1904,sydling-water,Sydling Water,Sydling Water,3273,1
-1905,tadburn-lake,Tadburn Lake,Tadburn Lake,1151,1
-1906,tang-hall-beck,Tang Hall Beck,Tang Hall Beck,8328,1
-1906,tang-hall-beck,Tang Hall Beck,Tang Hall Beck,9348,2
-1907,tanners-brook,Tanners Brook,Tanners Brook,9240,1
-1907,tanners-brook,Tanners Brook,Tanners Brook,1149,2
-1908,tetbury-avon,Tetbury Avon,Tetbury Avon,3034,1
-1909,thacka-beck,Thacka Beck,Thacka Beck,5212,1
-1909,thacka-beck,Thacka Beck,Thacka Beck,5204,2
-1909,thacka-beck,Thacka Beck,Thacka Beck,5208,3
-1911,the-beck,The Beck,The Beck,7318,1
-1912,the-cut,The Cut,The Cut,7167,1
-1912,the-cut,The Cut,The Cut,9118,2
-1912,the-cut,The Cut,The Cut,7398,3
-1913,the-fleet,The Fleet,The Fleet,9381,1
-1914,the-gissage,The Gissage,The Gissage,3349,1
-2011,the-moss,The Moss,The Moss,9412,1
-2041,the-porter-river,The Porter River,The Porter River,9444,1
-1915,the-roxbourne,The Roxbourne,The Roxbourne,7272,1
-1916,theobalds-brook,Theobalds Brook,Theobalds Brook,7362,1
-1917,thorngumbald-drain,Thorngumbald Drain,Thorngumbald Drain,9368,1
-1918,thornton-beck,Thornton Beck,Thornton Beck,8231,1
-1919,tory-brook,Tory Brook,Tory Brook,3199,1
-1920,town-beck,Town Beck,Town Beck,9393,1
-1920,town-beck,Town Beck,Town Beck,9242,2
-1921,trawden-brook,Trawden Brook,Trawden Brook,5187,1
-1922,tresillian-river,Tresillian River,Tresillian River,3170,1
-1923,trothy,Trothy,Trothy,4021,1
-1925,trout-beck-east-cumbria,Trout Beck,Trout Beck (East Cumbria),9379,1
-1926,trout-beck-lake-district,Trout Beck,Trout Beck (Lake District),5220,1
-1924,trout-beck-northumberland,Trout Beck,Trout Beck (Northumberland),8141,1
-1927,tryweryn,Tryweryn,Tryweryn,4153,1
-1928,turkey-brook,Turkey Brook,Turkey Brook,7367,1
-1929,twin,Twin,Twin,6263,1
-1930,ulley-brook,Ulley Brook,Ulley Brook,9337,1
-1931,ullswater,Ullswater,Ullswater,5166,1
-1932,umborne-brook,Umborne Brook,Umborne Brook,3228,1
-1933,usway-burn,Usway Burn,Usway Burn,8182,1
-1934,valley-brook,Valley Brook,Valley Brook,5097,1
-1935,waithe-beck,Waithe Beck,Waithe Beck,6233,1
-1936,walkford-brook,Walkford Brook,Walkford Brook,9187,1
-1937,waller-hill-beck,Waller Hill Beck,Waller Hill Beck,9314,1
-1937,waller-hill-beck,Waller Hill Beck,Waller Hill Beck,8094,2
-1938,wallop-brook,Wallop Brook,Wallop Brook,9172,1
-1939,walsden-water,Walsden Water,Walsden Water,8211,1
-1939,walsden-water,Walsden Water,Walsden Water,8310,2
-1940,waren-burn,Waren Burn,Waren Burn,8267,1
-1940,waren-burn,Waren Burn,Waren Burn,8268,2
-1941,warleggan-river,Warleggan River,Warleggan River,3141,1
-1942,wash-dike,Wash Dike,Wash Dike,8304,1
-1942,wash-dike,Wash Dike,Wash Dike,8257,2
-1943,washford-river,Washford River,Washford River,3089,1
-1944,washpit-brook,Washpit Brook,Washpit Brook,6294,1
-1945,wealdstone-brook,Wealdstone Brook,Wealdstone Brook,7287,1
-1945,wealdstone-brook,Wealdstone Brook,Wealdstone Brook,7288,2
-1946,weedon-beck,Weedon Beck,Weedon Beck,6123,1
-1947,wellow-brook,Wellow Brook,Wellow Brook,3002,1
-1947,wellow-brook,Wellow Brook,Wellow Brook,3048,2
-1948,wendlebury-brook,Wendlebury Brook,Wendlebury Brook,7070,1
-1949,wendling-beck,Wendling Beck,Wendling Beck,6097,1
-1950,wendover-springs,Wendover Springs,Wendover Springs,7090,1
-1951,wesley-brook,Wesley Brook,Wesley Brook,2169,1
-1952,west-bank-pond,West Bank Pond,West Bank Pond,8324,1
-2042,west-beck-county-durham,West Beck,West Beck (County Durham),9442,1
-1955,west-brook-hampshire,West Brook,West Brook (Hampshire),9224,1
-1954,west-brook-kent,West Brook,West Brook (Kent),9275,1
-1956,west-clough,West Clough,West Clough,9360,1
-1957,west-dart-river,West Dart River,West Dart River,3212,1
-1958,west-fen-catchwater-drain,West Fen Catchwater Drain,West Fen Catchwater Drain,6228,1
-1959,west-glen-river,West Glen River,West Glen River,6026,1
-1959,west-glen-river,West Glen River,West Glen River,6036,2
-1959,west-glen-river,West Glen River,West Glen River,6031,3
-1959,west-glen-river,West Glen River,West Glen River,6027,4
-1960,west-lyn-river,West Lyn River,West Lyn River,3358,1
-1961,west-moor-drain,West Moor Drain,West Moor Drain,3381,1
-1962,west-okement-river,West Okement River,West Okement River,3105,1
-1962,west-okement-river,West Okement River,West Okement River,9341,2
-1963,west-sedgemoor-drain,West Sedgemoor Drain,West Sedgemoor Drain,3066,1
-2012,western-drain,Western Drain,Western Drain,9414,1
-1964,western-yar,Western Yar,Western Yar,9196,1
-1966,whaddon-brook-cambridgeshire,Whaddon Brook,Whaddon Brook (Cambridgeshire),6281,1
-1965,whaddon-brook-gloucestershire,Whaddon Brook,Whaddon Brook (Gloucestershire),2228,1
-1967,wheelan-dyke,Wheelan Dyke,Wheelan Dyke,9036,1
-1968,whetstone-brook,Whetstone Brook,Whetstone Brook,2160,1
-1969,whiston-brook,Whiston Brook,Whiston Brook,9043,1
-1970,white-water-dyke,White Water Dyke,White Water Dyke,1144,1
-1971,whitley-beck,Whitley Beck,Whitley Beck,9285,1
-1972,whitley-brook,Whitley Brook,Whitley Brook,9035,1
-1973,willow-beck,Willow Beck,Willow Beck,8225,2
-1973,willow-beck,Willow Beck,Willow Beck,8285,3
-1973,willow-beck,Willow Beck,Willow Beck,8224,1
-1974,willow-brook,Willow Brook,Willow Brook,6124,1
-1974,willow-brook,Willow Brook,Willow Brook,6106,2
-1975,wincham-brook,Wincham Brook,Wincham Brook,5089,1
-1976,windermere,Windermere,Windermere,5164,1
-1977,windle-brook,Windle Brook,Windle Brook,7222,1
-1978,winestead-drain,Winestead Drain,Winestead Drain,9369,1
-1978,winestead-drain,Winestead Drain,Winestead Drain,9376,2
-1979,winford-brook,Winford Brook,Winford Brook,3409,1
-1980,winterbourne-stream-berkshire,Winterbourne Stream,Winterbourne Stream (Berkshire),7125,1
-1981,winterbourne-stream-sussex,Winterbourne Stream,Winterbourne Stream (Sussex),9253,1
-1982,witcombe-bottom-main-drain,Witcombe Bottom Main Drain,Witcombe Bottom Main Drain,3398,1
-1983,withy-brook,Withy Brook,Withy Brook,3190,1
-2013,withycombe-brook,Withycombe Brook,Withycombe Brook,9422,1
-1984,wiza-beck,Wiza Beck,Wiza Beck,5216,1
-1984,wiza-beck,Wiza Beck,Wiza Beck,5221,2
-1985,wood-brook,Wood Brook,Wood Brook,2168,1
-2021,wool-brook,Wool Brook,Wool Brook,9432,1
-1986,woodbridge-brook,Woodbridge Brook,Woodbridge Brook,3017,1
-1987,wooler-water,Wooler Water,Wooler Water,8051,1
-1987,wooler-water,Wooler Water,Wooler Water,8221,2
-1988,wootton-brook,Wootton Brook,Wootton Brook,6103,1
-1989,worsley-brook,Worsley Brook,Worsley Brook,5193,1
-1990,wortley-beck,Wortley Beck,Wortley Beck,9117,1
-1991,wotton-brook-gloucestershire,Wotton Brook,Wotton Brook (Gloucestershire),2226,1
-1991,wotton-brook-gloucestershire,Wotton Brook,Wotton Brook (Gloucestershire),2227,2
-2022,wotton-brook-devon,Wotton Brook,Wotton Brook (Devon),9435,1
-1992,wraysbury-river,Wraysbury River,Wraysbury River,7210,1
-1992,wraysbury-river,Wraysbury River,Wraysbury River,7209,2
-1993,wych-brook,Wych Brook,Wych Brook,4192,1
-2014,wydon-burn,Wydon Burn,Wydon Burn,9411,1
-1994,wyke-beck,Wyke Beck,Wyke Beck,8251,1
-1994,wyke-beck,Wyke Beck,Wyke Beck,9392,2
-1994,wyke-beck,Wyke Beck,Wyke Beck,8316,3
-1995,wymans-brook,Wymans Brook,Wymans Brook,2201,1
-1995,wymans-brook,Wymans Brook,Wymans Brook,2200,2
-1996,yazor-brook,Yazor Brook,Yazor Brook,4033,1
-1997,yeading-brook,Yeading Brook,Yeading Brook,7270,1
-1997,yeading-brook,Yeading Brook,Yeading Brook,7271,2
-1997,yeading-brook,Yeading Brook,Yeading Brook,7274,3
-1997,yeading-brook,Yeading Brook,Yeading Brook,7275,4
-1998,yeading-brook-eastern-arm,Yeading Brook,Yeading Brook (Eastern Arm),7273,1
-2043,yeolands-stream,Yeolands Stream,Yeolands Stream,9450,1
+station_id,slug,order
+6075,alconbury-brook,1
+6161,alconbury-brook,2
+6150,alconbury-brook,3
+4174,aldford-brook,1
+9254,aldingbourne-rife,1
+3204,aller-brook,1
+9324,allison-dike,1
+8311,alverthorpe-beck,1
+8353,alverthorpe-beck,2
+4166,alwen,1
+4186,alyn,1
+4242,alyn,2
+4243,alyn,3
+4182,alyn,4
+4244,alyn,5
+7021,ampney-brook,1
+7022,ampney-brook,2
+8168,arkle-beck,1
+5002,arrowe-brook,1
+2199,ashbrooke,1
+9171,atherfield-brook,1
+6248,babingley-river,1
+9147,back-delfin,1
+2015,badsey-brook,1
+2210,bagley-brook,1
+9328,bagley-dike,1
+5197,baguley-brook,1
+9334,baildon-dike,1
+9046,balne-beck,1
+9399,balne-beck,2
+2235,barbourne-brook,1
+2236,barbourne-brook,2
+8236,bardsey-beck,1
+9235,barge-canal,1
+6052,barlings-eau,1
+9361,barmston-drain,1
+9251,barnham-rife,1
+9170,bartley-water,1
+9221,bartley-water,2
+9264,bartley-water,3
+9263,bartley-water,4
+6242,barton-haven,1
+9032,batley-beck,1
+8348,batley-beck,2
+8347,batley-beck,3
+7091,bear-brook,1
+9201,beaulieu-river,1
+9239,beaulieu-river,2
+9238,beaulieu-river,3
+4259,bechan-brook,1
+9142,bedale-beck,1
+8018,bedburn-beck,1
+7292,beverley-brook,1
+7293,beverley-brook,2
+7297,beverley-brook,3
+7298,beverley-brook,4
+7299,beverley-brook,5
+9227,bickerly-mill-stream,1
+9145,bielby-beck,1
+6071,billinghay-skirth,1
+6227,billinghay-skirth,2
+6246,bin-brook,1
+8229,bishop-monkton-beck,1
+2161,black-brook-leicestershire,1
+9413,black-brook-yorkshire,1
+8341,blackburn-brook,1
+8261,blackburn-brook,2
+9144,blackfoss-beck,1
+8297,blacup-beck,1
+7061,bloxham-brook,1
+8332,blue-beck,1
+3395,bodmin-town-leat,1
+3173,bolingey-stream,1
+9255,bosham-stream,1
+2191,bottle-brook,1
+9365,boundary-brook,1
+6262,bourn-brook,1
+6197,bourn-brook,2
+9111,bourne-brook,1
+9231,bourne-rivulet,1
+9205,bourne-rivulet,2
+2224,bow-brook,1
+2010,bow-brook,2
+8375,bowmont-water,1
+9390,bradford-beck,1
+9048,bradford-beck,2
+3109,bradiford-water,1
+3411,bradley-brook,1
+8329,bramham-beck,1
+9417,brampton-beck,1
+6122,brampton-branch,3
+6102,brampton-branch,4
+6218,brampton-branch,1
+6118,brampton-branch,2
+9039,bridgehouse-beck,1
+9122,brinkworth-brook,1
+3419,brinkworth-brook,2
+3032,brislington-brook,1
+5110,broad-fleet,1
+8188,brompton-beck,1
+8254,brook-dike,1
+9344,brough-beck,2
+8284,brough-beck,3
+8283,brough-beck,1
+8035,broughton-beck,1
+6164,broughton-brook,1
+9386,browney-dyke,1
+9176,brownwich-stream,1
+9304,buck-beck,1
+3348,budleigh-brook,1
+3236,budleigh-brook,2
+7075,bulstake-stream,1
+6133,bumpstead-brook,1
+9443,burn-valley-beck,1
+5185,burrow-beck,1
+7255,burstow-stream,1
+7256,burstow-stream,2
+8239,burstwick-drain,1
+6256,bury-brook,1
+9321,bushy-beck,1
+3022,by-brook,1
+3040,by-brook,2
+7228,caker-stream,1
+4263,camlad,1
+1050,candover-stream,1
+9110,canley-brook,1
+9097,canley-brook,2
+3378,cannington-brook,1
+9307,cannon-brook,1
+7355,canons-brook,1
+3161,carnon-river,1
+9327,carr-brook,1
+8322,catcliffe-drain,1
+4162,ceiriog,1
+6136,chad-brook,1
+7404,chalgrove-brook,1
+8318,charlton-brook,1
+3410,cheddar-yeo,1
+1057,cheriton-stream,1
+3031,chew-stoke-brook,1
+7008,ching-brook,1
+7373,ching-brook,2
+3321,chitterne-brook,1
+9409,church-beck,1
+9279,clackers-brook,1
+7039,clanfield-brook,1
+9057,clay-coton-brook,1
+9457,clennon-valley-watercourse,1
+6156,clipstone-brook,1
+8362,clow-beck,1
+5033,coal-burn,1
+3387,coastal-stream,1
+7363,cobbins-brook,1
+7364,cobbins-brook,2
+9350,cock-beck,1
+2215,cocker-beck,1
+5113,cockers-dyke,1
+8270,cockshaw-burn,1
+8271,cockshaw-burn,2
+8273,cockshaw-burn,3
+8286,cod-beck,1
+8287,cod-beck,2
+8063,cod-beck,3
+9437,cole-brook,1
+3033,colliters-brook,1
+7199,colne-brook,1
+9297,colne-brook,2
+7212,colne-brook,3
+7208,colne-brook,4
+5188,colne-water,1
+1166,combe-haven,1
+3117,coney-gut,1
+3108,coney-gut,2
+3060,congresbury-yeo,1
+9406,costa-beck,1
+7400,cove-brook,2
+9408,cove-brook,1
+8321,cragg-brook,1
+7233,cranleigh-waters,1
+7235,cranleigh-waters,2
+7377,cripsey-brook,1
+7378,cripsey-brook,2
+1167,cuckmere-&-pevensey-levels,1
+8016,cundall-beck,1
+5209,cunsey-beck,1
+3064,currymoor-drain,1
+5040,dacre-beck,1
+9210,danes-stream,1
+9208,danes-stream,2
+2183,daniels-brook,1
+9416,daniels-brook,2
+3030,dauntsey-brook,1
+3404,dawlish-water,1
+2231,day-brook,1
+3136,de-lank-river,1
+5133,dean,1
+8301,dean-bottom-beck,1
+9431,dean-burn,1
+7283,deans-brook,1
+2229,dimore-brook,1
+2221,dimore-brook,2
+3313,docken's-water,1
+7278,dollis-brook,1
+7279,dollis-brook,2
+9261,doniford-stream,1
+3087,doniford-stream,2
+3090,doniford-stream,3
+7029,dorcan-brook,1
+3278,river-frome-dorset,1
+3277,river-frome-dorset,2
+3272,river-frome-dorset,3
+3275,river-frome-dorset,4
+3280,river-frome-dorset,5
+2232,dover-beck,1
+5227,dovers-brook,1
+2023,dowles-brook,1
+9241,dragley-beck,1
+9423,dulas-brook,1
+8243,ea-beck,1
+8244,ea-beck,2
+8151,ea-beck,3
+5200,eagley-brook,1
+8070,earby-beck,1
+8250,earby-beck,2
+7238,east-clandon-stream,1
+3215,east-dart-river,1
+6229,east-fen-catchwater,1
+6033,east-glen-river,1
+6040,east-glen-river,2
+3099,east-lyn-river,1
+3407,east-okement-river,1
+1129,east-stour-kent,1
+9140,east-stour-kent,2
+3359,east-wilder-brook,1
+8060,eastburn-beck,2
+9184,eastern-yar,1
+9168,eastern-yar,2
+9185,eastern-yar,3
+9215,eastern-yar,4
+1018,eastern-yar,5
+7284,edgware-brook,1
+9079,egginton-brook,1
+9315,eller-beck,1
+9316,eller-beck,2
+8187,eller-beck,3
+9317,eller-beck,4
+9357,elvington-beck,1
+7153,emm-brook,1
+4168,emral-brook,1
+9105,endon-brook,1
+1076,eridge-stream,1
+7098,ewelme-brook,1
+3253,exminster-marshes,1
+3241,exminster-marshes,2
+8306,farnley-beck,1
+8260,fenay-beck,1
+9260,ferring-rife,1
+2094,field-drain,1
+9056,finham-brook,1
+9195,fishlake-stream,1
+8373,fleet-drain,1
+8338,fleet-drain,2
+2096,flood-channel,1
+9087,ford-brook,1
+9424,ford-stream,1
+9098,ford-green-brook,1
+6047,fosdyke-canal,1
+6066,foston-beck,1
+9088,foston-brook,1
+7130,foudry-brook,1
+9086,fowlea-brook,1
+9288,fowler-bridge-drain,1
+7197,frays-river,1
+7205,frays-river,2
+9362,frodingham-beck,1
+2214,gaddesby-brook,1
+7251,gatwick-stream,1
+7252,gatwick-stream,2
+7253,gatwick-stream,3
+3018,gauze-brook,1
+4164,gelyn,1
+9092,gilwiskaw-brook,1
+7082,ginge-brook,1
+5228,glaze-brook,1
+3234,glen-stream,1
+9113,glenridding-beck,1
+5079,glossop-brook,1
+8252,eastburn-beck,1
+8344,gowdall-ings,1
+2233,grace-dieu-brook,1
+1132,great-stour-kent,1
+1137,great-stour-kent,2
+1133,great-stour-kent,3
+1145,great-stour-kent,4
+1135,great-stour-kent,5
+9274,great-stour-kent,6
+1143,great-stour-kent,7
+9148,great-stour-kent,8
+1134,great-stour-kent,9
+9130,great-stour-kent,10
+9083,great-stour-kent,11
+9384,green-dyke,1
+9323,grimescar-dike,1
+1046,gurnard-luck,1
+3421,gwyle,1
+8029,gypsey-race,1
+6231,hagnaby-beck,1
+9440,halford-stream,1
+3081,halse-water,1
+6105,harpers-brook,2
+9396,harpers-brook,1
+8092,hart-burn,1
+8363,hartburn-beck,1
+8093,harwood-beck,1
+2207,hatherley-brook,1
+2208,hatherley-brook,2
+5025,haweswater-beck,1
+5211,haweswater-beck,2
+3396,hawkcombe-stream,1
+6268,heacham-river,1
+9319,hebble-brook,1
+8152,hebden-water,1
+6061,heighington-beck,1
+9458,hele-stream,1
+5191,hellifield-beck,1
+9069,henmore-brook,1
+2126,henmore-brook,2
+9202,hermitage-stream,1
+6210,river-thurne,1
+9451,higher-brixham-watercourse,1
+3084,hillfarrance-brook,1
+9101,hilton-brook,1
+9120,hinksey-stream,1
+7076,hinksey-stream,2
+8045,hodge-beck,1
+7241,hoe-stream,1
+7264,hogsmill-river,1
+7265,hogsmill-river,2
+7266,hogsmill-river,3
+9153,hol-beck,1
+8383,holderness-drain,1
+9389,holderness-drain,2
+8382,holderness-drain,3
+8234,holgate-beck,1
+9033,holme-brook,1
+4031,honddu,1
+3091,horner-water,1
+2179,horsbere-brook,1
+9028,horsbere-brook,2
+2222,horsbere-brook,3
+9294,horsbere-brook,4
+2180,horsbere-brook,5
+8230,hovingham-beck,1
+7159,hughenden-stream,1
+3065,huish-level-rhyne,1
+6090,huntingfield-watercourse,1
+7249,ifield-brook,1
+9428,illey-brook,1
+8312,ings-beck,1
+8065,ings-beck,2
+4001,irfon,1
+4010,irfon,2
+4018,ithon,1
+4012,ithon,2
+7164,jubilee-river,1
+9313,kelbrook-beck,1
+3405,kenwith-stream,1
+8111,kielder-burn,1
+8212,killhope-burn,1
+8185,kilton-beck,1
+9425,kingsbridge-north-watercourse,1
+7127,kingsclere-brook,1
+9402,knoll-beck,1
+9438,knowle-stream,1
+7322,kyd-brook,1
+7323,kyd-brook,2
+7324,kyd-brook,3
+7325,kyd-brook,4
+7326,kyd-brook,5
+7321,kyd-brook-east-branch,1
+2198,kyre-brook,1
+2197,kyre-brook,2
+6243,laceby-beck,1
+6244,laceby-beck,2
+3107,landkey-brook,1
+8302,lands-beck,1
+7069,langford-brook,1
+3390,lariggan-river,1
+7237,law-brook,1
+2088,ledwyche-brook,1
+2070,leigh-brook,1
+7004,letcombe-brook,1
+7080,letcombe-brook,2
+7079,letcombe-brook,3
+8125,levisham-beck,1
+2209,lilley-brook,1
+5116,limey-water,1
+9370,little-avon-river,1
+3118,little-dart-river,1
+3400,little-salt-moor-rhyne,1
+1139,little-stour,1
+7234,littlemead-brook,1
+3288,litton-cheney-stream,1
+2089,lledan-brook,1
+4032,llynfi,1
+5213,lochinvar-beck,1
+3198,long-brook,1
+3379,longload-main-drain,1
+9322,longwood-brook,1
+9391,low-moor-beck,1
+9186,lukely-brook,1
+9204,lukely-brook,2
+8275,lustrum-beck,1
+9099,lyme-brook,1
+1062,lymington,1
+1060,lymington,2
+9262,lymington,3
+1024,lymington,4
+7168,maidenhead-ditch,1
+3388,manacan-river,1
+3284,mangerton-brook,1
+9103,marchington-brook,1
+9452,marsh-water,1
+7023,marston-meysey-brook,1
+9018,marton-west-beck,1
+9351,marton-west-beck,2
+6230,maud-foster/stonebridge-drain,1
+7408,meadlake-ditch,1
+8327,meanwood-beck,1
+5222,mearley-brook,1
+6038,medbourne-brook,1
+6032,medbourne-brook,2
+9112,meece-brook,1
+9441,meers-brook,1
+3024,mells-river,1
+3050,mells-river,2
+7236,merrow-common-stream,1
+3393,mevagissey-stream,1
+9378,mickley-dyke,1
+3045,midford-brook,1
+9359,mill-beck-back-delphin,1
+9343,mill-beck-derwent,1
+7223,mill-bourne,1
+7103,mill-brook-oxfordshire,1
+9421,mill-brook-herefordshire,1
+9426,mill-brook-devon,1
+7176,mimmshall-brook,1
+7177,mimmshall-brook,2
+8238,mires-beck,1
+9383,monk-dyke,1
+1051,monks-brook,1
+1058,monks-brook,2
+3086,monksilver-stream,1
+9217,monktonmead-brook,1
+9209,monktonmead-brook,2
+4015,monnow,1
+4049,monnow,2
+4024,monnow,3
+8274,moors-burn,1
+3301,moors-river,3
+9398,moors-river,2
+9397,moors-river,1
+7281,mutton-brook,1
+1131,nailbourne,1
+7360,nazeing-brook,1
+5203,netherley-brook,1
+9287,nettleham-beck,1
+2095,new-cut,1
+7306,norbury-brook,1
+3053,north-drain,1
+3415,northmoor-main-drain,1
+3061,northmoor-main-drain,2
+3005,nunney-brook,1
+8255,oakenshaw-beck,1
+6295,oakington-brook,1
+8155,oakley-cross-beck,1
+5082,ogden-brook,1
+9403,oil-mill-beck,1
+6252,old-bedford-river,1
+6261,old-bedford-river,2
+6245,old-bedford-river,3
+1130,old-mill-stream,1
+9291,oldbury-naite-rhyne,1
+8374,ormesby-beck,1
+9433,otterton-brook,1
+8075,oulton-beck,2
+9400,oulton-beck,1
+8222,ouse-burn,1
+8085,ouse-burn,2
+8058,ouse-burn,3
+9434,ouse-dyke,1
+6224,ousemere-lode,1
+9174,oxlease-drain,1
+3159,par-river,1
+3167,par-river,2
+9462,parham-beck,1
+9446,pearl-brook,1
+3339,penberth-stream,1
+5118,pendle-water,1
+5087,pendle-water,2
+5011,pendle-water,3
+9022,pent-stream,1
+3175,perrancombe-stream,1
+3168,perrancombe-stream,2
+3391,perrancombe-stream,3
+9234,petersfield-stream,1
+9233,petersfield-stream,2
+7135,petty's-brook,1
+8126,pickering-beck,1
+9005,pickering-beck,2
+8161,pickering-beck,3
+8330,pickering-beck,4
+9104,picknall-brook,1
+2223,piddle-brook,1
+9222,pillhill-brook,1
+5192,pimlico-brook,1
+7352,pincey-brook,1
+7354,pishiobury-brook,1
+8279,pocklington-beck,1
+6222,pointon-lode,1
+8339,porter-brook,1
+8340,porter-brook,2
+7206,poyle-channel,1
+5201,poynton-brook,1
+3158,praze-stream,1
+9340,priorpot-beck,1
+7294,pyl-brook,1
+7295,pyl-brook,2
+7296,pyl-brook,3
+7370,pymmes-brook,1
+7371,pymmes-brook,2
+7372,pymmes-brook,3
+6272,quy-water,1
+7175,radlett-brook,1
+7006,radlett-brook,2
+7359,rags-brook,1
+6091,rattlesden-river,1
+2013,rea-brook,1
+3389,red-cornwall,1
+7181,red-hertfordshire,1
+7258,redhill-brook,1
+9107,ridings-brook,1
+6160,river-kym,1
+9084,rising-brook,1
+1006,river-adur,1
+1001,river-adur,2
+1032,river-adur,3
+8083,river-aire,1
+8189,river-aire,2
+8054,river-aire,3
+8112,river-aire,4
+8199,river-aire,5
+8345,river-aire,6
+8056,river-aire,7
+8346,river-aire,8
+9017,river-aire,9
+8120,river-aire,10
+8009,river-aire,11
+8061,river-aire,12
+9151,river-aire,13
+9152,river-aire,14
+8079,river-aire,15
+9310,river-aire,16
+9309,river-aire,17
+9311,river-aire,18
+8320,river-aire,19
+8042,river-aire,20
+9312,river-aire,21
+8077,river-aire,22
+8122,river-aire,23
+9042,river-aire,24
+8017,river-aire,25
+8350,river-aire,26
+8294,river-aire,27
+8041,river-aire,28
+8003,river-aire,29
+6085,river-alde,1
+6298,river-alde,2
+6296,river-alde,3
+3145,river-allen-cornwall-north,1
+3171,river-allen-cornwall-south,1
+9007,river-allen-dorset,1
+3299,river-allen-dorset,2
+3092,river-aller,1
+2083,river-alne,1
+2048,river-alne,2
+1053,river-alre,1
+9193,river-alre,2
+5078,river-alt,1
+9175,river-alver,1
+2120,river-amber,1
+6239,river-ancholme,1
+6241,river-ancholme,2
+6016,river-ancholme,3
+9064,river-anker,1
+9063,river-anker,2
+2112,river-anker,3
+6216,river-ant,1
+9169,river-anton,1
+9198,river-anton,2
+9199,river-anton,3
+4020,river-arrow-herefordshire,1
+4035,river-arrow-herefordshire,2
+2195,river-arrow-herefordshire,3
+2047,river-arrow-warwickshire,1
+2052,river-arrow-warwickshire,2
+9243,river-arun,1
+1165,river-arun,2
+1168,river-arun,3
+1014,river-arun,4
+1017,river-arun,5
+9245,river-arun,6
+1011,river-arun,7
+9248,river-arun,8
+1162,river-arun,9
+7345,river-ash-hertfordshire,1
+7346,river-ash-hertfordshire,2
+7347,river-ash-hertfordshire,3
+7247,river-ash-middlesex,1
+7248,river-ash-middlesex,2
+3221,river-ashburn,1
+3222,river-ashburn,2
+3290,river-asker,1
+3283,river-asker,2
+3027,river-avon-bristol,1
+3016,river-avon-bristol,2
+3041,river-avon-bristol,3
+3042,river-avon-bristol,4
+3043,river-avon-bristol,5
+3416,river-avon-bristol,6
+3414,river-avon-bristol,7
+3037,river-avon-bristol,8
+3013,river-avon-bristol,9
+3014,river-avon-bristol,10
+9123,river-avon-corsham,1
+3220,river-avon-devon,1
+3218,river-avon-devon,2
+3323,river-avon-hampshire,1
+3324,river-avon-hampshire,2
+3325,river-avon-hampshire,3
+3374,river-avon-hampshire,4
+3375,river-avon-hampshire,5
+3370,river-avon-hampshire,6
+3315,river-avon-hampshire,7
+3314,river-avon-hampshire,8
+3320,river-avon-hampshire,9
+2042,river-avon-warwickshire,1
+2043,river-avon-warwickshire,2
+9072,river-avon-warwickshire,3
+2044,river-avon-warwickshire,4
+2046,river-avon-warwickshire,5
+2234,river-avon-warwickshire,6
+2002,river-avon-warwickshire,7
+2049,river-avon-warwickshire,8
+9025,river-avon-warwickshire,9
+2056,river-avon-warwickshire,10
+2050,river-avon-warwickshire,11
+3227,river-axe-devon,1
+3350,river-axe-devon,2
+3229,river-axe-devon,3
+3238,river-axe-devon,4
+3059,river-axe-somerset,1
+6063,river-bain,1
+6060,river-bain,2
+6041,river-bain,3
+2062,river-banwy,1
+3242,river-barle,1
+3257,river-barle,2
+3345,river-batherm,1
+5229,river-beal,1
+5134,river-beal,2
+7383,river-beam,1
+7337,river-beane,1
+7340,river-beane,2
+7339,river-beane,3
+7341,river-beane,4
+1086,river-beult,1
+1085,river-beult,2
+5163,river-bela,1
+5041,river-birket,1
+5053,river-birket,2
+3047,river-biss,1
+9121,river-biss,1
+6142,river-blackwater-essex,1
+6143,river-blackwater-essex,2
+7150,river-blackwater-loddon,6
+7149,river-blackwater-loddon,5
+7143,river-blackwater-loddon,4
+7142,river-blackwater-loddon,3
+7140,river-blackwater-loddon,2
+7137,river-blackwater-loddon,1
+9212,river-blackwater-new-forest,1
+5064,river-blakewater,1
+9445,river-blakewater,2
+9089,river-blithe,1
+9090,river-blithe,2
+9081,river-blithe,3
+8291,river-blyth,1
+8026,river-blyth,2
+2151,river-blythe,1
+2143,river-blythe,2
+5102,river-bollin,1
+5114,river-bollin,2
+5153,river-bollin,3
+5016,river-bollin,4
+7224,river-bourne-addlestone,1
+7225,river-bourne-addlestone,2
+7219,river-bourne-chertsey,3
+7220,river-bourne-chertsey,4
+7217,river-bourne-chertsey,1
+7218,river-bourne-chertsey,2
+1073,river-bourne-kent,1
+3309,river-bourne-wiltshire,4
+3311,river-bourne-wiltshire,1
+3310,river-bourne-wiltshire,2
+3319,river-bourne-wiltshire,3
+3225,river-bovey,1
+3207,river-bovey,2
+9420,river-bovey-wifford-tributary,1
+6080,river-box,1
+6081,river-box,2
+3021,river-boyd,1
+3039,river-boyd,2
+6144,river-brain,1
+6053,river-brant,1
+6221,river-brant,2
+5161,river-brathay,1
+9339,river-bray,1
+3112,river-bray,2
+1127,river-brede,1
+1120,river-brede,2
+7282,river-brent,1
+7289,river-brent,2
+7290,river-brent,3
+7291,river-brent,4
+7007,river-brent,5
+6079,river-brett,1
+6082,river-brett,2
+3285,river-bride,1
+3281,river-brit,1
+3293,river-brit,2
+3294,river-brit,3
+5022,river-brock,1
+5120,river-brock,2
+8038,river-browney,1
+3056,river-brue,1
+3055,river-brue,2
+3057,river-brue,3
+3058,river-brue,4
+5224,river-brun,1
+7186,river-bulbourne,1
+7187,river-bulbourne,2
+1156,river-bull,1
+1154,river-bull,2
+6094,river-bure,1
+6099,river-bure,2
+6211,river-bure,3
+6215,river-bure,4
+6203,river-bure,5
+6202,river-bure,6
+6093,river-burn,1
+1122,river-dudwell,1
+3351,river-caen,1
+3346,river-caen,2
+3119,river-caen,3
+4261,river-cain,1
+4262,river-cain,2
+5027,river-calder-cumbria,1
+5104,river-calder-lancashire,1
+5189,river-calder-lancashire,2
+5105,river-calder-lancashire,3
+5150,river-calder-lancashire,4
+8305,river-calder-yorkshire,1
+8205,river-calder-yorkshire,2
+9318,river-calder-yorkshire,3
+8343,river-calder-yorkshire,4
+8097,river-calder-yorkshire,5
+9167,river-calder-yorkshire,6
+8048,river-calder-yorkshire,7
+9031,river-calder-yorkshire,8
+8191,river-calder-yorkshire,9
+8298,river-calder-yorkshire,10
+8073,river-calder-yorkshire,11
+8032,river-calder-yorkshire,12
+8096,river-calder-yorkshire,13
+8124,river-calder-yorkshire,14
+8066,river-calder-yorkshire,15
+8100,river-calder-yorkshire,16
+8209,river-calder-yorkshire,17
+9320,river-calder-yorkshire,18
+8134,river-calder-yorkshire,19
+5125,river-caldew,1
+5039,river-caldew,2
+5042,river-caldew,3
+5173,river-caldew,4
+3298,river-cale,1
+6189,river-cam-cambridgeshire,1
+6190,river-cam-cambridgeshire,2
+6192,river-cam-cambridgeshire,3
+6193,river-cam-cambridgeshire,4
+6198,river-cam-cambridgeshire,5
+2074,river-cam-severn,1
+2077,river-cam-severn,2
+3078,river-cam-somerset,1
+3134,river-camel,1
+9303,river-camel,2
+9149,river-camel,3
+3153,river-camel,4
+3132,river-camel,5
+6149,river-can,1
+3286,river-char,1
+6034,river-chater,1
+6145,river-chelmer,1
+6146,river-chelmer,2
+6147,river-chelmer,3
+2170,river-chelt,1
+2172,river-chelt,2
+2171,river-chelt,3
+2173,river-chelt,4
+2174,river-chelt,5
+7058,river-cherwell,1
+7059,river-cherwell,2
+7060,river-cherwell,3
+7063,river-cherwell,4
+7064,river-cherwell,5
+7066,river-cherwell,6
+9082,river-cherwell,7
+7071,river-cherwell,8
+9119,river-cherwell,9
+7189,river-chess,1
+7190,river-chess,2
+3044,river-chew,1
+7015,river-churn,1
+7016,river-churn,2
+7017,river-churn,3
+2154,river-churnet,1
+9073,river-churnet,2
+2127,river-churnet,3
+9074,river-churnet,4
+2153,river-churnet,5
+3249,river-clyst,1
+3355,river-clyst,2
+3250,river-clyst,3
+2054,river-clywedog,1
+3392,river-cober,1
+3160,river-cober,2
+3338,river-cober,3
+3169,river-cober,4
+5123,river-cocker,1
+5129,river-cocker,2
+5128,river-cocker,3
+2157,river-cole-staffordshire,1
+2129,river-cole-staffordshire,2
+9065,river-cole-staffordshire,3
+7028,river-cole-wiltshire,1
+7030,river-cole-wiltshire,2
+7031,river-cole-wiltshire,3
+7025,river-coln,1
+7026,river-coln,2
+7406,river-coln,3
+6138,river-colne-essex,1
+6139,river-colne-essex,2
+6140,river-colne-essex,3
+6003,river-colne-essex,4
+7179,river-colne-hertfordshire,1
+7184,river-colne-hertfordshire,2
+9296,river-colne-hertfordshire,3
+7192,river-colne-hertfordshire,4
+7196,river-colne-hertfordshire,5
+7198,river-colne-hertfordshire,6
+9298,river-colne-hertfordshire,7
+7200,river-colne-hertfordshire,8
+9436,river-colne-hertfordshire,9
+7207,river-colne-hertfordshire,10
+7211,river-colne-hertfordshire,11
+8258,river-colne-yorkshire,1
+8317,river-colne-yorkshire,2
+8105,river-colne-yorkshire,3
+8053,river-colne-yorkshire,4
+3232,river-coly,1
+5054,river-conder,1
+8008,river-coquet,1
+8173,river-coquet,2
+8143,river-coquet,3
+8369,river-coquet,4
+2065,river-corve,1
+5165,river-crake,1
+5092,river-crake,2
+7276,river-crane,1
+7277,river-crane,2
+1037,river-cray,1
+1036,river-cray,2
+3245,river-creedy,1
+3261,river-creedy,2
+8023,river-crimple,2
+9410,river-crimple,1
+5049,river-croal,1
+6129,river-crouch,1
+6127,river-crouch,2
+1153,river-cuckmere,1
+3347,river-culm,1
+3259,river-culm,2
+9430,river-culm,3
+3247,river-culm,4
+5073,river-dane,1
+5036,river-dane,2
+5121,river-dane,3
+9300,river-darent,1
+9301,river-darent,2
+9136,river-darent,3
+1040,river-darent,4
+9137,river-darent,5
+1038,river-darent,6
+3216,river-dart,1
+3406,river-dart,2
+3363,river-dart,3
+9463,river-darwen,1
+5061,river-darwen,2
+5048,river-darwen,3
+9448,river-darwen,3
+5015,river-darwen,4
+9329,river-dearne,1
+8240,river-dearne,2
+8062,river-dearne,3
+8015,river-dearne,4
+8101,river-dearne,5
+8064,river-dearne,6
+8027,river-dearne,7
+8002,river-dearne,8
+9333,river-dearne,9
+9332,river-dearne,10
+6087,river-deben,1
+6297,river-deben,2
+4178,river-dee,1
+4165,river-dee,2
+4152,river-dee,3
+4163,river-dee,4
+4176,river-dee,5
+4241,river-dee,6
+4170,river-dee,7
+4173,river-dee,8
+9029,river-dene-gloucestershire,1
+9078,river-dene-warwickshire,1
+2029,river-dene-warwickshire,2
+5178,river-derwent-cumbria,1
+5174,river-derwent-cumbria,2
+5179,river-derwent-cumbria,3
+5103,river-derwent-cumbria,4
+5181,river-derwent-cumbria,5
+5180,river-derwent-cumbria,6
+5155,river-derwent-cumbria,7
+2097,river-derwent-derbyshire,1
+2230,river-derwent-derbyshire,2
+2118,river-derwent-derbyshire,3
+2103,river-derwent-derbyshire,4
+2138,river-derwent-derbyshire,5
+2130,river-derwent-derbyshire,6
+8376,river-derwent-northumberland,1
+8272,river-derwent-northumberland,2
+8292,river-derwent-northumberland,3
+9355,river-derwent-yorkshire,1
+8214,river-derwent-yorkshire,2
+8132,river-derwent-yorkshire,3
+8131,river-derwent-yorkshire,4
+8130,river-derwent-yorkshire,5
+9356,river-derwent-yorkshire,6
+8039,river-derwent-yorkshire,7
+8280,river-derwent-yorkshire,8
+8074,river-derwent-yorkshire,9
+8037,river-derwent-yorkshire,10
+9358,river-derwent-yorkshire,11
+9388,river-derwent-yorkshire,12
+9173,river-dever,1
+2190,river-devon,1
+7041,river-dikler,1
+8197,river-doe-lea,1
+8247,river-don,1
+9326,river-don,2
+8323,river-don,3
+8248,river-don,4
+8090,river-don,5
+8174,river-don,6
+8175,river-don,7
+9375,river-don,8
+8135,river-don,9
+8349,river-don,10
+8067,river-don,11
+8242,river-don,12
+8259,river-don,13
+4027,river-dore,1
+5117,river-douglas,1
+5152,river-douglas,2
+5006,river-douglas,3
+5106,river-douglas,4
+5147,river-douglas,5
+9019,river-dour,1
+8117,river-dove-north-yorkshire,1
+8241,river-dove-south-yorkshire,1
+2119,river-dove-staffordshire,1
+9070,river-dove-staffordshire,2
+2101,river-dove-staffordshire,3
+2133,river-dove-staffordshire,4
+2150,river-dove-staffordshire,5
+9059,river-dove-staffordshire,6
+2107,river-dove-staffordshire,7
+9338,river-drone,1
+8069,river-drone,2
+5142,river-duddon,1
+5044,river-duddon,2
+1121,river-darwell,1
+2017,river-dulas,1
+7120,river-dun-berkshire,1
+9232,river-dun-hampshire,1
+5206,river-eamont,1
+5168,river-eamont,2
+5046,river-eamont,3
+5141,river-eamont,4
+8005,river-east-allen,1
+2211,river-eau,1
+3371,river-ebble,1
+3318,river-ebble,2
+2124,river-ecclesbourne,1
+5157,river-eden-cumbria,1
+5059,river-eden-cumbria,2
+5005,river-eden-cumbria,3
+5138,river-eden-cumbria,4
+5058,river-eden-cumbria,5
+5081,river-eden-cumbria,6
+5171,river-eden-cumbria,7
+5127,river-eden-cumbria,8
+1081,river-eden-kent,1
+1071,river-eden-kent,2
+1091,river-eden-kent,3
+1084,river-eden-kent,4
+5014,river-ehen,1
+5047,river-ehen,2
+5018,river-ehen,3
+4008,river-elan,1
+5024,river-ellen,1
+1155,river-ems,1
+7128,river-enborne,1
+2155,river-erewash,1
+2159,river-erewash,2
+2164,river-erewash,3
+3208,river-erme,1
+3219,river-erme,2
+5207,river-esk-north-cumbria,1
+5037,river-esk-west-cumbria,1
+8331,river-esk-yorkshire,1
+8232,river-esk-yorkshire,2
+8233,river-esk-yorkshire,3
+8216,river-esk-yorkshire,4
+5154,river-etherow,1
+5035,river-etherow,2
+7002,river-evenlode,1
+7050,river-evenlode,2
+9050,river-evenlode,3
+7051,river-evenlode,4
+7053,river-evenlode,5
+7054,river-evenlode,6
+3254,river-exe,1
+3256,river-exe,2
+3258,river-exe,3
+3246,river-exe,4
+3260,river-exe,5
+9427,river-exe,6
+3251,river-exe,7
+9010,river-exe,8
+3094,river-exe,9
+3174,river-fal,1
+3164,river-fal,2
+6077,river-flit,1
+8154,river-font,1
+9305,river-foss,1
+8235,river-foss,2
+9387,river-foss,3
+9141,river-foulness,1
+8282,river-foulness,2
+3142,river-fowey,1
+3139,river-fowey,2
+3152,river-fowey,3
+3386,river-fowey,4
+3009,river-frome-bristol,1
+3023,river-frome-bristol,2
+3029,river-frome-bristol,3
+3036,river-frome-bristol,4
+3413,river-frome-bristol,5
+3412,river-frome-bristol,6
+2175,river-frome-severn,1
+2176,river-frome-severn,2
+2019,river-frome-severn,3
+2177,river-frome-severn,4
+4223,river-frome-wye,1
+4003,river-frome-wye,2
+4036,river-frome-wye,3
+6092,river-fromus,1
+7185,river-gade,1
+7188,river-gade,2
+3135,river-gannel,1
+8055,river-gaunless,1
+8128,river-gaunless,2
+8361,river-gaunless,3
+8192,river-gaunless,4
+8360,river-gaunless,5
+8068,river-gaunless,6
+8198,river-gaunless,7
+5074,river-gelt,1
+6086,river-gipping,1
+6135,river-glem,1
+6035,river-glen,1
+6022,river-glen,2
+5140,river-glenderamackin,1
+7052,river-glyme,1
+9131,river-gowan,1
+5019,river-gowy,1
+5232,river-goyt,1
+5096,river-goyt,2
+6074,river-granta,1
+6194,river-granta,2
+6195,river-granta,3
+7307,river-graveney,1
+7308,river-graveney,2
+6158,river-great-ouse,1
+6183,river-great-ouse,2
+6159,river-great-ouse,3
+6274,river-great-ouse,4
+6185,river-great-ouse,5
+6163,river-great-ouse,6
+6387,river-great-ouse,7
+6162,river-great-ouse,8
+6276,river-great-ouse,9
+6166,river-great-ouse,10
+6167,river-great-ouse,11
+6168,river-great-ouse,12
+6291,river-great-ouse,13
+6169,river-great-ouse,14
+6289,river-great-ouse,15
+6171,river-great-ouse,16
+6172,river-great-ouse,17
+6173,river-great-ouse,18
+6174,river-great-ouse,19
+6078,river-great-ouse,20
+6264,river-great-ouse,21
+6175,river-great-ouse,22
+6176,river-great-ouse,23
+6177,river-great-ouse,24
+6178,river-great-ouse,25
+6179,river-great-ouse,26
+6180,river-great-ouse,27
+6278,river-great-ouse,28
+6254,river-great-ouse,29
+6290,river-great-ouse,30
+9380,river-great-ouse,31
+6009,river-great-ouse,32
+2216,river-greet,1
+9419,river-greta-cumbria,1
+5060,river-greta-cumbria,2
+5175,river-greta-cumbria,3
+8177,river-greta-durham,1
+9354,river-haddeo,1
+9353,river-haddeo,2
+9342,river-haddeo,3
+9352,river-haddeo,4
+9211,river-hamble,1
+9197,river-hamble,2
+9203,river-hamble,3
+9200,river-hamble,4
+2117,river-hamps,1
+3210,river-harbourne,1
+3217,river-harbourne,2
+3360,river-harbourne,3
+7148,river-hart,1
+7147,river-hart,2
+7146,river-hart,3
+7145,river-hart,4
+3166,river-hayle,1
+3165,river-hayle,2
+3172,river-hayle,3
+5156,river-hindburn,1
+8300,river-hipper,1
+8047,river-hipper,2
+8295,river-hipper,3
+6076,river-hiz,1
+5071,river-hodder,1
+8342,river-holme,1
+8165,river-holme,2
+3271,river-hooke,1
+9367,river-hull,8
+9385,river-hull,6
+8381,river-hull,4
+9364,river-hull,2
+8103,river-hull,10
+8335,river-hull,9
+9366,river-hull,7
+8281,river-hull,5
+8385,river-hull,3
+9146,river-hull,1
+5223,river-hyndburn,1
+2156,river-idle,1
+2106,river-idle,2
+7384,river-ingrebourne,1
+9325,river-ingrebourne,2
+3181,river-inny,1
+5034,river-irk,1
+5182,river-irt,1
+5183,river-irthing,1
+5195,river-irwell,1
+5075,river-irwell,2
+5136,river-irwell,3
+5115,river-irwell,4
+5026,river-irwell,5
+5230,river-irwell,6
+5076,river-irwell,7
+5095,river-irwell,8
+5003,river-irwell,9
+2193,river-isbourne,1
+2194,river-isbourne,2
+2024,river-isbourne,3
+6109,river-ise,1
+6113,river-ise,2
+6104,river-ise,3
+3076,river-isle,1
+3077,river-isle,2
+3380,river-isle,3
+1054,river-itchen-hampshire,1
+9194,river-itchen-hampshire,2
+1052,river-itchen-hampshire,3
+1059,river-itchen-hampshire,4
+1055,river-itchen-hampshire,5
+1048,river-itchen-hampshire,6
+9220,river-itchen-hampshire,7
+1049,river-itchen-hampshire,8
+1056,river-itchen-hampshire,9
+1034,river-itchen-hampshire,10
+2080,river-itchen-warwickshire,1
+6182,river-ivel,1
+6181,river-ivel,2
+6021,river-jordan,1
+6019,river-jordan,2
+5131,river-keekle,1
+5068,river-keer,1
+3356,river-kenn-tributary,1
+3385,river-kennall,1
+7112,river-kennet,1
+7113,river-kennet,2
+7118,river-kennet,3
+7117,river-kennet,4
+7122,river-kennet,5
+9395,river-kennet,6
+7131,river-kennet,7
+6249,river-kennett,1
+6253,river-kennett,2
+3192,river-kensey,1
+3337,river-kensey,2
+5017,river-kent,1
+5225,river-kent,2
+5126,river-kent,3
+3163,river-kenwyn,1
+7013,river-key,1
+9143,river-kyle,1
+6153,river-kym,2
+6155,river-kym,3
+7123,river-lambourn,1
+9020,river-lambourn,2
+7126,river-lambourn,3
+9292,river-lambourn,4
+6251,river-lark,1
+6255,river-lark,2
+6279,river-lark,3
+6260,river-lark,4
+6271,river-lark,5
+9191,river-lavant-hampshire,1
+9223,river-lavant-hampshire,2
+1163,river-lavant-sussex,1
+9244,river-lavant-sussex,2
+9346,river-laver,1
+8171,river-laver,2
+7329,river-lea,1
+7330,river-lea,2
+9289,river-lea,3
+7332,river-lea,4
+7333,river-lea,5
+7357,river-lea,7
+7374,river-lea,10
+7361,river-lea,8
+7375,river-lea,11
+7365,river-lea,9
+9047,river-lea,6
+7033,river-leach,1
+2205,river-leadon,1
+2012,river-leadon,2
+2079,river-leam,1
+2184,river-leam,2
+2165,river-leen,1
+2163,river-leen,2
+3209,river-lemon,1
+3223,river-lemon,2
+3205,river-lemon,3
+3354,river-lemon,4
+9009,river-lemon,5
+5160,river-leven-cumbria,1
+8071,river-leven-yorkshire,1
+8088,river-leven-yorkshire,2
+8364,river-leven-yorkshire,3
+8200,river-leven-yorkshire,4
+8365,river-leven-yorkshire,5
+8082,river-leven-yorkshire,6
+3121,river-lew,1
+3420,river-lim,1
+9016,river-lin,1
+6270,river-little-ouse,1
+6247,river-little-ouse,2
+6257,river-little-ouse,3
+1009,river-lod,1
+7154,river-loddon,7
+7152,river-loddon,6
+7151,river-loddon,5
+7138,river-loddon,4
+7139,river-loddon,3
+7136,river-loddon,2
+7134,river-loddon,1
+5010,river-lostock,1
+5083,river-lostock,2
+3248,river-lowman,1
+9008,river-lowman,2
+5170,river-lowther,1
+5169,river-lowther,2
+9256,river-lox,1
+9259,river-lox,2
+8249,river-loxley,1
+9038,river-loxley,2
+6017,river-lud,1
+4022,river-lugg,1
+4007,river-lugg,2
+4006,river-lugg,3
+4019,river-lugg,4
+5094,river-lune,1
+5077,river-lune,2
+5029,river-lune,3
+9127,river-lune,4
+5080,river-lune,5
+3202,river-lyd-devon,1
+2055,river-lyd-gloucestershire,1
+2087,river-lyd-gloucestershire,2
+3307,river-loddon-dorset,1
+6112,river-lymn,1
+3184,river-lynher,1
+2113,river-manifold,1
+3383,river-marden,1
+3038,river-marden,2
+9015,river-mardle,1
+2212,river-maun,1
+2146,river-maun,2
+2147,river-maun,3
+9106,river-mease,1
+2186,river-meden,1
+2148,river-meden,2
+1047,river-medina,1
+1020,river-medina,2
+5194,river-medlock,1
+5088,river-medlock,2
+1072,river-medway,1
+1088,river-medway,2
+1066,river-medway,3
+1067,river-medway,4
+1080,river-medway,5
+1090,river-medway,6
+1074,river-medway,7
+9124,river-medway,8
+1069,river-medway,9
+1089,river-medway,10
+1083,river-medway,11
+1064,river-medway,12
+1063,river-medway,13
+1029,river-medway,14
+2027,river-meese,1
+9177,river-meon,1
+9181,river-meon,2
+9178,river-meon,3
+9182,river-meon,4
+9179,river-meon,5
+9180,river-meon,6
+5021,river-mersey,1
+5101,river-mersey,2
+5008,river-mersey,3
+5052,river-mersey,4
+5149,river-mersey,5
+5050,river-mersey,6
+5084,river-mersey,7
+7334,river-mimram,1
+7335,river-mimram,2
+7336,river-mimram,3
+5098,river-mint,1
+7194,river-misbourne,1
+7407,river-misbourne,2
+3110,river-mole-devon,1
+3096,river-mole-devon,2
+3127,river-mole-devon,3
+7399,river-mole-surrey,1
+7250,river-mole-surrey,2
+7254,river-mole-surrey,3
+7257,river-mole-surrey,4
+7260,river-mole-surrey,5
+7261,river-mole-surrey,6
+7262,river-mole-surrey,7
+7263,river-mole-surrey,8
+3330,river-nadder,1
+3329,river-nadder,2
+6288,river-nar,1
+6277,river-nar,2
+3131,river-neet,1
+3151,river-neet,2
+6101,river-nene,1
+6120,river-nene,2
+6117,river-nene,3
+6108,river-nene,4
+6115,river-nene,5
+9374,river-nene,6
+6116,river-nene,7
+6110,river-nene,8
+6111,river-nene,9
+6107,river-nene,10
+6286,river-nene,11
+6121,river-nene,12
+6014,river-nene,13
+8086,river-nidd,1
+8160,river-nidd,2
+8021,river-nidd,3
+8121,river-nidd,4
+8104,river-nidd,5
+8186,river-nidd,6
+3111,river-north-lew,1
+8368,river-north-tyne,1
+8262,river-north-tyne,2
+8370,river-north-tyne,3
+8019,river-north-tyne,4
+8166,river-north-tyne,5
+8355,river-north-tyne,6
+7077,river-ock,1
+7078,river-ock,2
+7081,river-ock,3
+7402,river-ock,4
+7114,river-og,1
+3122,river-okement,1
+2030,river-onny,1
+6089,river-ore,1
+3239,river-otter,1
+3237,river-otter,2
+3384,river-ottery,1
+3191,river-ottery,2
+3341,river-ottery,3
+1152,river-ouse-sussex,1
+1110,river-ouse-sussex,2
+1106,river-ouse-sussex,3
+1107,river-ouse-sussex,4
+9246,river-ouse-sussex,5
+1100,river-ouse-sussex,6
+9250,river-ouse-sussex,7
+9249,river-ouse-sussex,8
+1109,river-ouse-sussex,9
+1026,river-ouse-sussex,10
+8140,river-ouse-yorkshire,1
+8184,river-ouse-yorkshire,2
+9347,river-ouse-yorkshire,3
+8208,river-ouse-yorkshire,4
+8081,river-ouse-yorkshire,5
+8145,river-ouse-yorkshire,6
+8044,river-ouse-yorkshire,7
+8180,river-ouse-yorkshire,8
+8179,river-ouse-yorkshire,9
+8084,river-ouse-yorkshire,10
+8024,river-ouse-yorkshire,11
+6152,river-ouzel,1
+6154,river-ouzel,2
+6165,river-ouzel,3
+6258,river-ouzel,4
+7104,river-pang,1
+7105,river-pang,2
+7106,river-pang,3
+7107,river-pang,4
+6141,river-pant,1
+6130,river-pant,2
+3075,river-parrett,1
+3072,river-parrett,2
+3397,river-parrett,3
+9067,river-penk,1
+2123,river-penk,2
+2014,river-perry,1
+5100,river-petteril,1
+5159,river-petteril,2
+5172,river-petteril,3
+5214,river-petteril,4
+3276,river-piddle,1
+3270,river-piddle,2
+3269,river-piddle,3
+7397,river-pinn,1
+7201,river-pinn,2
+7173,river-pinn,3
+7174,river-pinn,4
+7005,river-pinn,5
+7202,river-pinn,6
+7203,river-pinn,7
+7183,river-pinn,8
+7204,river-pinn,9
+3197,river-plym,1
+3144,river-pol,1
+8195,river-pont,1
+8098,river-pont,2
+8162,river-pont,3
+7319,river-pool,1
+2114,river-poulter,1
+7327,river-quaggy,1
+7328,river-quaggy,2
+7343,river-quin,1
+6238,river-rase,1
+7311,river-ravensbourne,1
+7310,river-ravensbourne,2
+7314,river-ravensbourne,3
+7320,river-ravensbourne,4
+7315,river-ravensbourne,5
+7312,river-ravensbourne-east-branch,1
+7313,river-ravensbourne-east-branch,2
+5020,river-rawthey,1
+7067,river-ray,1
+7068,river-ray,2
+7018,river-ray,3
+7019,river-ray,4
+7020,river-ray,5
+2026,river-rea-shropshire,1
+9066,river-rea-west-midlands,1
+9055,river-rea-west-midlands,2
+2115,river-rea-west-midlands,3
+8158,river-rede,1
+8157,river-rede,2
+8167,river-rede,3
+6196,river-rhee,1
+6199,river-rhee,2
+6191,river-rhee,3
+7342,river-rib,1
+7344,river-rib,2
+5086,river-ribble,1
+5109,river-ribble,2
+5056,river-ribble,3
+5091,river-ribble,4
+5066,river-ribble,5
+5099,river-ribble,6
+5119,river-ribble,7
+5122,river-ribble,8
+5146,river-ribble,9
+8153,river-riccal,1
+5199,river-roch,1
+5004,river-roch,2
+5231,river-roch,3
+5013,river-roch,4
+2011,river-roden,1
+7376,river-roding,1
+7379,river-roding,2
+7009,river-roding,3
+7380,river-roding,4
+7381,river-roding,5
+9282,river-rom,1
+7382,river-rom,2
+5162,river-rothay,2
+9418,river-rothay,1
+1126,river-rother-kent,1
+1030,river-rother-kent,2
+1164,river-rother-sussex,1
+1169,river-rother-sussex,2
+1013,river-rother-sussex,3
+1010,river-rother-sussex,4
+9335,river-rother-yorkshire,1
+9034,river-rother-yorkshire,2
+8091,river-rother-yorkshire,3
+8296,river-rother-yorkshire,4
+8217,river-rother-yorkshire,5
+8114,river-rother-yorkshire,6
+9045,river-rother-yorkshire,7
+9382,river-rother-yorkshire,8
+9345,river-rother-yorkshire,9
+9044,river-rother-yorkshire,10
+8253,river-rother-yorkshire,11
+9336,river-rother-yorkshire,12
+8172,river-ryburn,1
+8309,river-ryburn,2
+8033,river-rye,1
+8147,river-rye,2
+8102,river-rye,3
+2121,river-ryton,1
+2141,river-ryton,2
+9295,river-salwarpe,1
+2075,river-salwarpe,2
+2007,river-salwarpe,3
+3133,river-seaton,1
+2139,river-sence-leicestershire,1
+2188,river-sence-leicestershire,2
+9080,river-sence-west-leicestershire,1
+8183,river-seven,1
+8148,river-seven,2
+2033,river-severn,1
+4260,river-severn,2
+2034,river-severn,3
+4235,river-severn,4
+2009,river-severn,5
+2072,river-severn,6
+2068,river-severn,7
+2061,river-severn,8
+2067,river-severn,9
+9308,river-severn,10
+2004,river-severn,11
+2036,river-severn,12
+2058,river-severn,13
+2069,river-severn,14
+2001,river-severn,15
+2092,river-severn,16
+2039,river-severn,17
+2081,river-severn,18
+2022,river-severn,19
+2041,river-severn,20
+2078,river-severn,21
+2031,river-severn,22
+2166,river-severn,23
+2167,river-severn,24
+9030,river-severn,25
+2063,river-severn,26
+2051,river-severn,27
+2059,river-severn,28
+2071,river-severn,29
+7121,river-shalbourne,1
+8299,river-sheaf,1
+8308,river-sheaf,2
+8099,river-sheaf,3
+9040,river-sheaf,4
+3054,river-sheppey,1
+9085,river-sherbourne,1
+9096,river-sherbourne,2
+9109,river-sherbourne,3
+1039,river-shuttle,1
+3240,river-sid,1
+3233,river-sid,2
+8006,river-skell,1
+8030,river-skerne,1
+8164,river-skerne,2
+8108,river-skerne,3
+8190,river-skerne,4
+6069,river-slea,1
+6070,river-slea,2
+6064,river-slea,3
+2213,river-smite,1
+6267,river-snail,1
+2187,river-soar,1
+2136,river-soar,2
+2158,river-soar,3
+2142,river-soar,4
+2132,river-soar,5
+8007,river-south-tyne,1
+8076,river-south-tyne,2
+8356,river-south-tyne,3
+9283,river-south-tyne,4
+8095,river-south-tyne,5
+2122,river-sow,1
+9076,river-sow,2
+2105,river-sow,3
+9094,river-sowe,1
+9095,river-sowe,2
+3399,river-sowy,1
+5130,river-sprint,1
+9373,river-steeping,1
+3418,river-stennack,1
+7003,river-stert,1
+6100,river-stiffkey,1
+7348,river-stort,1
+7350,river-stort,2
+7351,river-stort,3
+7353,river-stort,4
+3297,river-stour-dorset,1
+3296,river-stour-dorset,2
+3306,river-stour-dorset,3
+3305,river-stour-dorset,4
+3302,river-stour-dorset,5
+3295,river-stour-dorset,6
+3303,river-stour-dorset,7
+3300,river-stour-dorset,8
+6131,river-stour-essex,1
+6134,river-stour-essex,2
+6126,river-stour-essex,3
+6128,river-stour-essex,4
+6137,river-stour-essex,5
+2045,river-stour-warwickshire,1
+9407,river-stour-warwickshire,2
+2006,river-stour-warwickshire,3
+9429,river-stour-worcestershire,1
+2076,river-stour-worcestershire,2
+2037,river-stour-worcestershire,3
+2038,river-stour-worcestershire,4
+9023,river-stour-worcestershire,5
+3149,river-strat,1
+2066,river-strine,1
+8159,river-swale,1
+8089,river-swale,2
+8169,river-swale,3
+8043,river-swale,4
+8371,river-swale,5
+8059,river-swale,6
+8144,river-swale,7
+9091,river-swarbourne,1
+9216,river-swift-hampshire,1
+9100,river-swift-warwickshire,1
+3235,river-tale,1
+3334,river-tamar,1
+3336,river-tamar,2
+3187,river-tamar,3
+3203,river-tamar,4
+3195,river-tamar,5
+3201,river-tamar,6
+5196,river-tame-greater-manchester,1
+5143,river-tame-greater-manchester,2
+5145,river-tame-greater-manchester,3
+5023,river-tame-greater-manchester,4
+5112,river-tame-greater-manchester,5
+9071,river-tame-west-midlands,1
+9062,river-tame-west-midlands,2
+2135,river-tame-west-midlands,3
+2140,river-tame-west-midlands,4
+9061,river-tame-west-midlands,5
+2098,river-tame-west-midlands,6
+2134,river-tame-west-midlands,7
+2131,river-tame-west-midlands,8
+9060,river-tame-west-midlands,9
+2025,river-tanat,1
+3185,river-tavy,1
+3340,river-tavy,2
+3196,river-tavy,3
+3100,river-taw,1
+3123,river-taw,2
+3113,river-taw,3
+3106,river-taw,4
+8359,river-team,1
+8203,river-team,2
+2149,river-tean,1
+9075,river-tean,2
+8138,river-tees,1
+8014,river-tees,2
+8034,river-tees,3
+8315,river-tees,4
+8129,river-tees,5
+8223,river-tees,6
+8366,river-tees,7
+8372,river-tees,8
+9459,river-teign,1
+3214,river-teign,2
+3206,river-teign,3
+3226,river-teign,4
+3361,river-teign,5
+1170,river-teise,1
+1078,river-teise,2
+1087,river-teise,3
+2090,river-teme,1
+2053,river-teme,2
+2057,river-teme,3
+2086,river-teme,4
+2005,river-teme,5
+2178,river-teme,6
+2021,river-teme,7
+2040,river-teme,8
+2008,river-tern,1
+9229,river-test,1
+9230,river-test,2
+1161,river-test,3
+9188,river-test,4
+9190,river-test,5
+9218,river-test,6
+9219,river-test,7
+9213,river-test,8
+9236,river-test,9
+9207,river-test,10
+9189,river-test,11
+7087,river-thame,1
+7089,river-thame,2
+7092,river-thame,3
+7094,river-thame,4
+7095,river-thame,5
+7097,river-thame,6
+7403,river-thame,7
+7010,river-thames,1
+7011,river-thames,2
+7014,river-thames,3
+7024,river-thames,4
+7027,river-thames,5
+7034,river-thames,6
+7035,river-thames,7
+7036,river-thames,8
+7037,river-thames,9
+7038,river-thames,10
+7046,river-thames,11
+7047,river-thames,12
+7048,river-thames,13
+7049,river-thames,14
+7055,river-thames,15
+7056,river-thames,16
+7057,river-thames,17
+7072,river-thames,18
+7405,river-thames,19
+7073,river-thames,20
+7083,river-thames,21
+7084,river-thames,22
+7085,river-thames,23
+7086,river-thames,24
+7099,river-thames,25
+7100,river-thames,26
+7101,river-thames,27
+7102,river-thames,28
+7109,river-thames,29
+7110,river-thames,30
+7111,river-thames,31
+7132,river-thames,32
+7133,river-thames,33
+7155,river-thames,34
+7156,river-thames,35
+7396,river-thames,36
+7162,river-thames,37
+7163,river-thames,38
+7165,river-thames,39
+7166,river-thames,40
+7169,river-thames,41
+7170,river-thames,42
+7172,river-thames,43
+7171,river-thames,44
+7213,river-thames,45
+7214,river-thames,46
+7215,river-thames,47
+7216,river-thames,48
+7244,river-thames,49
+7245,river-thames,50
+7395,river-thames,51
+7246,river-thames,52
+7267,river-thames,53
+7269,river-thames,54
+7268,river-thames,55
+7393,river-thames,56
+7392,river-thames,57
+7389,river-thames,58
+7391,river-thames,59
+7390,river-thames,60
+7388,river-thames,61
+9154,river-thames,62
+7394,river-thames,63
+7386,river-thames,64
+6250,river-thet,1
+6265,river-thet,2
+6273,river-thet,3
+6280,river-thet,4
+3194,river-thrushel,1
+3178,river-thrushel,2
+6217,river-thurne,2
+3179,river-tiddy,1
+6114,river-till-lincolnshire,1
+9277,river-till-northumberland,1
+9278,river-till-northumberland,2
+8290,river-till-northumberland,3
+7239,river-tillingbourne,1
+1125,river-tillingham,1
+3083,river-tone,1
+3082,river-tone,2
+3364,river-tone,3
+9126,river-tone,4
+9125,river-tone,5
+3073,river-tone,6
+3124,river-torridge,1
+3125,river-torridge,2
+3126,river-torridge,3
+3103,river-torridge,4
+6157,river-tove,1
+6151,river-tove,2
+9068,river-trent,1
+2116,river-trent,2
+9077,river-trent,3
+2137,river-trent,4
+2099,river-trent,5
+2104,river-trent,6
+2108,river-trent,7
+2152,river-trent,8
+2100,river-trent,9
+2217,river-trent,10
+2102,river-trent,11
+2185,river-trent,12
+2109,river-trent,13
+2128,river-trent,14
+2145,river-trent,15
+2144,river-trent,16
+6096,river-tud,1
+8227,river-tutt,1
+8264,river-tweed,1
+8263,river-tweed,2
+8020,river-tweed,3
+9024,river-twyver,1
+2181,river-twyver,2
+2219,river-twyver,3
+9027,river-twyver,4
+8357,river-tyne,1
+9006,river-tyne,2
+8354,river-tyne,3
+8170,river-tyne,4
+8040,river-tyne,5
+8150,river-tyne,6
+9257,river-uck,1
+1119,river-uck,2
+1108,river-uck,3
+3357,river-umber,1
+8011,river-ure,1
+8113,river-ure,2
+8133,river-ure,3
+8176,river-ure,4
+8215,river-ure,5
+8028,river-ure,6
+8004,river-ure,7
+3401,river-valency,1
+3402,river-valency,2
+3138,river-valency,3
+7178,river-ver,1
+7180,river-ver,2
+7182,river-ver,3
+2020,river-vyrnwy,1
+2035,river-vyrnwy,2
+2060,river-vyrnwy,3
+2003,river-vyrnwy,4
+3102,river-waldon,1
+3200,river-walkham,1
+6269,river-wallington-cambridgeshire,1
+9192,river-wallington-hampshire,1
+1044,river-wallington-hampshire,2
+7300,river-wandle,1
+7301,river-wandle,2
+7303,river-wandle,4
+7305,river-wandle,5
+7304,river-wandle,6
+7309,river-wandle,7
+8137,river-wansbeck,1
+8139,river-wansbeck,2
+8293,river-wansbeck,3
+6046,river-waring,1
+6088,river-waveney,1
+6083,river-waveney,2
+6204,river-waveney,3
+6209,river-waveney,4
+6207,river-waveney,5
+6206,river-waveney,6
+6212,river-waveney,7
+8196,river-wear,1
+8219,river-wear,2
+8201,river-wear,3
+8288,river-wear,4
+8046,river-wear,5
+5009,river-weaver,1
+5202,river-weaver,2
+5007,river-weaver,3
+5065,river-weaver,4
+5198,river-weaver,5
+6023,river-welland,1
+6025,river-welland,2
+6024,river-welland,3
+6030,river-welland,4
+6020,river-welland,5
+6028,river-welland,6
+6029,river-welland,7
+6018,river-welland,8
+6006,river-welland,9
+5012,river-wenning,1
+5184,river-wenning,2
+5148,river-wenning,3
+5072,river-wenning,4
+6098,river-wensum,1
+6125,river-wensum,2
+8245,river-went,1
+8210,river-went,2
+9041,river-went,3
+8246,river-went,4
+8367,river-west-allen,1
+3377,river-wey-dorset,1
+3287,river-wey-dorset,2
+3291,river-wey-dorset,3
+3353,river-wey-dorset,4
+7226,river-wey-surrey,1
+7227,river-wey-surrey,2
+7230,river-wey-surrey,3
+7229,river-wey-surrey,4
+7231,river-wey-surrey,5
+7232,river-wey-surrey,6
+7240,river-wey-surrey,7
+7401,river-wey-surrey,8
+7409,river-wey-surrey,9
+7242,river-wey-surrey,10
+7243,river-wey-surrey,11
+8110,river-wharfe,1
+8276,river-wharfe,2
+8277,river-wharfe,3
+8001,river-wharfe,4
+8106,river-wharfe,5
+8156,river-wharfe,6
+8163,river-wharfe,7
+8010,river-wharfe,8
+8052,river-wharfe,9
+8080,river-wharfe,10
+8202,river-wharfe,11
+9053,river-wharfe,12
+8050,river-wharfe,13
+8278,river-wharfe,14
+8078,river-wharfe,15
+7144,river-whitewater,1
+8181,river-whitting,1
+6275,river-whittle,1
+6148,river-wid,1
+6201,river-wid,2
+6200,river-wid,3
+7040,river-windrush,1
+7042,river-windrush,2
+7043,river-windrush,3
+7044,river-windrush,4
+7045,river-windrush,5
+3376,river-winterbourne,1
+8207,river-wiske,1
+8116,river-wiske,2
+6259,river-wissey,1
+6219,river-witham,1
+6051,river-witham,2
+6055,river-witham,3
+6067,river-witham,4
+6057,river-witham,5
+6044,river-witham,6
+6049,river-witham,7
+6056,river-witham,8
+6045,river-witham,9
+6050,river-witham,10
+6058,river-witham,11
+6073,river-witham,12
+6042,river-witham,13
+6068,river-witham,14
+6043,river-witham,15
+3343,river-wolf,1
+2016,river-worfe,1
+8303,river-worth,1
+8109,river-worth,2
+9037,river-worth,3
+2192,river-wreake,1
+2218,river-wreake,2
+2111,river-wreake,3
+3063,river-wriggle,1
+7302,river-wandle,3
+4026,river-wye,1
+4011,river-wye,2
+4005,river-wye,3
+4013,river-wye,4
+4014,river-wye,5
+4016,river-wye,6
+4004,river-wye,7
+4002,river-wye,8
+4017,river-wye,9
+4025,river-wye,10
+4029,river-wye,11
+2196,river-wye,12
+4023,river-wye,13
+4028,river-wye,14
+7158,river-wye-buckinghamshire,1
+7161,river-wye-buckinghamshire,2
+2162,river-wye-derbyshire,1
+2110,river-wye-derbyshire,2
+3322,river-wylye,1
+3326,river-wylye,2
+3327,river-wylye,3
+5001,river-wyre,1
+5186,river-wyre,2
+5055,river-wyre,3
+9132,river-wyre,4
+5030,river-wyre,5
+5132,river-wyre,6
+6095,river-yare,1
+6205,river-yare,2
+6214,river-yare,3
+6208,river-yare,4
+6213,river-yare,5
+5111,river-yarrow,1
+9114,river-yarrow,2
+5038,river-yarrow,3
+9115,river-yarrow,4
+3231,river-yarty,1
+3188,river-yealm,1
+3193,river-yealm,2
+3244,river-yeo-creedy,1
+3128,river-yeo-lapford,1
+3104,river-yeo-lapford,2
+3098,river-yeo-lapford,3
+3070,river-yeo-somerset,1
+3074,river-yeo-somerset,2
+3079,river-yeo-somerset,3
+3071,river-yeo-somerset,4
+8352,roall-dyke,1
+5135,roe-beck,1
+9102,rolleston-brook,1
+8072,rookhope-burn,1
+2189,rothley-brook,1
+2125,rothley-brook,2
+2225,rudhall-brook,1
+6299,ruskington-beck,1
+7358,rye-meads-effluent-channel,1
+7356,rye-meads-effluent-channel,2
+9460,sabden-brook,1
+7259,salfords-stream-kent,1
+1118,salfords-stream-sussex,1
+7368,salmon-brook,1
+7369,salmon-brook,2
+1027,salt-haven,1
+9273,sampford-brett-stream,1
+6188,sandon-brook,1
+9116,sandy-brook,1
+9093,sandyford-brook,1
+5031,sankey-brook,1
+5069,sankey-brook,2
+5085,sankey-brook,3
+9108,saredon-brook,1
+9363,scurf-dyke,1
+9330,sea-cut,1
+9331,sea-cut,2
+8178,sea-cut,3
+7074,seacourt-stream,1
+9349,selby-dam,1
+3046,semington-brook,1
+9405,setting-dyke,1
+9404,setting-dyke,2
+5043,shaw-brook-tributary,1
+3035,sherston-avon,1
+3408,sherston-avon,2
+7001,shill-brook,1
+3308,shreen-water,1
+3372,shreen-water,2
+9453,shutterton-brook,1
+7285,silk-stream,1
+7286,silk-stream,2
+8326,silsden-beck,1
+6054,sincil-dyke,1
+5107,sinderland-brook,1
+9377,skeffling-drain,1
+9372,skirting-beck,1
+9371,skirting-beck,2
+2203,slad-brook,1
+2204,slad-brook,2
+9415,slad-brook,3
+8123,smallhope-burn,1
+2091,smestow-brook,1
+2032,smestow-brook,2
+8351,snaith-ings,1
+8127,snaizeholme-beck,1
+9228,somborne-stream,1
+3004,river-frome-somerset,1
+3382,river-frome-somerset,2
+3049,river-frome-somerset,3
+7062,sor-brook,1
+9280,south-brook,1
+9401,south-cave-beck,1
+6223,south-forty-foot-drain,1
+6226,south-forty-foot-drain,2
+6293,south-forty-foot-drain,3
+7093,southcourt-brook,1
+8256,spen-beck,1
+8149,spen-beck,2
+9014,spratford-stream,1
+7316,spring-brook,1
+3155,st-austell-river,1
+3157,st-austell-river,2
+3394,st-blazey-stream,1
+7317,st-james-stream,1
+5210,st-johns-beck,1
+5139,st-johns-beck,2
+3147,st-neot-river,1
+6062,stainfield-beck,1
+7349,stansted-brook,1
+7338,stevenage-brook,1
+5226,stock-beck,1
+5215,stock-beck,2
+5233,stock-beck,3
+9447,stock-ghyll,1
+6084,stonham-watercourse,1
+6132,stour-brook,1
+9026,sud-brook,1
+2182,sud-brook,2
+7108,sulham-brook,1
+9268,sutton-beck,1
+9276,swalecliffe-brook,1
+3263,swan-brook,1
+3333,swan-brook,2
+6186,swavesey-drain,1
+7012,swill-brook,1
+8228,swinney-beck,1
+,syd-brook,
+3273,sydling-water,1
+1151,tadburn-lake,1
+8328,tang-hall-beck,1
+9348,tang-hall-beck,2
+9240,tanners-brook,1
+1149,tanners-brook,2
+3034,tetbury-avon,1
+5212,thacka-beck,1
+5204,thacka-beck,2
+5208,thacka-beck,3
+7318,the-beck,1
+7167,the-cut,1
+9118,the-cut,2
+7398,the-cut,3
+9381,the-fleet,1
+3349,the-gissage,1
+9412,the-moss,1
+9444,the-porter-river,1
+7272,the-roxbourne,1
+7362,theobalds-brook,1
+9368,thorngumbald-drain,1
+8231,thornton-beck,1
+3199,tory-brook,1
+9393,town-beck,1
+9242,town-beck,2
+5187,trawden-brook,1
+3170,tresillian-river,1
+4021,trothy,1
+9379,trout-beck-east-cumbria,1
+5220,trout-beck-lake-district,1
+8141,trout-beck-northumberland,1
+4153,tryweryn,1
+7367,turkey-brook,1
+6263,twin,1
+9337,ulley-brook,1
+5166,ullswater,1
+3228,umborne-brook,1
+8182,usway-burn,1
+5097,valley-brook,1
+6233,waithe-beck,1
+9187,walkford-brook,1
+9314,waller-hill-beck,1
+8094,waller-hill-beck,2
+9172,wallop-brook,1
+8211,walsden-water,1
+8310,walsden-water,2
+8267,waren-burn,1
+8268,waren-burn,2
+3141,warleggan-river,1
+8304,wash-dike,1
+8257,wash-dike,2
+3089,washford-river,1
+6294,washpit-brook,1
+7287,wealdstone-brook,1
+7288,wealdstone-brook,2
+6123,weedon-beck,1
+3002,wellow-brook,1
+3048,wellow-brook,2
+7070,wendlebury-brook,1
+6097,wendling-beck,1
+7090,wendover-springs,1
+2169,wesley-brook,1
+8324,west-bank-pond,1
+9442,west-beck-county-durham,1
+9224,west-brook-hampshire,1
+9275,west-brook-kent,1
+9360,west-clough,1
+3212,west-dart-river,1
+6228,west-fen-catchwater-drain,1
+6026,west-glen-river,1
+6036,west-glen-river,2
+6031,west-glen-river,3
+6027,west-glen-river,4
+3358,west-lyn-river,1
+3381,west-moor-drain,1
+3105,west-okement-river,1
+9341,west-okement-river,2
+3066,west-sedgemoor-drain,1
+9414,western-drain,1
+9196,western-yar,1
+6281,whaddon-brook-cambridgeshire,1
+2228,whaddon-brook-gloucestershire,1
+9036,wheelan-dyke,1
+2160,whetstone-brook,1
+9043,whiston-brook,1
+1144,white-water-dyke,1
+9285,whitley-beck,1
+9035,whitley-brook,1
+8225,willow-beck,2
+8285,willow-beck,3
+8224,willow-beck,1
+6124,willow-brook,1
+6106,willow-brook,2
+5089,wincham-brook,1
+5164,windermere,1
+7222,windle-brook,1
+9369,winestead-drain,1
+9376,winestead-drain,2
+3409,winford-brook,1
+7125,winterbourne-stream-berkshire,1
+9253,winterbourne-stream-sussex,1
+3398,witcombe-bottom-main-drain,1
+3190,withy-brook,1
+9422,withycombe-brook,1
+5216,wiza-beck,1
+5221,wiza-beck,2
+2168,wood-brook,1
+9432,wool-brook,1
+3017,woodbridge-brook,1
+8051,wooler-water,1
+8221,wooler-water,2
+6103,wootton-brook,1
+5193,worsley-brook,1
+9117,wortley-beck,1
+2226,wotton-brook-gloucestershire,1
+2227,wotton-brook-gloucestershire,2
+9435,wotton-brook-devon,1
+7210,wraysbury-river,1
+7209,wraysbury-river,2
+4192,wych-brook,1
+9411,wydon-burn,1
+8251,wyke-beck,1
+9392,wyke-beck,2
+8316,wyke-beck,3
+2201,wymans-brook,1
+2200,wymans-brook,2
+4033,yazor-brook,1
+7270,yeading-brook,1
+7271,yeading-brook,2
+7274,yeading-brook,3
+7275,yeading-brook,4
+7273,yeading-brook-eastern-arm,1
+9450,yeolands-stream,1

@@ -1,8 +1,8 @@
 ####### If table already exists then we need to truncate the table (ie if this is not the first load)
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river;"
 
-###### Import columns 1 to 3 from csv into river table
-cut -f2,3,4 -d, ./rivers.csv | psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(name, qualified_name, id) from STDIN with delimiter as ',' CSV HEADER"
+###### Import csv into river table
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name) from ./rivers.csv with delimiter as ',' CSV HEADER"
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
