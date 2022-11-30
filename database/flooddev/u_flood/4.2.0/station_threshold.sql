@@ -1,6 +1,9 @@
--- SEQUENCE: u_flood.station_threshold_station_threshold_id_seq
+-- Table: u_flood.station_threshold
 
-DROP SEQUENCE u_flood.station_threshold_station_threshold_id_seq;
+DROP TABLE IF EXISTS u_flood.station_threshold;
+DROP SEQUENCE IF EXISTS u_flood.station_threshold_station_threshold_id_seq;
+
+-- SEQUENCE: u_flood.station_threshold_station_threshold_id_seq
 
 CREATE SEQUENCE IF NOT EXISTS u_flood.station_threshold_station_threshold_id_seq
     INCREMENT 1
@@ -12,9 +15,6 @@ CREATE SEQUENCE IF NOT EXISTS u_flood.station_threshold_station_threshold_id_seq
 ALTER SEQUENCE u_flood.station_threshold_station_threshold_id_seq
     OWNER TO u_flood;
 
--- Table: u_flood.station_threshold
-
-DROP TABLE u_flood.station_threshold;
 
 CREATE TABLE IF NOT EXISTS u_flood.station_threshold
 (
