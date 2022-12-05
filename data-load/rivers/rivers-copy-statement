@@ -3,6 +3,8 @@ psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river;"
 
 ###### Import csv into river table
 psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name) from ./rivers.csv with delimiter as ',' CSV HEADER"
+psql ${LFW_DATA_DB_CONNECTION} -c "UPDATE u_flood.river r1 SET qualified_name_tokens = to_tsvector(r1.qualified_name) FROM u_flood.river r2"
+
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
