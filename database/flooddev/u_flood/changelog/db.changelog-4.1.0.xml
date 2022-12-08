@@ -4,19 +4,19 @@ xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns:ora="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-	<changeSet author="nmclaughlin" id="4.3.0-1">
-		<sqlFile path="./4.3.0/drop.sql" splitStatements="false"/>
+	<changeSet author="nmclaughlin" id="4.1.0-1">
+		<sqlFile path="./4.1.0/drop.sql" splitStatements="false"/>
 	</changeSet>
-	<changeSet author="nmclaughlin" id="4.3.0-2">
-		<sqlFile path="./4.3.0/rivers.sql" splitStatements="false"/>
+	<changeSet author="nmclaughlin" id="4.1.0-2">
+		<sqlFile path="./4.1.0/rivers.sql" splitStatements="false"/>
 	</changeSet>
-	<changeSet author="nmclaughlin" id="4.3.0-3">
-		<sqlFile path="./4.3.0/river_stations.sql" splitStatements="false"/>
+	<changeSet author="nmclaughlin" id="4.1.0-3">
+		<sqlFile path="./4.1.0/river_stations.sql" splitStatements="false"/>
 	</changeSet>
-	<changeSet author="nmclaughlin" id="4.3.0-4">
-		<sqlFile path="./4.3.0/rivers_mview.sql" splitStatements="false"/>
+	<changeSet author="nmclaughlin" id="4.1.0-4">
+		<sqlFile path="./4.1.0/rivers_mview.sql" splitStatements="false"/>
 	</changeSet>
-	<changeSet author="nmclaughlin" id="4.3.0-5">
-		<sqlFile path="./4.3.0/stations_list_mview.sql" splitStatements="false"/>
+	<changeSet author="nmclaughlin" id="4.1.0-5">
+		<sqlFile path="./4.1.0/stations_list_mview.sql" splitStatements="false"/>
 	</changeSet>
 </databaseChangeLog>
