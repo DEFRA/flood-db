@@ -4,6 +4,12 @@ psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river;"
 ###### Import csv into river table
 psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name) from ./rivers.csv with delimiter as ',' CSV HEADER"
 
+####### If table already exists then we need to truncate the table (ie if this is not the first load)
+psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river_stations;"
+
+###### Import data into river_stations
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(rloi_id, river_id, rank) from ./river-stations.csv with delimiter as ',' CSV HEADER"
+
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.stations_list_mview with data;"
