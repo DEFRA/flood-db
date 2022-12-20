@@ -1,14 +1,21 @@
 ####### If table already exists then we need to truncate the table (ie if this is not the first load)
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river;"
 
-###### Import csv into river table
-psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name) from ./rivers.csv with delimiter as ',' CSV HEADER"
+###### Import tsv into river table
+# Note 1: expected input columns and their order: (slug,local_name,qualified_name)
+# Note 2: tab seperated as river names may include commas
+# Note 3: psql has an issue with dos file format.
+#         Use sed 's/^M$//' to convert dos line ending to unix (ctrl-v, ctrl-m to get the ^M in sed)
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river(id, name, qualified_name) from ./rivers.tsv with delimiter as E'\t' CSV HEADER"
 
 ####### If table already exists then we need to truncate the table (ie if this is not the first load)
 psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.river_stations;"
 
-###### Import data into river_stations
-psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(rloi_id, river_id, rank) from ./river-stations.csv with delimiter as ',' CSV HEADER"
+###### Import csv into river_stations
+# Note 1: expected input columns and their order: (slug,station_id,order)
+# Note 2: psql has an issue with dos file format.
+#         Use sed 's/^M$//' to convert dos line ending to unix (ctrl-v, ctrl-m to get the ^M in sed)
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.river_stations(river_id, rloi_id, rank) from ./river-stations.csv with delimiter as ',' CSV HEADER"
 
 ###### refresh mview
 psql ${LFW_DATA_DB_CONNECTION} -c "refresh materialized view u_flood.rivers_mview with data;"
