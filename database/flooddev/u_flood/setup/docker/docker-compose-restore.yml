@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  flood-db:
+    volumes:
+      - backup:/backup
+
+volumes: 
+  backup:
+    external: true
+    name: backup

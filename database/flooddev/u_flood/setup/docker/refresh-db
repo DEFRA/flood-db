@@ -1,0 +1,48 @@
+#!/bin/bash
+
+set -e
+
+function liquibase-update {
+  docker compose -f docker-compose.yml -f docker-compose-liquibase.yml run --rm liquibase
+  # shut down the db container as we only need to mount the external backup volume during initialisation
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml down
+}
+
+# Note: this file name is used in the db_setup.sh script
+FILE=./flood-db.bak
+
+while getopts "d:" opt
+do
+   case "$opt" in
+      d ) DB_CONNECTION="$OPTARG" ;;
+      * ) echo "Usage: refresh-db [-d postgres-connection-string]"
+      exit 0;;
+   esac
+done
+
+if [ -n "$DB_CONNECTION" ]
+then 
+  # Clear out the existing external volume
+  docker volume rm -f backup
+  # Use external volume so it can be populated here and used in docker compose below
+  docker volume create --name backup 
+  # Create dump from db
+  # Note 1: use docker for pg_dump so there is no requirement for postgres to be installed
+  # Note 2: the postgis image tag used here should match the one in the Dockerfile
+  docker run --rm -v backup:/backup postgis/postgis:13-3.1 pg_dump "${DB_CONNECTION}" --file "/backup/$FILE" --verbose --format plain
+else
+  echo "Restoring from existing backup volume"
+fi
+
+# check external volume containing the backup exists
+if [ -n "$(docker volume ls --filter name=backup --format "{{.Name}}")" ]
+then
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
+  # Start app which will trigger DB population from initilisation scripts (see ./Dockerfile)
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml up --build -d 
+  read -rp "$(printf 'Press enter to follow the DB logs\nPress CTRL-C when the logs report that the DB is accepting connections\nAny pending liquibase updates will then be applied and the container shut down')"
+  trap liquibase-update INT
+  docker compose logs -f
+else
+  echo "backup volume not found"
+fi

@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  liquibase:
+    image: liquibase/liquibase
+    depends_on:
+      flood-db:
+        condition: service_healthy
+    networks:
+      - cff-stack
+    volumes:
+      - ../..:/liquibase/u_flood
+    command: [ 
+      "--username=postgres",
+      "--password=postgres",
+      "--defaultSchemaName=u_flood",
+      "--driver=org.postgresql.Driver",
+      "--changeLogFile=db.changelog-master.xml",
+      "--contexts=dev",
+      "--url=jdbc:postgresql://flood-db:5432/flooddev",
+      "--searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood",
+      "update"
+    ]

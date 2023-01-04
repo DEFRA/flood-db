@@ -17,8 +17,8 @@ CREATE SCHEMA postgis
 
 GRANT ALL ON SCHEMA postgis TO u_flood;
 
-CREATE EXTENSION postgis;
-CREATE EXTENSION postgis_topology;
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE EXTENSION IF NOT EXISTS postgis_topology;
 
 ALTER DATABASE flooddev SET search_path = "$user", public, postgis, topology;
 
@@ -28,11 +28,3 @@ UPDATE pg_extension
  
 ALTER EXTENSION postgis 
   SET SCHEMA postgis;
- 
-ALTER EXTENSION postgis 
-  UPDATE TO "2.3.3next";
- 
-ALTER EXTENSION postgis 
-  UPDATE TO "2.3.3";
-
-
