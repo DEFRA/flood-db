@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  flood-db:
+    networks:
+      - cff-shared
+
+networks:
+  cff-shared:
+    external: true
+

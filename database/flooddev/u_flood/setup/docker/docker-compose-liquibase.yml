@@ -6,8 +6,6 @@ services:
     depends_on:
       flood-db:
         condition: service_healthy
-    networks:
-      - cff-stack
     volumes:
       - ../..:/liquibase/u_flood
     command: [ 

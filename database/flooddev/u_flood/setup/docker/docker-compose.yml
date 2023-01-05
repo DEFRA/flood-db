@@ -11,8 +11,6 @@ services:
       POSTGRES_USER: postgres
     ports:
       - "5432:5432"
-    networks:
-      - cff-stack
     volumes:
       - pgdata:/pgdata
       - wiyby:/wiyby
@@ -22,9 +20,6 @@ services:
       timeout: 5s
       retries: 5
     command: postgres -c max_wal_size=2048 # set max_wal_size to prevent warnings when restoring db
-
-networks:
-  cff-stack:
 
 volumes: 
   pgdata:
