@@ -3,20 +3,13 @@
 set -e
 
 # Note: the db_setup.sh script expects this file name
-FILE=./flood-db.bak
-# Note: the docker-compose-restore.yml file expects this volume name
-BACKUP_VOLUME=flood-db-backup
+FILE=flood-db.bak
 
 function liquibase-update {
   docker compose -f docker-compose.yml -f docker-compose-liquibase.yml run --rm liquibase
-  # shut down the db container as we only need to mount the external backup volume during initialisation
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml down
+  # shut down the db container as we only need the backup volume during initialisation
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --remove-orphans
 }
-
-function external-volume-exists {
-  [ -n "$(docker volume ls --filter name=backup --format "{{.Name}}")" ]
-}
-
 
 while getopts "d:" opt
 do
@@ -28,27 +21,24 @@ do
 done
 
 if [ -n "$DB_CONNECTION" ]
-then 
-  # Clear out the existing external volume
-  docker volume rm -f $BACKUP_VOLUME
-  # Use external volume so it can be populated here and used in docker compose below
-  docker volume create --name $BACKUP_VOLUME
-  # Create dump from db
-  # Note 1: use docker for pg_dump so there is no requirement for postgres to be installed
-  # Note 2: the postgis image tag used here should match the one in the Dockerfile
-  docker run --rm -v "$BACKUP_VOLUME":/backup postgis/postgis:13-3.1 pg_dump "${DB_CONNECTION}" --file "/backup/$FILE" --verbose --format plain
+then
+  # Clear out the existing volumes and create dump from db
+  # Note: use docker for pg_dump so there is no requirement for postgres to be installed
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
+  docker compose -f docker-compose.yml -f docker-compose-restore.yml \
+    run --rm flood-db pg_dump "${DB_CONNECTION}" --file /backup/$FILE --verbose --format plain
 else
-  echo "Restoring from existing backup volume: $BACKUP_VOLUME"
+  # by ommiting the `-f docker-compose-restore.yml` option only the pgdata and wiyby volumes are deleted and
+  # not the flood-db-backup volume
+  docker compose -f docker-compose.yml down --volumes --remove-orphans
+  echo "Restoring from existing backup"
 fi
 
-if external-volume-exists
-then
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
-  # Start app which will trigger DB population from initilisation scripts (see ./Dockerfile)
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml up --build -d 
-  read -rp "$(printf 'Press enter to follow the DB logs\nPress CTRL-C when the logs report that the DB is accepting connections\nAny pending liquibase updates will then be applied and the container shut down')"
-  trap liquibase-update INT
-  docker compose logs -f
-else
-  echo "external backup volume not found"
-fi
+# Start app which will trigger DB population from initilisation scripts (see ./Dockerfile)
+docker compose -f docker-compose.yml -f docker-compose-restore.yml up --build -d
+
+read -rp "$(printf 'Press enter to follow the DB logs\nPress CTRL-C when the logs report that the DB is accepting connections\nAny pending liquibase updates will then be applied and the container shut down')"
+
+trap liquibase-update INT
+
+docker compose logs -f

@@ -7,4 +7,3 @@ services:
 
 volumes: 
   flood-db-backup:
-    external: true

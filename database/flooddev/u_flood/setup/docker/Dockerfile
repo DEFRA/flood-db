@@ -6,6 +6,6 @@ COPY docker/tablespaces.sql .
 COPY docker/roles.sql .
 COPY docker/database.sql .
 COPY ./non_rds_initial_setup.sql .
-RUN mkdir -p /wiyby/wiyby_tables /wiyby/wiyby_indexes
-RUN chown -R postgres:root /wiyby 
+RUN mkdir -p /wiyby/wiyby_tables /wiyby/wiyby_indexes /backup
+RUN chown -R postgres:root /wiyby /backup
 RUN apt-get update && apt-get install -y postgresql-13-pgrouting
