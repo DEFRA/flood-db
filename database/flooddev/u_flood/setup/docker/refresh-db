@@ -8,7 +8,11 @@ function liquibase-update {
   docker compose -f docker-compose.yml -f docker-compose-restore.yml down
 }
 
-# Note: this file name is used in the db_setup.sh script
+function external-volume-exists {
+  [ -n "$(docker volume ls --filter name=backup --format "{{.Name}}")" ]
+}
+
+# Note: the db_setup.sh script expects this file name
 FILE=./flood-db.bak
 
 while getopts "d:" opt
@@ -34,8 +38,7 @@ else
   echo "Restoring from existing backup volume"
 fi
 
-# check external volume containing the backup exists
-if [ -n "$(docker volume ls --filter name=backup --format "{{.Name}}")" ]
+if external-volume-exists
 then
   docker compose -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
   # Start app which will trigger DB population from initilisation scripts (see ./Dockerfile)
@@ -44,5 +47,5 @@ then
   trap liquibase-update INT
   docker compose logs -f
 else
-  echo "backup volume not found"
+  echo "external backup volume not found"
 fi
