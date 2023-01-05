@@ -3,9 +3,8 @@ version: "3.6"
 services:
   flood-db:
     volumes:
-      - backup:/backup
+      - flood-db-backup:/backup
 
 volumes: 
-  backup:
+  flood-db-backup:
     external: true
-    name: backup

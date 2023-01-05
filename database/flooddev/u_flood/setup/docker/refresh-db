@@ -2,6 +2,11 @@
 
 set -e
 
+# Note: the db_setup.sh script expects this file name
+FILE=./flood-db.bak
+# Note: the docker-compose-restore.yml file expects this volume name
+BACKUP_VOLUME=flood-db-backup
+
 function liquibase-update {
   docker compose -f docker-compose.yml -f docker-compose-liquibase.yml run --rm liquibase
   # shut down the db container as we only need to mount the external backup volume during initialisation
@@ -12,8 +17,6 @@ function external-volume-exists {
   [ -n "$(docker volume ls --filter name=backup --format "{{.Name}}")" ]
 }
 
-# Note: the db_setup.sh script expects this file name
-FILE=./flood-db.bak
 
 while getopts "d:" opt
 do
@@ -27,15 +30,15 @@ done
 if [ -n "$DB_CONNECTION" ]
 then 
   # Clear out the existing external volume
-  docker volume rm -f backup
+  docker volume rm -f $BACKUP_VOLUME
   # Use external volume so it can be populated here and used in docker compose below
-  docker volume create --name backup 
+  docker volume create --name $BACKUP_VOLUME
   # Create dump from db
   # Note 1: use docker for pg_dump so there is no requirement for postgres to be installed
   # Note 2: the postgis image tag used here should match the one in the Dockerfile
-  docker run --rm -v backup:/backup postgis/postgis:13-3.1 pg_dump "${DB_CONNECTION}" --file "/backup/$FILE" --verbose --format plain
+  docker run --rm -v "$BACKUP_VOLUME":/backup postgis/postgis:13-3.1 pg_dump "${DB_CONNECTION}" --file "/backup/$FILE" --verbose --format plain
 else
-  echo "Restoring from existing backup volume"
+  echo "Restoring from existing backup volume: $BACKUP_VOLUME"
 fi
 
 if external-volume-exists
