@@ -23,6 +23,6 @@ Without the -d option the DB image will be built from the last DB backup.
 ## Notes
 
 * the DB needs starting after the refresh using `docker compose up`
-* the flood-app can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost/flooddev node .`
-* the DB backup file for backup and restore is stored on an external docker volume (`backup`) as `flood-db.bak`
+* the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost/flooddev node .`
+* the DB backup file for backup and restore is stored on an docker volume (`backup`) as `flood-db.bak`
 
