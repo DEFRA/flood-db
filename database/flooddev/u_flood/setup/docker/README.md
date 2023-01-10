@@ -20,9 +20,28 @@ Without the -d option the DB image will be built from the last DB backup.
 
 `./refresh-db`
 
+# Starting the DB after the refresh
+
+The DB needs starting after the refresh using `docker compose up`.
+
+If you want to connect to the DB from a client running on your local machine (e.g. pgAdmin or the flood-service running locally) you will need to expose a port.
+
+To do this create a docker compose file called, for example, docker-compose-override.yml with the following contents
+
+```
+services:
+  flood-db:
+    ports:
+      - "5432:5432"
+```
+
+Then start the DB using `docker compose -f docker-compose.yml -f docker-compose-override.yml up`
+
+As this file is specific to your local environment it should not be committed to the repo.
+
+Note: The port mapping you use depends on if you have Postgres installed and running on your machine.  If you do then, to avoid clashing port numbers, the port mapping should not be "5432:5432" (e.g. "5433:5432", the server name in the connection string would then be `localhost:5433`).  If not then the mapping can be as above (i.e. "5432:5432" ).
+
 ## Notes
 
-* the DB needs starting after the refresh using `docker compose up`
-* the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost/flooddev node .`
-* the DB backup file for backup and restore is stored on an docker volume (`backup`) as `flood-db.bak`
-
+* the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost:5432/flooddev node .` (see comments above on the port number)
+* the DB backup file for backup and restore is stored on a docker volume (`backup`) as `flood-db.bak`
