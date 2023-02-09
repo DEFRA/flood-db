@@ -7,7 +7,72 @@ DROP MATERIALIZED VIEW IF EXISTS u_flood.stations_overview_mview;
 CREATE MATERIALIZED VIEW IF NOT EXISTS u_flood.stations_overview_mview
 TABLESPACE pg_default
 AS
- SELECT s.rloi_id,
+WITH all_values AS (
+  SELECT
+	tvp.rloi_id,
+    tvp.parameter,
+    tvp.qualifier,
+    tvp.units,
+	tv.telemetry_value_id,
+    tv.telemetry_value_parent_id,
+    tv.value,
+    tv.processed_value,
+    tv.value_timestamp,
+    tv.error,
+    rank() OVER (PARTITION BY tv.telemetry_value_parent_id ORDER BY tv.value_timestamp DESC) AS value_rank
+  FROM sls_telemetry_value tv
+  JOIN sls_telemetry_value_parent tvp ON tv.telemetry_value_parent_id = tvp.telemetry_value_parent_id
+	WHERE lower(tvp.parameter) = 'water level'::text 
+	AND lower(tvp.units) !~~ '%deg%'::text 
+	AND lower(tvp.qualifier) !~~ '%height%'::text 
+),
+latest_value AS (
+  SELECT * FROM all_values WHERE value_rank = 1
+),
+all_value_parents AS (
+SELECT
+	p.rloi_id,
+	lv.parameter,
+	lv.qualifier,
+	lv.units,
+	lv.telemetry_value_id,
+	lv.telemetry_value_parent_id,
+	lv.value,
+	lv.processed_value,
+	lv.value_timestamp,
+	lv.error,
+	lv.value_rank,
+	rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
+FROM latest_value lv
+	JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
+WHERE lv.value_rank = 1 
+	AND lower(p.parameter) = 'water level'::text
+	AND lower(p.units) !~~ '%deg%'::text 
+	AND lower(p.qualifier) !~~ '%height%'::text
+	AND lower(p.qualifier) <> 'crest tapping'::text
+),
+latest_value_parents AS (
+	SELECT * FROM all_value_parents WHERE all_value_parents.parent_rank = 1
+),
+xyz AS (
+	SELECT
+		s_1.rloi_id,
+		s_1.qualifier
+	FROM station_split_mview s_1
+		JOIN sls_telemetry_value_parent p ON s_1.rloi_id = p.rloi_id AND (s_1.qualifier = 'u'::text AND lower(p.qualifier) !~~ '%downstream%'::text OR s_1.qualifier = 'd'::text AND lower(p.qualifier) ~~ '%downstream%'::text)
+		JOIN sls_telemetry_value v ON p.telemetry_value_parent_id = v.telemetry_value_parent_id
+	WHERE NOT v.error
+		AND v.processed_value <> 'NaN'::numeric
+		AND COALESCE(v.processed_value, 0::numeric) > s_1.por_max_value
+		AND lower(p.parameter) = 'water level'::text
+		AND lower(p.units) !~~ '%deg%'::text
+		AND lower(p.qualifier) !~~ '%height%'::text
+		AND lower(p.qualifier) <> 'crest tapping'::text
+    GROUP BY s_1.rloi_id, s_1.qualifier
+)
+
+
+SELECT s.rloi_id,
     s.telemetry_id,
     s.wiski_id,
     s.qualifier AS direction,
@@ -39,48 +104,12 @@ AS
     s.percentile_5,
     s.percentile_95
    FROM station_split_mview s
-     LEFT JOIN ( SELECT p_rank.rloi_id,
-            p_rank.parameter,
-            p_rank.qualifier,
-            p_rank.units,
-            p_rank.telemetry_value_id,
-            p_rank.telemetry_value_parent_id,
-            p_rank.value,
-            p_rank.processed_value,
-            p_rank.value_timestamp,
-            p_rank.error,
-            p_rank.value_rank,
-            p_rank.parent_rank
-           FROM ( SELECT p.rloi_id,
-                    p.parameter,
-                    p.qualifier,
-                    p.units,
-                    v_rank.telemetry_value_id,
-                    v_rank.telemetry_value_parent_id,
-                    v_rank.value,
-                    v_rank.processed_value,
-                    v_rank.value_timestamp,
-                    v_rank.error,
-                    v_rank.value_rank,
-                    rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY v_rank.value_timestamp DESC, v_rank.telemetry_value_id DESC) AS parent_rank
-                   FROM ( SELECT sls_telemetry_value.telemetry_value_id,
-                            sls_telemetry_value.telemetry_value_parent_id,
-                            sls_telemetry_value.value,
-                            sls_telemetry_value.processed_value,
-                            sls_telemetry_value.value_timestamp,
-                            sls_telemetry_value.error,
-                            rank() OVER (PARTITION BY sls_telemetry_value.telemetry_value_parent_id ORDER BY sls_telemetry_value.value_timestamp DESC) AS value_rank
-                           FROM sls_telemetry_value) v_rank
-                     JOIN sls_telemetry_value_parent p ON v_rank.telemetry_value_parent_id = p.telemetry_value_parent_id
-                  WHERE v_rank.value_rank = 1 AND lower(p.parameter) = 'water level'::text AND lower(p.units) !~~ '%deg%'::text AND lower(p.qualifier) !~~ '%height%'::text AND lower(p.qualifier) <> 'crest tapping'::text) p_rank
-          WHERE p_rank.parent_rank = 1) latest ON s.rloi_id = latest.rloi_id AND (s.qualifier = 'u'::text AND lower(latest.qualifier) !~~ '%downstream%'::text OR s.qualifier = 'd'::text AND lower(latest.qualifier) ~~ '%downstream%'::text)
-     LEFT JOIN ( SELECT s_1.rloi_id,
-            s_1.qualifier
-           FROM station_split_mview s_1
-             JOIN sls_telemetry_value_parent p ON s_1.rloi_id = p.rloi_id AND (s_1.qualifier = 'u'::text AND lower(p.qualifier) !~~ '%downstream%'::text OR s_1.qualifier = 'd'::text AND lower(p.qualifier) ~~ '%downstream%'::text)
-             JOIN sls_telemetry_value v ON p.telemetry_value_parent_id = v.telemetry_value_parent_id
-          WHERE NOT v.error AND v.processed_value <> 'NaN'::numeric AND COALESCE(v.processed_value, 0::numeric) > s_1.por_max_value AND lower(p.parameter) = 'water level'::text AND lower(p.units) !~~ '%deg%'::text AND lower(p.qualifier) !~~ '%height%'::text AND lower(p.qualifier) <> 'crest tapping'::text
-          GROUP BY s_1.rloi_id, s_1.qualifier) rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
+     LEFT JOIN latest_value_parents latest ON s.rloi_id = latest.rloi_id
+	 	AND (s.qualifier = 'u'::text
+		AND lower(latest.qualifier) !~~ '%downstream%'::text 
+		OR s.qualifier = 'd'::text 
+		AND lower(latest.qualifier) ~~ '%downstream%'::text)
+     LEFT JOIN xyz rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
      LEFT JOIN ffoi_station fs ON fs.rloi_id = s.rloi_id
 WITH DATA;
 
