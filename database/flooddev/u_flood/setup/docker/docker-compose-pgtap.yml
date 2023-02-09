@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  db_check:
+    image: hbpmip/pgtap:0.96.0-5
+    restart: unless-stopped
+    environment:
+      DATABASE: flooddev
+      HOST: flood-db
+      USER: u_flood
+      PASSWORD: secret
+      TESTS: /test/*.sql -v
+    volumes:
+      - ./tests/:/test/
+

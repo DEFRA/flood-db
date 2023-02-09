@@ -41,6 +41,13 @@ As this file is specific to your local environment it should not be committed to
 
 Note: The port mapping you use depends on if you have Postgres installed and running on your machine.  If you do then, to avoid clashing port numbers, the port mapping should not be "5432:5432" (e.g. "5433:5432", the server name in the connection string would then be `localhost:5433`).  If not then the mapping can be as above (i.e. "5432:5432" ).
 
+# To run the DB tests
+
+Start the DB:
+ * `docker compose up -d`
+Run the pgTap tests :
+ * `docker compose -f docker-compose.yml -f docker-compose-pgtap.yml run --rm db_check`
+
 ## Notes
 
 * the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost:5432/flooddev node .` (see comments above on the port number)
