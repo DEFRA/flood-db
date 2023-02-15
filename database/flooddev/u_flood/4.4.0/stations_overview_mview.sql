@@ -183,6 +183,7 @@ AS
     ss.qualifier,
     lower(ss.region) = 'wales'::text OR (ss.rloi_id = ANY (ARRAY[4162, 4170, 4173, 4174, 4176])) AS iswales,
     so.processed_value AS value,
+    so.trend,
     so.value_timestamp,
     so.error AS value_erred,
     so.percentile_5,
