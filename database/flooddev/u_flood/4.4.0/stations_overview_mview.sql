@@ -43,7 +43,7 @@ SELECT
 	lv.error,
 	lv.value_rank,
   -- need to understand partitions much more
-  lag(lv.value, 1) OVER (PARTITION BY p.rloi_id ORDER BY lv.value_timestamp ASC) AS previous_value,
+  lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id ORDER BY lv.value_timestamp ASC) AS previous_value,
 	rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
 FROM latest_value lv
 	JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
@@ -92,8 +92,8 @@ SELECT s.rloi_id,
     latest.error,
     latest.previous_value,
     CASE
-      WHEN latest.value - latest.previous_value > 0 THEN 'rising'
-      WHEN latest.value - latest.previous_value < 0 THEN 'steady'
+      WHEN latest.processed_value > latest.previous_value THEN 'rising'
+      WHEN latest.processed_value < latest.previous_value THEN 'falling'
       ELSE 'steady'
     END AS trend,
     now() - latest.value_timestamp AS age,
