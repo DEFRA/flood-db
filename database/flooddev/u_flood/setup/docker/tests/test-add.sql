@@ -10,11 +10,14 @@ BEGIN;
   SELECT has_column( 'stations_list_mview', 'trend' );
   SELECT results_eq('SELECT count(*) FROM stations_overview_mview', ARRAY[ 2721::BIGINT ], 'stations_list_mview result count');
   SELECT results_eq(
-    'SELECT rloi_id, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1006,1009) ORDER BY rloi_id',
+    'SELECT rloi_id, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1006,1009,3287) ORDER BY rloi_id',
     $$VALUES
      (1001, 1.458, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 1.556, 'falling'),
      (1006, 0.441, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.44, 'rising'),
-     (1009, 0.066, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.066, 'steady')
+     (1009, 0.066, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.066, 'steady'),
+     -- 3287 is an example of a station with a batch of telemetry values under a single telemetry value parent
+     -- which was previously returning the wrong trend value
+     (3287, 0.312, TO_TIMESTAMP('2023-02-06 06:00:00+00','YYYY-MM-DD HH24:MI:SS'), 0.312, 'steady')
     $$,
     'stations_overview_mview results');
   SELECT results_eq(

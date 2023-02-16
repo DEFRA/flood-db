@@ -27,7 +27,7 @@ WITH all_values AS (
 	AND lower(tvp.qualifier) !~~ '%height%'::text 
 ),
 latest_value AS (
-  SELECT * FROM all_values WHERE value_rank = 1
+  SELECT * FROM all_values WHERE value_rank IN (1,2)
 ),
 all_value_parents AS (
 SELECT
@@ -47,8 +47,7 @@ SELECT
 	rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
 FROM latest_value lv
 	JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
-WHERE lv.value_rank = 1 
-	AND lower(p.parameter) = 'water level'::text
+WHERE lower(p.parameter) = 'water level'::text
 	AND lower(p.units) !~~ '%deg%'::text 
 	AND lower(p.qualifier) !~~ '%height%'::text
 	AND lower(p.qualifier) <> 'crest tapping'::text
