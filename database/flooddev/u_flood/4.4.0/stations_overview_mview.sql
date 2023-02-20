@@ -91,8 +91,8 @@ SELECT s.rloi_id,
     latest.error,
     latest.previous_value,
     CASE
-      WHEN latest.processed_value > latest.previous_value THEN 'rising'
-      WHEN latest.processed_value < latest.previous_value THEN 'falling'
+      WHEN ROUND(latest.processed_value,2) > ROUND(latest.previous_value,2) THEN 'rising'
+      WHEN ROUND(latest.processed_value,2) < ROUND(latest.previous_value,2) THEN 'falling'
       ELSE 'steady'
     END AS trend,
     now() - latest.value_timestamp AS age,
