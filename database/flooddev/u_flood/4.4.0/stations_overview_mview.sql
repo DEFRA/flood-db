@@ -9,11 +9,11 @@ TABLESPACE pg_default
 AS
 WITH all_values AS (
   SELECT
-	tvp.rloi_id,
+    tvp.rloi_id,
     tvp.parameter,
     tvp.qualifier,
     tvp.units,
-	tv.telemetry_value_id,
+    tv.telemetry_value_id,
     tv.telemetry_value_parent_id,
     tv.value,
     tv.processed_value,
@@ -43,7 +43,7 @@ SELECT
 	lv.error,
 	lv.value_rank,
   -- need to understand partitions much more
-  lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id ORDER BY lv.value_timestamp ASC) AS previous_value,
+  lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id, lv.qualifier ORDER BY p.rloi_id, lv.qualifier, lv.value_timestamp ASC) AS previous_value,
 	rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
 FROM latest_value lv
 	JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
@@ -111,7 +111,7 @@ SELECT s.rloi_id,
     s.percentile_5,
     s.percentile_95
    FROM station_split_mview s
-     LEFT JOIN latest_value_parents latest ON s.rloi_id = latest.rloi_id
+     LEFT JOIN latest_value_parents latest ON s.rloi_id = latest.rloi_id AND s.qualifier = s.qualifier
 	 	AND (s.qualifier = 'u'::text
 		AND lower(latest.qualifier) !~~ '%downstream%'::text 
 		OR s.qualifier = 'd'::text 
