@@ -1,5 +1,5 @@
 BEGIN;
-  SELECT plan(16);
+  SELECT plan(18);
   SELECT has_materialized_view('stations_overview_mview');
   SELECT has_column( 'stations_overview_mview', 'value' );
   SELECT has_column( 'stations_overview_mview', 'value_timestamp' );
@@ -10,16 +10,25 @@ BEGIN;
   SELECT has_column( 'stations_list_mview', 'trend' );
   SELECT results_eq('SELECT count(*) FROM stations_overview_mview', ARRAY[ 2721::BIGINT ], 'stations_list_mview result count should be unchanged from before code changes');
   SELECT results_eq(
-    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1009,1018,3287) ORDER BY rloi_id, direction',
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1009,1046) ORDER BY rloi_id, direction',
     $$VALUES
      (1001, 'u', 1.458, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 1.556, 'falling'),
      (1009, 'u', 0.066, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.066, 'steady'),
-     (1018, 'u', 1.546, TO_TIMESTAMP('2023-02-06 12:00:00+00','YYYY-MM-DD HH24:MI:SS'), 1.536, 'rising'),
-     -- 3287 is an example of a station with a batch of telemetry values under a single telemetry value parent
-     -- which was previously returning the wrong trend value
-     (3287, 'u', 0.312, TO_TIMESTAMP('2023-02-06 06:00:00+00','YYYY-MM-DD HH24:MI:SS'), 0.312, 'steady')
+     (1046, 'u', 0.288, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.276, 'rising')
     $$,
     'stations_overview_mview should populate trend for river stations as falling, steady or rising');
+  SELECT results_eq(
+    'SELECT rloi_id, value, status, value_timestamp, trend FROM stations_list_mview WHERE rloi_id IN (9137) ORDER BY rloi_id',
+    $$VALUES
+     (9137, 44.097, 'Active', TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 'steady')
+    $$,
+    'stations_list_mview should populate trend for groundwater');
+  SELECT results_eq(
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (9214) ORDER BY rloi_id, direction',
+    $$VALUES
+     (9214, 'u', 1.192, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 1.215, 'falling')
+    $$,
+    'stations_overview_mview should populate trend for coastal stations');
   SELECT results_eq(
     'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (3287) ORDER BY rloi_id, direction',
     $$VALUES
