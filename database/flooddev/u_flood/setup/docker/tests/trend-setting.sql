@@ -30,6 +30,12 @@ BEGIN;
     $$,
     'stations_overview_mview should populate trend for coastal stations');
   SELECT results_eq(
+    $$SELECT river_id, value, value_timestamp, trend FROM stations_list_mview WHERE river_id = 'rainfall-North East' and telemetry_id = '075233'$$,
+    $$VALUES
+     ('rainfall-North East', 0.0, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 'n/a')
+    $$,
+    'stations_list_mview should set trend to n/a for rainfall stations');
+  SELECT results_eq(
     'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (3287) ORDER BY rloi_id, direction',
     $$VALUES
      -- 3287 is an example of a station with a batch of telemetry values under a single telemetry value parent
@@ -74,11 +80,5 @@ BEGIN;
      (9302, 78.8, 'Suspended', TO_TIMESTAMP('2023-02-06 10:00:00+00','YYYY-MM-DD HH24:MI:SS'), 'rising')
     $$,
     'stations_list_mview should populate trend for suspended and unsuspended stations');
-  SELECT results_eq(
-    $$SELECT river_id, value, value_timestamp, trend FROM stations_list_mview WHERE river_id = 'rainfall-North East' and telemetry_id = '075233'$$,
-    $$VALUES
-     ('rainfall-North East', 0.0, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 'n/a')
-    $$,
-    'stations_list_mview should set trend to n/a for rainfall stations');
 SELECT * FROM finish();
 ROLLBACK;
