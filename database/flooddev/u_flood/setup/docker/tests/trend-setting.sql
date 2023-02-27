@@ -1,5 +1,5 @@
 BEGIN;
-  SELECT plan(13);
+  SELECT plan(15);
   SELECT has_materialized_view('stations_overview_mview');
   SELECT has_column( 'stations_overview_mview', 'value' );
   SELECT has_column( 'stations_overview_mview', 'value_timestamp' );
@@ -10,16 +10,11 @@ BEGIN;
   SELECT has_column( 'stations_list_mview', 'trend' );
   SELECT results_eq('SELECT count(*) FROM stations_overview_mview', ARRAY[ 2721::BIGINT ], 'stations_list_mview result count');
   SELECT results_eq(
-    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1006,1009,1018,2116,3287) ORDER BY rloi_id, direction',
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1001,1009,1018,3287) ORDER BY rloi_id, direction',
     $$VALUES
      (1001, 'u', 1.458, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 1.556, 'falling'),
-     -- differences are to 2 dp
-     (1006, 'u', 0.441, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.44, 'steady'),
      (1009, 'u', 0.066, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.066, 'steady'),
      (1018, 'u', 1.546, TO_TIMESTAMP('2023-02-06 12:00:00+00','YYYY-MM-DD HH24:MI:SS'), 1.536, 'rising'),
-     -- 2116 is a multi-gauge station
-     (2116, 'd', -0.432, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), -0.431, 'steady'),
-     (2116, 'u', 0.106, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.106, 'steady'),
      -- 3287 is an example of a station with a batch of telemetry values under a single telemetry value parent
      -- which was previously returning the wrong trend value
      (3287, 'u', 0.312, TO_TIMESTAMP('2023-02-06 06:00:00+00','YYYY-MM-DD HH24:MI:SS'), 0.312, 'steady')
@@ -41,6 +36,20 @@ BEGIN;
      (1018, 1.546, TO_TIMESTAMP('2023-02-06 12:00:00+00','YYYY-MM-DD HH24:MI:SS'), 'rising')
     $$,
     'stations_list_mview results');
+  SELECT results_eq(
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (1006) ORDER BY rloi_id, direction',
+    $$VALUES
+     (1006, 'u', 0.441, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.44, 'steady')
+    $$,
+    'stations_overview_mview trend should be calculated based on a precision of 2 decimal places');
+  SELECT results_eq(
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (2116) ORDER BY rloi_id, direction',
+    $$VALUES
+     -- 2116 is a multi-gauge station
+     (2116, 'd', -0.432, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), -0.431, 'steady'),
+     (2116, 'u', 0.106, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.106, 'steady')
+    $$,
+    'stations_overview_mview should return trend for both upstream and downstream for a mulitgauge station');
   SELECT results_eq(
     'SELECT rloi_id, value, status, value_timestamp, trend FROM stations_list_mview WHERE rloi_id IN (9137, 9302) ORDER BY rloi_id',
     $$VALUES
