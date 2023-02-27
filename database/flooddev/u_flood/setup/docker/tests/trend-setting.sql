@@ -42,11 +42,12 @@ BEGIN;
     $$,
     'stations_list_mview results');
   SELECT results_eq(
-    'SELECT rloi_id, value, status, value_timestamp, trend FROM stations_list_mview WHERE rloi_id IN (9302) ORDER BY rloi_id',
+    'SELECT rloi_id, value, status, value_timestamp, trend FROM stations_list_mview WHERE rloi_id IN (9137, 9302) ORDER BY rloi_id',
     $$VALUES
+     (9137, 44.097, 'Active', TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 'steady'),
      (9302, 78.8, 'Suspended', TO_TIMESTAMP('2023-02-06 10:00:00+00','YYYY-MM-DD HH24:MI:SS'), 'rising')
     $$,
-    'stations_list_mview should populate trend for suspended groundwater station');
+    'stations_list_mview should populate trend for suspended and unsuspended stations');
   SELECT results_eq(
     $$SELECT river_id, value, value_timestamp, trend FROM stations_list_mview WHERE river_id = 'rainfall-North East' and telemetry_id = '075233'$$,
     $$VALUES
