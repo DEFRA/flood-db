@@ -55,7 +55,7 @@ WHERE lower(p.parameter) = 'water level'::text
 latest_value_parents AS (
 	SELECT * FROM all_value_parents WHERE all_value_parents.parent_rank = 1
 ),
-xyz AS (
+record_breached AS (
 	SELECT
 		s_1.rloi_id,
 		s_1.qualifier
@@ -116,7 +116,7 @@ SELECT s.rloi_id,
 		AND lower(latest.qualifier) !~~ '%downstream%'::text 
 		OR s.qualifier = 'd'::text 
 		AND lower(latest.qualifier) ~~ '%downstream%'::text)
-     LEFT JOIN xyz rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
+     LEFT JOIN record_breached rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
      LEFT JOIN ffoi_station fs ON fs.rloi_id = s.rloi_id
 WITH DATA;
 
