@@ -59,5 +59,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 	<!-- Release TBC -->
 	<include file="./changelog/db.changelog-4.1.0.xml" />
 	<!-- Release TBC -->
+	<include file="./changelog/db.changelog-4.2.0.xml" />
+	<!-- Release TBC -->
 	<include file="./changelog/db.changelog-4.3.0.xml" />
 </databaseChangeLog>
