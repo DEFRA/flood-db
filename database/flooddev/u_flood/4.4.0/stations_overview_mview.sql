@@ -53,7 +53,27 @@ WHERE lower(p.parameter) = 'water level'::text
 	AND lower(p.qualifier) <> 'crest tapping'::text
 ),
 latest_value_parents AS (
-	SELECT * FROM all_value_parents WHERE all_value_parents.parent_rank = 1
+	SELECT
+	  rloi_id,
+	  parameter,
+	  qualifier,
+	  units,
+	  telemetry_value_id,
+	  telemetry_value_parent_id,
+	  value,
+	  processed_value,
+    -- this is useful in debugging issues in the calculation of trend but should be commented out afterwards
+    -- previous_value,
+	  value_timestamp,
+	  error,
+	  value_rank,
+    parent_rank,
+    CASE
+      WHEN ROUND(processed_value,2) > ROUND(previous_value,2) THEN 'rising'
+      WHEN ROUND(processed_value,2) < ROUND(previous_value,2) THEN 'falling'
+      ELSE 'steady'
+    END AS trend
+  FROM all_value_parents WHERE parent_rank = 1
 ),
 record_breached AS (
 	SELECT
@@ -89,12 +109,7 @@ SELECT s.rloi_id,
     latest.processed_value,
     latest.value_timestamp,
     latest.error,
-    latest.previous_value,
-    CASE
-      WHEN ROUND(latest.processed_value,2) > ROUND(latest.previous_value,2) THEN 'rising'
-      WHEN ROUND(latest.processed_value,2) < ROUND(latest.previous_value,2) THEN 'falling'
-      ELSE 'steady'
-    END AS trend,
+    latest.trend,
     now() - latest.value_timestamp AS age,
     rb.rloi_id IS NOT NULL AS por_max_breached,
         CASE
