@@ -1,5 +1,5 @@
 BEGIN;
-  SELECT plan(18);
+  SELECT plan(19);
   SELECT has_materialized_view('stations_overview_mview');
   SELECT has_column( 'stations_overview_mview', 'value' );
   SELECT has_column( 'stations_overview_mview', 'value_timestamp' );
@@ -65,6 +65,12 @@ BEGIN;
      (1006, 'u', 0.441, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.44, 'steady')
     $$,
     'stations_overview_mview trend should be calculated based on a precision of 2 decimal places');
+  SELECT results_eq(
+    'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (7226) ORDER BY rloi_id, direction',
+    $$VALUES
+     (7226, 'u', 0.18, TO_TIMESTAMP('2023-02-06 13:15:00+00','YYYY-MM-DD HH24:MI:SS'), 0.18, 'steady')
+    $$,
+    'stations_overview_mview - calculation of trend should ignore crest topping values');
   SELECT results_eq(
     'SELECT rloi_id, direction, processed_value, value_timestamp, previous_value, trend FROM stations_overview_mview WHERE rloi_id IN (2116) ORDER BY rloi_id, direction',
     $$VALUES
