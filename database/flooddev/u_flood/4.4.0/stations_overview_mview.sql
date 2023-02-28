@@ -1,13 +1,16 @@
+
+-- dropping in reverse order of dependancy
 DROP MATERIALIZED VIEW IF EXISTS u_flood.stations_list_mview;
-DROP MATERIALIZED VIEW IF EXISTS u_flood.impact_mview;
-DROP MATERIALIZED VIEW IF EXISTS u_flood.rivers_mview;
+DROP MATERIALIZED VIEW IF EXISTS u_flood.impact_mview, u_flood.rivers_mview;
 DROP MATERIALIZED VIEW IF EXISTS u_flood.stations_overview_mview;
 
 -- View: u_flood.stations_overview_mview
 CREATE MATERIALIZED VIEW IF NOT EXISTS u_flood.stations_overview_mview
 TABLESPACE pg_default
 AS
-WITH all_values AS (
+WITH ranked_all_value_summaries AS (
+  -- all values for a station ranked by the value timestamp
+  -- this is used by subsequent CTE's to get the two most recent values
   SELECT
     tvp.rloi_id,
     tvp.parameter,
@@ -19,40 +22,19 @@ WITH all_values AS (
     tv.processed_value,
     tv.value_timestamp,
     tv.error,
-    rank() OVER (PARTITION BY tv.telemetry_value_parent_id ORDER BY tv.value_timestamp DESC) AS value_rank
+    rank() OVER (PARTITION BY tvp.rloi_id, tvp.qualifier ORDER BY tv.value_timestamp DESC, tv.telemetry_value_id DESC) AS parent_rank
   FROM sls_telemetry_value tv
     JOIN sls_telemetry_value_parent tvp ON tv.telemetry_value_parent_id = tvp.telemetry_value_parent_id
   WHERE lower(tvp.parameter) = 'water level'::text
   AND lower(tvp.units) !~~ '%deg%'::text
   AND lower(tvp.qualifier) !~~ '%height%'::text
+  AND lower(tvp.qualifier) <> 'crest tapping'::text
 ),
-latest_value AS (
-  SELECT * FROM all_values WHERE value_rank IN (1,2)
-),
-all_value_parents AS (
-  SELECT
-    p.rloi_id,
-    lv.parameter,
-    lv.qualifier,
-    lv.units,
-    lv.telemetry_value_id,
-    lv.telemetry_value_parent_id,
-    lv.value,
-    lv.processed_value,
-    lv.value_timestamp,
-    lv.error,
-    lv.value_rank,
-    -- need to understand partitions much more
-    lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id, lv.qualifier ORDER BY p.rloi_id, lv.qualifier, lv.value_timestamp ASC) AS previous_value,
-    rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
-  FROM latest_value lv
-    JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
-  WHERE lower(p.parameter) = 'water level'::text
-    AND lower(p.units) !~~ '%deg%'::text
-    AND lower(p.qualifier) !~~ '%height%'::text
-    AND lower(p.qualifier) <> 'crest tapping'::text
-),
-latest_value_parents AS (
+latest_value_summaries_with_previous_value AS (
+  -- add this intermediate CTE so we only calculate the previous value for the two most recent values.
+  -- a station may have hundreds of values so this gives a significant performance benefit.
+  -- parent rank needs to be 1 or 2 so that lag can get the two most recent values
+  -- if we just get the most recent value (i.e. parent_rank = 1) then the previous value will always be null
   SELECT
     rloi_id,
     parameter,
@@ -62,20 +44,37 @@ latest_value_parents AS (
     telemetry_value_parent_id,
     value,
     processed_value,
-    -- this is useful in debugging issues in the calculation of trend but should be commented out afterwards
-    -- previous_value,
     value_timestamp,
     error,
-    value_rank,
-    parent_rank,
+    lag(processed_value, 1) OVER (PARTITION BY rloi_id, qualifier ORDER BY rloi_id, qualifier, value_timestamp ASC) AS previous_value,
+    parent_rank
+  FROM ranked_all_value_summaries
+  WHERE parent_rank in (1,2)
+),
+latest_value_summary_with_trend AS (
+  -- in order to calculate trend from the previous value this separate CTE is needed
+  -- only need to do this for the most recent value
+  SELECT
+    rloi_id,
+    parameter,
+    qualifier,
+    units,
+    telemetry_value_id,
+    telemetry_value_parent_id,
+    value,
+    processed_value,
     CASE
       WHEN ROUND(processed_value,2) > ROUND(previous_value,2) THEN 'rising'
       WHEN ROUND(processed_value,2) < ROUND(previous_value,2) THEN 'falling'
       ELSE 'steady'
-    END AS trend
-  FROM all_value_parents WHERE parent_rank = 1
+    END AS trend,
+    value_timestamp,
+    error
+  FROM latest_value_summaries_with_previous_value
+  WHERE parent_rank = 1
 ),
 record_breached AS (
+  -- stations which have breached the value of their previous maximum level
   SELECT
     s_1.rloi_id,
     s_1.qualifier
@@ -126,7 +125,7 @@ SELECT s.rloi_id,
     s.percentile_5,
     s.percentile_95
    FROM station_split_mview s
-     LEFT JOIN latest_value_parents latest ON s.rloi_id = latest.rloi_id AND s.qualifier = s.qualifier
+     LEFT JOIN latest_value_summary_with_trend latest ON s.rloi_id = latest.rloi_id AND s.qualifier = s.qualifier
      AND (s.qualifier = 'u'::text AND lower(latest.qualifier) !~~ '%downstream%'::text
      OR s.qualifier = 'd'::text AND lower(latest.qualifier) ~~ '%downstream%'::text)
      LEFT JOIN record_breached rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
