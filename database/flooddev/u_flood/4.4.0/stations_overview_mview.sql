@@ -21,52 +21,52 @@ WITH all_values AS (
     tv.error,
     rank() OVER (PARTITION BY tv.telemetry_value_parent_id ORDER BY tv.value_timestamp DESC) AS value_rank
   FROM sls_telemetry_value tv
-  JOIN sls_telemetry_value_parent tvp ON tv.telemetry_value_parent_id = tvp.telemetry_value_parent_id
-	WHERE lower(tvp.parameter) = 'water level'::text 
-	AND lower(tvp.units) !~~ '%deg%'::text 
-	AND lower(tvp.qualifier) !~~ '%height%'::text 
+    JOIN sls_telemetry_value_parent tvp ON tv.telemetry_value_parent_id = tvp.telemetry_value_parent_id
+  WHERE lower(tvp.parameter) = 'water level'::text
+  AND lower(tvp.units) !~~ '%deg%'::text
+  AND lower(tvp.qualifier) !~~ '%height%'::text
 ),
 latest_value AS (
   SELECT * FROM all_values WHERE value_rank IN (1,2)
 ),
 all_value_parents AS (
-SELECT
-	p.rloi_id,
-	lv.parameter,
-	lv.qualifier,
-	lv.units,
-	lv.telemetry_value_id,
-	lv.telemetry_value_parent_id,
-	lv.value,
-	lv.processed_value,
-	lv.value_timestamp,
-	lv.error,
-	lv.value_rank,
-  -- need to understand partitions much more
-  lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id, lv.qualifier ORDER BY p.rloi_id, lv.qualifier, lv.value_timestamp ASC) AS previous_value,
-	rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
-FROM latest_value lv
-	JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
-WHERE lower(p.parameter) = 'water level'::text
-	AND lower(p.units) !~~ '%deg%'::text 
-	AND lower(p.qualifier) !~~ '%height%'::text
-	AND lower(p.qualifier) <> 'crest tapping'::text
+  SELECT
+    p.rloi_id,
+    lv.parameter,
+    lv.qualifier,
+    lv.units,
+    lv.telemetry_value_id,
+    lv.telemetry_value_parent_id,
+    lv.value,
+    lv.processed_value,
+    lv.value_timestamp,
+    lv.error,
+    lv.value_rank,
+    -- need to understand partitions much more
+    lag(lv.processed_value, 1) OVER (PARTITION BY p.rloi_id, lv.qualifier ORDER BY p.rloi_id, lv.qualifier, lv.value_timestamp ASC) AS previous_value,
+    rank() OVER (PARTITION BY p.rloi_id, p.qualifier ORDER BY lv.value_timestamp DESC, lv.telemetry_value_id DESC) AS parent_rank
+  FROM latest_value lv
+    JOIN sls_telemetry_value_parent p ON lv.telemetry_value_parent_id = p.telemetry_value_parent_id
+  WHERE lower(p.parameter) = 'water level'::text
+    AND lower(p.units) !~~ '%deg%'::text
+    AND lower(p.qualifier) !~~ '%height%'::text
+    AND lower(p.qualifier) <> 'crest tapping'::text
 ),
 latest_value_parents AS (
-	SELECT
-	  rloi_id,
-	  parameter,
-	  qualifier,
-	  units,
-	  telemetry_value_id,
-	  telemetry_value_parent_id,
-	  value,
-	  processed_value,
+  SELECT
+    rloi_id,
+    parameter,
+    qualifier,
+    units,
+    telemetry_value_id,
+    telemetry_value_parent_id,
+    value,
+    processed_value,
     -- this is useful in debugging issues in the calculation of trend but should be commented out afterwards
     -- previous_value,
-	  value_timestamp,
-	  error,
-	  value_rank,
+    value_timestamp,
+    error,
+    value_rank,
     parent_rank,
     CASE
       WHEN ROUND(processed_value,2) > ROUND(previous_value,2) THEN 'rising'
@@ -76,19 +76,19 @@ latest_value_parents AS (
   FROM all_value_parents WHERE parent_rank = 1
 ),
 record_breached AS (
-	SELECT
-		s_1.rloi_id,
-		s_1.qualifier
-	FROM station_split_mview s_1
-		JOIN sls_telemetry_value_parent p ON s_1.rloi_id = p.rloi_id AND (s_1.qualifier = 'u'::text AND lower(p.qualifier) !~~ '%downstream%'::text OR s_1.qualifier = 'd'::text AND lower(p.qualifier) ~~ '%downstream%'::text)
-		JOIN sls_telemetry_value v ON p.telemetry_value_parent_id = v.telemetry_value_parent_id
-	WHERE NOT v.error
-		AND v.processed_value <> 'NaN'::numeric
-		AND COALESCE(v.processed_value, 0::numeric) > s_1.por_max_value
-		AND lower(p.parameter) = 'water level'::text
-		AND lower(p.units) !~~ '%deg%'::text
-		AND lower(p.qualifier) !~~ '%height%'::text
-		AND lower(p.qualifier) <> 'crest tapping'::text
+  SELECT
+    s_1.rloi_id,
+    s_1.qualifier
+  FROM station_split_mview s_1
+    JOIN sls_telemetry_value_parent p ON s_1.rloi_id = p.rloi_id AND (s_1.qualifier = 'u'::text AND lower(p.qualifier) !~~ '%downstream%'::text OR s_1.qualifier = 'd'::text AND lower(p.qualifier) ~~ '%downstream%'::text)
+    JOIN sls_telemetry_value v ON p.telemetry_value_parent_id = v.telemetry_value_parent_id
+  WHERE NOT v.error
+    AND v.processed_value <> 'NaN'::numeric
+    AND COALESCE(v.processed_value, 0::numeric) > s_1.por_max_value
+    AND lower(p.parameter) = 'water level'::text
+    AND lower(p.units) !~~ '%deg%'::text
+    AND lower(p.qualifier) !~~ '%height%'::text
+    AND lower(p.qualifier) <> 'crest tapping'::text
     GROUP BY s_1.rloi_id, s_1.qualifier
 )
 
@@ -127,10 +127,8 @@ SELECT s.rloi_id,
     s.percentile_95
    FROM station_split_mview s
      LEFT JOIN latest_value_parents latest ON s.rloi_id = latest.rloi_id AND s.qualifier = s.qualifier
-	 	AND (s.qualifier = 'u'::text
-		AND lower(latest.qualifier) !~~ '%downstream%'::text 
-		OR s.qualifier = 'd'::text 
-		AND lower(latest.qualifier) ~~ '%downstream%'::text)
+     AND (s.qualifier = 'u'::text AND lower(latest.qualifier) !~~ '%downstream%'::text
+     OR s.qualifier = 'd'::text AND lower(latest.qualifier) ~~ '%downstream%'::text)
      LEFT JOIN record_breached rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
      LEFT JOIN ffoi_station fs ON fs.rloi_id = s.rloi_id
 WITH DATA;
