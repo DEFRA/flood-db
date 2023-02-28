@@ -56,7 +56,12 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 	<include file="./changelog/db.changelog-3.13.0.xml" />
 	<!--performance tuning 4.0.0-->
 	<include file="./changelog/db.changelog-4.0.0.xml" />
+	<!-- Release 6.0.0 Rivers list refresh -->
 	<include file="./changelog/db.changelog-4.1.0.xml" />
+	<!-- Release 6.4.0 IMTD Thresholds-->
+	<include file="./changelog/db.changelog-4.2.0.xml" />
+	<!-- Release 6.1.0 Last 5 days data only -->
 	<include file="./changelog/db.changelog-4.3.0.xml" />
+	<!-- Release 6.3.0  Trend -->
 	<include file="./changelog/db.changelog-4.4.0.xml" />
 </databaseChangeLog>
