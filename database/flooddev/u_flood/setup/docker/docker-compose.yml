@@ -6,6 +6,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+    shm_size: 1g
     environment:
       PGDATA: /pgdata
       POSTGRES_PASSWORD: postgres
