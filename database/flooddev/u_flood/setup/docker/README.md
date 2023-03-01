@@ -62,4 +62,4 @@ docker compose -f docker-compose.yml -f docker-compose-pgtap.yml run --rm db_che
 # Notes
 
 * the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost:5432/flooddev node .` (see comments above on the port number)
-* the DB backup file for backup and restore is stored on a docker volume (`backup`) as `flood-db.bak`
+* the DB backup file for backup and restore is stored in a host directory which is bind mounted (`db-backup/flood-db.bak`) by the `docker-compose-restore.yml` file
