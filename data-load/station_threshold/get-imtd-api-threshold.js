@@ -8,7 +8,7 @@ const connectionString = process.env.FLOOD_SERVICE_CONNECTION_STRING
 
 const getDBStuff = async () => {
     const pool = new Pool({ connectionString: connectionString })
-    const result = await pool.query('select rloi_id from rivers_mview where rloi_id is not null order by rloi_id asc')
+    const result = await pool.query('select distinct rloi_id from rivers_mview where rloi_id is not null order by rloi_id asc')
     console.log('Number of stations from database: ', result.rows.length)
     await pool.end()
     return result.rows
