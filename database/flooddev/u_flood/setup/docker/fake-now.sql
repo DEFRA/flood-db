@@ -1,5 +1,8 @@
 CREATE SCHEMA if not exists override;
 
+-- function to override the system now() function so that, for example, getting telemetry
+-- data using the get_telemetry() function will still work even with data from a backup
+-- made >5 days ago. The return value just needs to be set to a suitable point in time.
 CREATE OR REPLACE FUNCTION override.now()
   RETURNS timestamptz AS
 $$
@@ -11,3 +14,6 @@ END
 $$ language plpgsql;
 
 ALTER role u_flood set search_path = override, pg_catalog, u_flood, postgis, topology, public;
+
+-- to ignore the override now() function uncomment this line
+-- ALTER role u_flood set search_path = u_flood, postgis, topology, public;
