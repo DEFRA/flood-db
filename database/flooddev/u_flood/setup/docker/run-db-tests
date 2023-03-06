@@ -1,0 +1,15 @@
+# to run this script: `AWS_PROFILE=[profile name] ./run-db-tests`
+
+# get db snapshot
+aws s3 cp s3://lfw-rloi/cff-performance-test-resources/flood-db-060220231348.bak.gz db-backups/flood-db.bak.gz
+gunzip db-backups/flood-db.bak.gz
+
+# copy backup file onto docker volume
+docker compose -f docker-compose.yml -f docker-compose-restore.yml up -d
+docker compose cp db-backups/flood-db.bak flood-db:/backup/flood-db.bak
+
+# restore db from snapshot
+./refresh-db
+docker compose -f docker-compose.yml up -d
+docker compose -f docker-compose.yml -f docker-compose-pgtap.yml run --rm db_check
+

@@ -51,12 +51,7 @@ Note: The port mapping you use depends on if you have Postgres installed and run
 * the tests are dependent on a specific snapshot of the DB as contained in the backup file on s3 which is copied to the db-backups/flood-db.bak file. This will overwrite any existing db backup created by the `refresh-db` script.
 
 ```
-mkdir -p db-backups
-aws --profile [profile name here] s3 cp s3://lfw-rloi/cff-performance-test-resources/flood-db-060220231348.bak.gz db-backups/flood-db.bak.gz
-gunzip db-backups/flood-db.bak.gz
-./refresh-db
-docker compose -f docker-compose.yml up -d
-docker compose -f docker-compose.yml -f docker-compose-pgtap.yml run --rm db_check
+AWS_PROFILE=[profile name] ./run-db-tests
 ```
 
 # Notes

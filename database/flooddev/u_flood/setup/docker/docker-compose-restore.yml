@@ -3,4 +3,7 @@ version: "3.6"
 services:
   flood-db:
     volumes:
-      - ./db-backups/flood-db.bak:/backup/flood-db.bak
+      - flood-db-backup:/backup
+
+volumes:
+  flood-db-backup:
