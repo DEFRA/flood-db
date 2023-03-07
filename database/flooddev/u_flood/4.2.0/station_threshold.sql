@@ -30,3 +30,6 @@ WITH (
     OIDS = FALSE
 )
 TABLESPACE flood_tables;
+
+ALTER TABLE IF EXISTS u_flood.station_threshold
+    OWNER to u_flood;
