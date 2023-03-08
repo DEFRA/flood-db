@@ -1,0 +1,13 @@
+# to run the data load job for station IMTD thresholds:
+#  docker compose -f docker-compose.yml -f docker-compose-thresholds.yml run flood-db sh -c "cd /data-load && ./station-threshold-copy-statement"
+
+# Note: this file is a template for running any of the data load scripts on the docker db without having to have psql
+# installed locally
+
+services:
+  flood-db:
+    environment:
+     LFW_DATA_DB_CONNECTION: postgres://u_flood:secret@flood-db:5432/flooddev
+    volumes:
+      - ../../../../../data-load/station_threshold/station-threshold.csv:/data-load/station-threshold.csv
+      - ../../../../../data-load/station_threshold/station-threshold-copy-statement:/data-load/station-threshold-copy-statement
