@@ -21,7 +21,7 @@ const getDBStuff = async () => {
 const fs = require('fs')
 
 console.log('Writing CSV header')
-const csvHeader = 'station_id,fwis_code,value\n'
+const csvHeader = 'station_id,fwis_code,fwis_type,direction,value\n'
 fs.writeFile('./station-threshold.csv', csvHeader, err => {
     if (err) {
         console.log(err)
@@ -45,7 +45,8 @@ const getData = (stationId) => {
                         threshold.ThresholdType === 'FW ACTCON FAL' ||
                         threshold.ThresholdType === 'FW RES FAL'
                         ) {
-                            const csvString = `${stationId},${threshold.FloodWarningArea},${threshold.Level}\n`
+                            const direction = element.qualifier === 'Downstream Stage' ? 'd' : 'u'
+                            const csvString = `${stationId},${threshold.FloodWarningArea},${threshold.FloodWarningArea[4]},${direction},${threshold.Level}\n`
                             stationSelected = stationId
                             fs.appendFile('station-threshold.csv', csvString, (err) => {
                                 if (err) {
