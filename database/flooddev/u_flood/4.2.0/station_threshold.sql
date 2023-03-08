@@ -21,6 +21,8 @@ CREATE TABLE IF NOT EXISTS u_flood.station_threshold
     station_threshold_id bigint NOT NULL DEFAULT nextval('station_threshold_station_threshold_id_seq'::regclass),
     station_id bigint NOT NULL,
     fwis_code text NOT NULL,
+    fwis_type char NOT NULL,
+    direction char NOT NULL,
     value numeric NOT NULL,
 
     CONSTRAINT pk_station_threshold_id PRIMARY KEY (station_threshold_id)
@@ -30,6 +32,11 @@ WITH (
     OIDS = FALSE
 )
 TABLESPACE flood_tables;
+
+CREATE INDEX idx_station_threshold_station_id
+    ON u_flood.station_threshold USING btree
+    (station_id, direction COLLATE pg_catalog."default")
+TABLESPACE flood_indexes;
 
 ALTER TABLE IF EXISTS u_flood.station_threshold
     OWNER to u_flood;
