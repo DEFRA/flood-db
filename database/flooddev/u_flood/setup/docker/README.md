@@ -57,4 +57,6 @@ AWS_PROFILE=[profile name] ./run-db-tests
 # Notes
 
 * the flood-service can then be run connected to the local DB using `FLOOD_SERVICE_CONNECTION_STRING=postgres://u_flood:secret@localhost:5432/flooddev node .` (see comments above on the port number)
-* the DB backup file for backup and restore is stored in a host directory which is bind mounted (`db-backup/flood-db.bak`) by the `docker-compose-restore.yml` file
+* the DB backup file for backup and restore is stored on a docker volume (`backup`) as `flood-db.bak`
+* in order to run one of the data-load jobs without having to have psql installed then create a docker-compose-???.yml
+  file using `docker-compose-thresholds.yml` (which loads station thresholds) as a template.   
