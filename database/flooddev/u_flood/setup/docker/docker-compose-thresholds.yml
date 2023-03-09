@@ -9,5 +9,5 @@ services:
     environment:
      LFW_DATA_DB_CONNECTION: postgres://u_flood:secret@flood-db:5432/flooddev
     volumes:
-      - ../../../../../data-load/station_threshold/station-threshold.csv:/data-load/station-threshold.csv
-      - ../../../../../data-load/station_threshold/station-threshold-copy-statement:/data-load/station-threshold-copy-statement
+      - ../../../../../data-load/station_imtd_threshold/station-threshold.csv:/data-load/station-threshold.csv
+      - ../../../../../data-load/station_imtd_threshold/station-threshold-copy-statement:/data-load/station-threshold-copy-statement
