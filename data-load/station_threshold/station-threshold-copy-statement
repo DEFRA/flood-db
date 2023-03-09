@@ -1,8 +1,8 @@
 ####### If table already exists then we need to truncate the table (ie if this is not the first load)
-psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.station_threshold;"
+psql ${LFW_DATA_DB_CONNECTION} -c "TRUNCATE TABLE u_flood.station_imtd_threshold;"
 
 
 ########## Import the station-threshold.csv to the station_threshold table
 
-psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.station_threshold(station_id,fwis_code,fwis_type,direction,value) from ./station-threshold.csv with DELIMITER as  ',' CSV HEADER"
+psql ${LFW_DATA_DB_CONNECTION} -c "\copy u_flood.station_imtd_threshold(station_id,fwis_code,fwis_type,direction,value) from ./station-threshold.csv with DELIMITER as  ',' CSV HEADER"
 
