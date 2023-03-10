@@ -38,23 +38,25 @@ const getData = (stationId) => {
                 let stationSelected = ''
                 res.data[0].TimeSeriesMetaData.forEach(element => {
                     element.Thresholds.forEach(threshold => {
-                        if (threshold.ThresholdType === 'FW ACT FW' ||
-                        threshold.ThresholdType === 'FW ACTCON FW' ||
-                        threshold.ThresholdType === 'FW RES FW' ||
-                        threshold.ThresholdType === 'FW ACT FAL' ||
-                        threshold.ThresholdType === 'FW ACTCON FAL' ||
-                        threshold.ThresholdType === 'FW RES FAL'
-                        ) {
-                            const direction = element.qualifier === 'Downstream Stage' ? 'd' : 'u'
-                            const csvString = `${stationId},${threshold.FloodWarningArea},${threshold.FloodWarningArea[4]},${direction},${threshold.Level}\n`
-                            stationSelected = stationId
-                            fs.appendFile('station-threshold.csv', csvString, (err) => {
-                                if (err) {
-                                    console.log('Append file error: ', err)
-                                } else {
-                                    // Insert extra logging here if required.
-                                }
-                            })
+                        if (element.Parameter !== 'Flow') {
+                            if (threshold.ThresholdType === 'FW ACT FW' ||
+                            threshold.ThresholdType === 'FW ACTCON FW' ||
+                            threshold.ThresholdType === 'FW RES FW' ||
+                            threshold.ThresholdType === 'FW ACT FAL' ||
+                            threshold.ThresholdType === 'FW ACTCON FAL' ||
+                            threshold.ThresholdType === 'FW RES FAL'
+                            ) {
+                                const direction = element.qualifier === 'Downstream Stage' ? 'd' : 'u'
+                                const csvString = `${stationId},${threshold.FloodWarningArea},${threshold.FloodWarningArea[4]},${direction},${threshold.Level}\n`
+                                stationSelected = stationId
+                                fs.appendFile('station-threshold.csv', csvString, (err) => {
+                                    if (err) {
+                                        console.log('Append file error: ', err)
+                                    } else {
+                                        // Insert extra logging here if required.
+                                    }
+                                })
+                            }
                         }
                     })
                 })
