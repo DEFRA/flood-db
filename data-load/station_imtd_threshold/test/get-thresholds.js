@@ -1,8 +1,8 @@
 const Code = require('@hapi/code')
 const Lab = require('@hapi/lab')
 const lab = exports.lab = Lab.script()
-const response = require('./imfs.json')
-const flowResponse = require('./imfs-flow.json')
+const response = require('./data/imfs-simple-response.json')
+const flowResponse = require('./data/imfs-flow-response.json')
 const { parseThresholds, getMinThresholds } = require('../parse-thresholds')
 
 lab.experiment('parseThresholds tests', () => {
