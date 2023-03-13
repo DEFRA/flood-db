@@ -6,7 +6,7 @@ const flowResponse = require('./imfs-flow.json')
 const { parseThresholds, getMinThresholds } = require('../parse-thresholds')
 
 lab.experiment('parseThresholds tests', () => {
-  lab.test('should parse thresholds from simple response', () => {
+  lab.test('should parse thresholds from simple IMTD response', () => {
     const thresholds = parseThresholds(response[0].TimeSeriesMetaData)
     Code.expect(thresholds).to.be.an.array()
     Code.expect(thresholds.length).to.equal(3)
@@ -31,7 +31,7 @@ lab.experiment('parseThresholds tests', () => {
       }
     ])
   })
-  lab.test('should get min thresholds from simple response', () => {
+  lab.test('should get minimum thresholds from simple IMTD response', () => {
     const thresholds = getMinThresholds(response[0].TimeSeriesMetaData)
     Code.expect(thresholds).to.be.an.object()
     Code.expect(thresholds).to.equal({
@@ -49,6 +49,7 @@ lab.experiment('parseThresholds tests', () => {
     const thresholds = parseThresholds(flowResponse[0].TimeSeriesMetaData)
     Code.expect(thresholds).to.be.an.array()
     Code.expect(thresholds.length).to.equal(16)
+    // use the map to make the test more concise
     Code.expect(thresholds.map(t => `2116,${t.floodWarningArea},${t.floodWarningType},${t.direction},${t.level}`)).to.equal([
       '2116,034WAF414,A,u,1.7',
       '2116,034WAF415,A,u,2.4',
@@ -68,7 +69,7 @@ lab.experiment('parseThresholds tests', () => {
       '2116,034FWFTRSAWLEY,W,u,3.5'
     ])
   })
-  lab.test('should get min thresholds from flow response', () => {
+  lab.test('should get minimum thresholds from flow response', () => {
     const thresholds = getMinThresholds(flowResponse[0].TimeSeriesMetaData)
     Code.expect(thresholds).to.be.an.object()
     Code.expect(thresholds).to.equal({
