@@ -34,7 +34,6 @@ const getData = (stationId) => {
       .get(`https://imfs-prd1-thresholds-api.azurewebsites.net/Location/${stationId}?version=2`)
       .then(res => {
         try {
-          let stationSelected = ''
           res.data[0].TimeSeriesMetaData.forEach(element => {
             element.Thresholds.forEach(threshold => {
               if (element.Parameter !== 'Flow') {
@@ -47,7 +46,6 @@ const getData = (stationId) => {
                 ) {
                   const direction = element.qualifier === 'Downstream Stage' ? 'd' : 'u'
                   const csvString = `${stationId},${threshold.FloodWarningArea},${threshold.FloodWarningArea[4]},${direction},${threshold.Level}\n`
-                  stationSelected = stationId
                   fs.appendFile('station-threshold.csv', csvString, (err) => {
                     if (err) {
                       console.log('Append file error: ', err)
@@ -82,7 +80,6 @@ const main = async () => {
 
   const stationBuffer = []
   let stationIndex = 0
-  const allStationData = []
 
   while (stationIndex < stations.length) {
     // Limit number of concurrent calls to the IMTD api to 50
