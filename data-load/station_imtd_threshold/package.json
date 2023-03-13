@@ -5,12 +5,15 @@
   "main": "get-imtd-api-threshold.js",
   "scripts": {
     "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "unit-test": "lab -v -c -r console -o stdout -r lcov -o coverage/lcov.info",
+    "test": "npm run lint && npm run unit-test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/lab": "^25.1.2",
     "axios": "^0.27.2",
     "pg": "^8.8.0",
     "standard": "^17.0.0"
