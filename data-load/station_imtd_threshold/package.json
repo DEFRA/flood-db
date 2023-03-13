@@ -4,6 +4,7 @@
   "description": "Station threshold values imported from the IMTD API.",
   "main": "get-imtd-api-threshold.js",
   "scripts": {
+    "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "pg": "^8.8.0"
+    "pg": "^8.8.0",
+    "standard": "^17.0.0"
   }
 }
