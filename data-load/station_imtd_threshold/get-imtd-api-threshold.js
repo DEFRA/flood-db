@@ -58,7 +58,7 @@ const getData = (stationId) => {
             })
           })
         } catch (err) {
-          console.log(`Error processing station ${station.rloi_id} - ${err}`)
+          console.log(`Error processing station ${stationId} - ${err}`)
         }
         return `Successfully processed station ${stationId}`
       })
