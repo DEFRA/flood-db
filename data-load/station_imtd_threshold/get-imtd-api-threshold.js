@@ -1,7 +1,6 @@
 const axios = require('axios')
 const { parseThresholds } = require('./parse-thresholds')
 
-
 // Connect to database and generate list of station ids
 
 const { Pool } = require('pg')
