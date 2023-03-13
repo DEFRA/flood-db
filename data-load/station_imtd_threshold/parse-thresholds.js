@@ -1,11 +1,14 @@
-const thresholdTypeFilter = (threshold) => {
+const thresholdTypeFilter = (thresholdType) => {
   // https://eaflood.atlassian.net/browse/FSR-595?focusedCommentId=425005
-  return threshold.ThresholdType === 'FW ACT FW' ||
-    threshold.ThresholdType === 'FW ACTCON FW' ||
-    threshold.ThresholdType === 'FW RES FW' ||
-    threshold.ThresholdType === 'FW ACT FAL' ||
-    threshold.ThresholdType === 'FW ACTCON FAL' ||
-    threshold.ThresholdType === 'FW RES FAL'
+  const includedThresholdTypes = [
+    'FW ACT FW',
+    'FW ACTCON FW',
+    'FW RES FW',
+    'FW ACT FAL',
+    'FW ACTCON FAL',
+    'FW RES FAL'
+  ]
+  return includedThresholdTypes.includes(thresholdType)
 }
 
 const parseThresholds = (data) => {
@@ -13,7 +16,7 @@ const parseThresholds = (data) => {
     .filter(element => element.Parameter !== 'Flow')
     .map(element => {
       return element.Thresholds
-        .filter(threshold => thresholdTypeFilter(threshold))
+        .filter(threshold => thresholdTypeFilter(threshold.ThresholdType))
         .map(threshold => {
           return {
             floodWarningArea: threshold.FloodWarningArea,
