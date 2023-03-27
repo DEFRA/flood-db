@@ -10,7 +10,7 @@ AS
             CASE
                 WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
                 WHEN ss.station_type = 'G'::bpchar THEN 'Groundwater Levels'::text
-                ELSE 'orphaned-'::text || ss.wiski_river_name
+                ELSE ss.wiski_river_name
             END
         END AS river_id,
         CASE
@@ -19,7 +19,7 @@ AS
             CASE
                 WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
                 WHEN ss.station_type = 'G'::bpchar THEN 'Groundwater Levels'::text
-                ELSE 'orphaned-'::text || ss.wiski_river_name
+                ELSE ss.wiski_river_name
             END
         END AS river_name,
         CASE
@@ -100,7 +100,7 @@ AS
             CASE
                 WHEN ss.station_type = 'C'::bpchar THEN 'Sea Levels'::text
                 WHEN ss.station_type = 'G'::bpchar THEN 'Groundwater Levels'::text
-                ELSE 'orphaned-'::text || ss.wiski_river_name
+                ELSE ss.wiski_river_name
             END
         END), rs.rank, ss.external_name, ss.qualifier DESC
 WITH DATA;
