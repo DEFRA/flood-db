@@ -183,7 +183,6 @@ exminster-marshes	Exminster Marshes	Exminster Marshes
 farnley-beck	Farnley Beck	Farnley Beck
 fenay-beck	Fenay Beck	Fenay Beck
 ferring-rife	Ferring Rife	Ferring Rife
-field-drain	Field Drain	Field Drain
 finham-brook	Finham Brook	Finham Brook
 fishlake-stream	Fishlake Stream	Fishlake Stream
 fleet-drain	Fleet Drain	Fleet Drain
@@ -491,7 +490,7 @@ river-chew	River Chew	River Chew
 river-churn	River Churn	River Churn
 river-churnet	River Churnet	River Churnet
 river-clyst	River Clyst	River Clyst
-river-clyst-clyst-st-mary-tributary	River Clyst, Clyst St Mary Tributary	River Clyst, Clyst St Mary Tributary
+river-clyst-clyst-st-mary-tributary	"River Clyst, Clyst St Mary Tributary"	"River Clyst, Clyst St Mary Tributary"
 river-clywedog	River Clywedog	River Clywedog
 river-cober	River Cober	River Cober
 river-cocker	River Cocker	River Cocker
@@ -521,8 +520,7 @@ river-darwen	River Darwen	River Darwen
 river-dearne	River Dearne	River Dearne
 river-deben	River Deben	River Deben
 river-dee	River Dee	River Dee
-river-dene-gloucestershire	River Dene	River Dene (Gloucestershire)
-river-dene-warwickshire	River Dene	River Dene (Warwickshire)
+river-dene	River Dene	River Dene
 river-derwent-cumbria	River Derwent	River Derwent (Cumbria)
 river-derwent-derbyshire	River Derwent	River Derwent (Derbyshire)
 river-derwent-northumberland	River Derwent	River Derwent (Northumberland)
@@ -596,7 +594,7 @@ river-haddeo	River Haddeo	River Haddeo
 river-hamble	River Hamble	River Hamble
 river-hamps	River Hamps	River Hamps
 river-harbourne	River Harbourne	River Harbourne
-river-harbourne-harbertonford-tributary	River Harbourne, Harbertonford Tributary	River Harbourne, Harbertonford Tributary
+river-harbourne-harbertonford-tributary	"River Harbourne, Harbertonford Tributary"	"River Harbourne, Harbertonford Tributary"
 river-hart	River Hart	River Hart
 river-hayle	River Hayle	River Hayle
 river-hindburn	River Hindburn	River Hindburn
@@ -662,7 +660,6 @@ river-lugg	River Lugg	River Lugg
 river-lune	River Lune	River Lune
 river-lyd-devon	River Lyd	River Lyd (Devon)
 river-lyd-gloucestershire	River Lyd	River Lyd (Gloucestershire)
-river-lydden	River Lydden	River Lydden
 river-lymn	River Lymn	River Lymn
 river-lynher	River Lynher	River Lynher
 river-manifold	River Manifold	River Manifold
@@ -718,7 +715,7 @@ river-rase	River Rase	River Rase
 river-ravensbourne	River Ravensbourne	River Ravensbourne
 river-ravensbourne-east-branch	River Ravensbourne (East branch)	River Ravensbourne (East branch)
 river-rawthey	River Rawthey	River Rawthey
-river-ray	River Ray	River Ray
+river-ray-oxfordshire	River Ray	River Ray (Oxfordshire)
 river-rea-shropshire	River Rea	River Rea (Shropshire)
 river-rea-west-midlands	River Rea	River Rea (West Midlands)
 river-rede	River Rede	River Rede
@@ -903,7 +900,6 @@ snaizeholme-beck	Snaizeholme Beck	Snaizeholme Beck
 somborne-stream	Somborne Stream	Somborne Stream
 river-frome-somerset	River Frome	River Frome (Somerset)
 sor-brook	Sor Brook	Sor Brook
-sour-beck	Sour Beck	Sour Beck
 south-brook	South Brook	South Brook
 south-cave-beck	South Cave Beck	South Cave Beck
 south-forty-foot-drain	South Forty Foot Drain	South Forty Foot Drain
@@ -1072,3 +1068,21 @@ stocksfield-burn	Stocksfield Burn	Stocksfield Burn
 thirlmere-reservoir	Thirlmere Reservoir	Thirlmere Reservoir
 woodborough-brook	Woodborough Brook	Woodborough Brook
 wyre-river	Wyre River	Wyre River
+birkey-burn	Birkey Burn	Birkey Burn
+black-brook-lancashire	Black Brook	Black Brook (Lancashire)
+cound-brook	Cound Brook	Cound Brook
+dun-navigation-canal	Dun Navigation Canal	Dun Navigation Canal
+golden-brook	Golden Brook	Golden Brook
+kenwater	Kenwater	Kenwater
+kings-sedgemoor-drain	Kings Sedgemoor Drain	Kings Sedgemoor Drain
+loftus-beck	Loftus Beck	Loftus Beck
+uddens-water	Uddens Water	Uddens Water
+mor-brook	Mor Brook	Mor Brook
+newlyn-coombe-river	Newlyn Coombe River	Newlyn Coombe River
+oxton-dumble	Oxton Dumble	Oxton Dumble
+pudding-brook	Pudding Brook	Pudding Brook
+river-clun	River Clun	River Clun
+river-iwerne	River Iwerne	River Iwerne
+river-ray-wiltshire	River Ray	River Ray (Wiltshire)
+river-trym	River Trym	River Trym
+tottle-brook	Tottle Brook	Tottle Brook
