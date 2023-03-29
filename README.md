@@ -83,7 +83,10 @@ After receiving updated 'river-stations.csv' and "rivers.csv"
 
 Convert rivers.csv to .tsv
 
-ensure columns in files are in the following order "river-stations.csv" (slug,station_id,order), "rivers.tsv" (slug,local_name,qualified_name)
+ensure columns in files are in the following order:
+
+"river-stations.csv" (slug,station_id,order), 
+"rivers.tsv" (slug,local_name,qualified_name)
 
 replace existing files located in data-load/river_stations
 
