@@ -77,10 +77,14 @@ All of the details for loading these data sets can be found in the appropriate j
 
 Following these data sets, lfw-data data integration tier will need to be deployed and running to feed data into the database. station-process will probably need running as a one off to load the station context data.
 
-# Updating Orphaned Stations in River Stations list
+# Updating Rivers and Stations in River Stations list
 
-After receiving updated 'river-stations.csv'
+After receiving updated 'river-stations.csv' and "rivers.csv"
 
-replace existing file located in data-load/river_stations
+Convert rivers.csv to .tsv
+
+ensure columns in files are in the following order "river-stations.csv" (slug,station_id,order), "rivers.tsv" (slug,local_name,qualified_name)
+
+replace existing files located in data-load/river_stations
 
 to apply to environment run job LFW_DEV_99_LOAD_RIVER_STATIONS in the LFW_DEV_MISC_JOBS folder in Jenkins
