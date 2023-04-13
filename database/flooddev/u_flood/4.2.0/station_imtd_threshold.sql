@@ -18,7 +18,7 @@ ALTER SEQUENCE u_flood.station_imtd_threshold_station_threshold_id_seq
 
 CREATE TABLE IF NOT EXISTS u_flood.station_imtd_threshold
 (
-    station_threshold_id bigint NOT NULL DEFAULT nextval('station_threshold_station_threshold_id_seq'::regclass),
+    station_threshold_id bigint NOT NULL DEFAULT nextval('station_imtd_threshold_station_threshold_id_seq'::regclass),
     station_id bigint NOT NULL,
     fwis_code text NOT NULL,
     fwis_type char NOT NULL,
