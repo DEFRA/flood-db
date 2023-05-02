@@ -13,9 +13,10 @@ Briefly, the loading process flow is as follows.  Threshold data for each statio
 
 2.  Then execute the data import script:
 
-    `node get-imtd-api-threshold.js`
+    `FLOOD_SERVICE_CONNECTION_STRING={DB Connection} node get-imtd-api-threshold.js`
 
     The node/js script `get-imtd-api-thresholds.js` issues http GET requests to the IMTD API for each station currently in the `rivers_mview` table. Threshold values for the station are then extracted from the returned JSON response and written to the csv file - `station-threshold.csv`.
+    The DB connection should typically be for prodb/prodg and should be the one which is not currently serving live traffic.
 
 
 3.  Check the `station-threshold.csv` file produced in step 2 has a valid header and rows look valid. Then merge the file into the `flood-db dev` branch
