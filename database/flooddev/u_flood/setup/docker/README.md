@@ -20,6 +20,8 @@ Without the -d option the DB image will be built from the last DB backup.
 
 `./refresh-db`
 
+Note: the refresh-db script will also apply any outstanding liquibase scripts which are missing from the restored DB. See also the Liquibase section below.
+
 # Starting the DB after the refresh
 
 The DB needs starting after the refresh using `docker compose up`.
@@ -41,11 +43,20 @@ As this file is specific to your local environment it should not be committed to
 
 Note: The port mapping you use depends on if you have Postgres installed and running on your machine.  If you do then, to avoid clashing port numbers, the port mapping should not be "5432:5432" (e.g. "5433:5432", the server name in the connection string would then be `localhost:5433`).  If not then the mapping can be as above (i.e. "5432:5432" ).
 
+# Liquibase
+
+The database is updated using liquibase.
+
+  * A simple self-contained example of a liquibase update would be [PR-66](https://github.com/DEFRA/flood-db/pull/66)
+  * Scripts can be applied without having to do a full restore using `docker compose -f docker-compose.yml -f docker-compose-override.yml  -f docker-compose-liquibase.yml run --rm liquibase`
+  * In the integration and production environments the Jenkins job `LFW_{STAGE}_02_UPDATE_DATABASE` will apply liquibase scripts  
+
+
 # To run the pgTap DB tests
 
 [https://pgtap.org/]
 
-## Notes
+## PGTap notes
 
 * the tests are developer tests in that they (currently) only run locally on a developer machine
 * the tests are dependent on a specific snapshot of the DB as contained in the backup file on s3 which is copied to the db-backups/flood-db.bak file. This will overwrite any existing db backup created by the `refresh-db` script.

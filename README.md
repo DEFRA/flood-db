@@ -4,6 +4,8 @@ This is the database configuration for the service refresh application for the d
 
 The database source control is based around liquibase https://www.liquibase.org/
 
+Note: a lot of the detail below is redundant if you are running the DB locally using docker. The instructions in [this](database/flooddev/u_flood/setup/docker/README.md) readme are probably more relevant.
+
 # Pre requisites
 
 The database has been copied from the production live flood warnings application, so either a snapshot of that database is required or the installation instructions need following
