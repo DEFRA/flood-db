@@ -13,7 +13,7 @@ LFW_{stage}_99_ENGLAND_10k
 
 # 4
 LFW_{stage}_02_UPDATE_DATABASE
-###### NOTE LFW_{stage}_02_UPDATE_DATABASE needs running twice, first time will fail, 2nd should pass. some weird race condition that can't work around.
+###### NOTE LFW_{stage}_02_UPDATE_DATABASE may need running twice, first time will fail, 2nd should pass. some weird race condition that can't work around.
 
 # 5
 LFW_{stage}_99_LOAD_FLOOD_ALERT_AREAS
