@@ -4,7 +4,7 @@ xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:ora="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-	<changeSet author="nwycherley" id="4.9.0-1">
-		<sqlFile path="./4.9.0/imtd_add_column.sql" splitStatements="false"/>
+	<changeSet author="nwycherley" id="4.9.0">
+		<sqlFile path="./4.9.0/display_time_series_table.sql" splitStatements="false"/>
 	</changeSet>
 </databaseChangeLog>
