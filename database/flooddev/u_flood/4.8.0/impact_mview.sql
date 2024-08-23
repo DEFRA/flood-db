@@ -21,7 +21,7 @@ AS
     s.processed_value AS telemetrylatest,
     s.processed_value >= i.value AS telemetryactive,
     ffoi.value AS forecastmax,
-    sdts.display_time_series AS forecast -- Changed this line
+    sdts.display_time_series AS forecast
    FROM impact i
      JOIN telemetry_context tc ON i.rloi_id = tc.rloi_id
      LEFT JOIN ( SELECT DISTINCT ON (stations_overview_mview.rloi_id) stations_overview_mview.rloi_id,
@@ -49,7 +49,7 @@ AS
             stations_overview_mview.percentile_95
            FROM stations_overview_mview) s ON s.rloi_id = i.rloi_id AND s.direction = 'u'::text
      LEFT JOIN ffoi_max ffoi ON ffoi.telemetry_id = s.telemetry_id
-     LEFT JOIN station_display_time_series sdts ON sdts.station_id = s.rloi_id AND sdts.direction = s.qualifier  -- Changed this line
+     LEFT JOIN station_display_time_series sdts ON sdts.station_id = s.rloi_id AND sdts.direction = s.qualifier
   WHERE tc.status = 'Active'::text
 WITH DATA;
 
