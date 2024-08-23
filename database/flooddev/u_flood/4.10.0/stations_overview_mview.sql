@@ -113,7 +113,7 @@ SELECT s.rloi_id,
             WHEN NOT latest.error AND latest.processed_value <> 'NaN'::numeric AND COALESCE(latest.processed_value, 0::numeric) >= s.percentile_5 THEN true
             ELSE false
         END AS at_risk,
-    sdts.display_time_series AS forecast,
+    sdts.display_time_series AS forecast, -- Changed this line
         CASE
             WHEN s.station_type = 'C'::bpchar THEN ''::text
             WHEN latest.processed_value < s.percentile_95 THEN 'low'::text
@@ -127,7 +127,7 @@ SELECT s.rloi_id,
      AND (s.qualifier = 'u'::text AND lower(latest.qualifier) !~~ '%downstream%'::text
      OR s.qualifier = 'd'::text AND lower(latest.qualifier) ~~ '%downstream%'::text)
      LEFT JOIN record_breached rb ON rb.rloi_id = s.rloi_id AND rb.qualifier = s.qualifier
-     LEFT JOIN station_display_time_series sdts ON sdts.station_id = s.rloi_id AND sdts.direction = s.qualifier
+     LEFT JOIN station_display_time_series sdts ON sdts.station_id = s.rloi_id AND sdts.direction = s.qualifier -- Changed this line
 WITH DATA;
 
 ALTER TABLE IF EXISTS u_flood.stations_overview_mview
