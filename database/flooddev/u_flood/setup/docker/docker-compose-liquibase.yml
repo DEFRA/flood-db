@@ -8,6 +8,8 @@ services:
         condition: service_healthy
     volumes:
       - ../..:/liquibase/u_flood
+    networks:
+      cff-internal:
     command: [ 
       "--username=postgres",
       "--password=postgres",
@@ -19,3 +21,6 @@ services:
       "--searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood",
       "update"
     ]
+
+networks:
+  cff-internal:

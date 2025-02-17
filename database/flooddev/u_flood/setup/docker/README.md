@@ -51,6 +51,22 @@ The database is updated using liquibase.
   * Scripts can be applied without having to do a full restore using `docker compose -f docker-compose.yml -f docker-compose-override.yml  -f docker-compose-liquibase.yml run --rm liquibase`
   * In the integration and production environments the Jenkins job `LFW_{STAGE}_02_UPDATE_DATABASE` will apply liquibase scripts  
 
+# Telemetry data refresh
+
+Since we are not currently running the flood data lambda's then the telemetry
+data is not updated and the data shown on the maps will get progressively more
+stale. Eventually, once there is no data for the last 5 days, the station will
+be flagged as having a data problem and no graph will be displayed.
+
+In order to resolve this, and to avoid a time consuming database refresh from
+one of the environments, there is a function called adjust_telemetry_timestamp
+which will identify the latest telemetry timestamp and correct it to make it now
+and also adjust all other timestamps by the same amount making the telemetry
+data appear current.
+
+This can be executed in the running flood-db container:
+
+`docker compose exec flood-db psql postgres://u_flood:secret@flood-db:5432/flooddev -c "SELECT adjust_telemetry_timestamps();"`
 
 # To run the pgTap DB tests
 
