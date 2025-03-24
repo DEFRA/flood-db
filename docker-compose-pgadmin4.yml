@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    ports:
+      - "8080:80"  # Map port 5050 on host to port 80 inside container
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=neil.mclaughlin@defra.gov.uk
+      - PGADMIN_DEFAULT_PASSWORD=secret
+    volumes:
+      - ~/.config/pgadmin4:/var/lib/pgadmin  # Mount a local directory to persist pgAdmin data

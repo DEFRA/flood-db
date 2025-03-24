@@ -1,0 +1,73 @@
+#!/bin/bash
+
+function doTimings() {
+  ID=$1
+  echo "Telemetry value count: $(curl -s http://localhost:8050/station/$1/u/telemetry | jq '.[] | .ts' | wc -l)"
+  curl -s -o /dev/null -w "Station API:  Response status: %{http_code} Connect time: %{time_connect} Time to first byte: %{time_starttransfer} Total time: %{time_total}\n" http://localhost:8050/station/$1/u/telemetry 
+  curl -s -o /dev/null -w "Station Page: Response status: %{http_code} Connect time: %{time_connect} Time to first byte: %{time_starttransfer} Total time: %{time_total}\n" http://localhost:3009/station/$1
+}
+
+function forceCacheFlush() {
+  # force restart the server to empty cache
+  echo "Flushing cache"
+  touch ../../../../../../flood-app/server/index.js 
+  sleep 10
+}
+
+function checkServiceRunning() {
+  SERVICE=$1
+  COUNT=$(ps -ef | grep -e "$SERVICE.*nodemon" | grep -v grep | wc -l) 
+  if [ $COUNT -ne 1 ]; then
+    echo "$SERVICE not running"
+    exit 1
+  fi
+  echo "$SERVICE is running"
+}
+
+function refreshMaterializedViews() {
+  # these are the views refreshed by the rloi-refresh lambda
+  views=(
+    telemetry_context_mview
+    station_split_mview
+    stations_overview_mview
+    impact_mview
+    rivers_mview
+    rainfall_stations_mview
+    stations_list_mview
+  )
+  for view in "${views[@]}"; do 
+    REFRESH_TIME=$(psql postgres://u_flood:secret@localhost:5433/flooddev -q -c "\timing on"  -c "REFRESH MATERIALIZED VIEW u_flood.${view} WITH DATA;")
+    echo "refreshing view $view: $REFRESH_TIME"
+  done
+}
+
+function getSizes() {
+  DB_SIZE=$(psql postgres://u_flood:secret@localhost:5433/flooddev -t -c "SELECT pg_size_pretty(pg_database_size('flooddev'));")
+  TV_SIZE=$(psql postgres://u_flood:secret@localhost:5433/flooddev -t -c "SELECT pg_size_pretty(pg_relation_size('u_flood.sls_telemetry_value'));")
+  TVP_SIZE=$(psql postgres://u_flood:secret@localhost:5433/flooddev -t -c "SELECT pg_size_pretty(pg_relation_size('u_flood.sls_telemetry_value_parent'))")
+  echo "Sizes - DB: $DB_SIZE TV: $TV_SIZE, TVP: $TVP_SIZE" 
+}
+
+checkServiceRunning flood-app
+checkServiceRunning flood-service
+
+forceCacheFlush
+
+echo "DB hit"
+doTimings $1
+echo "Cache hit"
+doTimings $1
+getSizes
+refreshMaterializedViews
+
+echo "Replicating data, it will take a few minutes"
+psql postgres://u_flood:secret@localhost:5433/flooddev -c "\timing on" -f ./data-replicate.sql
+
+forceCacheFlush
+
+echo "DB hit"
+doTimings $1
+echo "Cache hit"
+doTimings $1
+getSizes
+refreshMaterializedViews

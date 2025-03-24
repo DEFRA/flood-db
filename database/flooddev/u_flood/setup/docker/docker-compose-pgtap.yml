@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   db_check:
     image: hbpmip/pgtap:0.96.0-5

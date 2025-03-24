@@ -1,0 +1,8 @@
+services:
+  flood-db:
+    environment:
+     LFW_DATA_DB_CONNECTION: postgres://u_flood:secret@flood-db:5432/flooddev
+    volumes:
+      - ../../../../../data-load/rivers/rivers.tsv:/db-init-scripts/rivers.tsv
+      - ../../../../../data-load/rivers/river-stations.csv:/db-init-scripts/river-stations.tsv
+      - ../../../../../data-load/rivers/rivers-copy-statement:/db-init-scripts/rivers-copy-statement
