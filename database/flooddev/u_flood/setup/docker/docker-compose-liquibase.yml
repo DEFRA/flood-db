@@ -1,26 +1,20 @@
-version: "3"
-
 services:
   liquibase:
-    image: liquibase/liquibase
+    build:
+      context: .
+      dockerfile: Dockerfile.liquibase
     depends_on:
       flood-db:
         condition: service_healthy
     volumes:
       - ../..:/liquibase/u_flood
+      - ./wait-for-postgis.sh:/wait-for-postgis.sh
     networks:
-      cff-internal:
-    command: [ 
-      "--username=postgres",
-      "--password=postgres",
-      "--defaultSchemaName=u_flood",
-      "--driver=org.postgresql.Driver",
-      "--changeLogFile=db.changelog-master.xml",
-      "--contexts=dev",
-      "--url=jdbc:postgresql://flood-db:5432/flooddev",
-      "--searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood",
-      "update"
-    ]
-
-networks:
-  cff-internal:
+      - cff-internal
+    entrypoint: /bin/bash
+    command: >
+      -c "
+        chmod +x /wait-for-postgis.sh && \
+        /wait-for-postgis.sh && \
+        liquibase --username=u_flood --password=secret --defaultSchemaName=u_flood --liquibaseSchemaName=u_flood --driver=org.postgresql.Driver --changeLogFile=db.changelog-master.xml --contexts=dev --url=jdbc:postgresql://flood-db:5432/flooddev --searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood update
+      "
