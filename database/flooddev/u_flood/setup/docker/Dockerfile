@@ -1,4 +1,4 @@
-FROM postgis/postgis:13-3.1
+FROM postgis/postgis:15-3.5
 ENV PATH=${PATH}:/scripts
 COPY docker/db_setup.sh /docker-entrypoint-initdb.d/db_setup.sh
 WORKDIR /db-init-scripts

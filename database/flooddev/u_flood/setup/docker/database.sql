@@ -8,6 +8,4 @@ CREATE DATABASE flooddev
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
-ALTER DATABASE flooddev SET search_path = "$user", public, postgis, topology;
-
-
+ALTER DATABASE flooddev SET search_path = u_flood, public, postgis, topology;
