@@ -16,5 +16,5 @@ services:
       -c "
         chmod +x /wait-for-postgis.sh && \
         /wait-for-postgis.sh && \
-        liquibase --username=u_flood --password=secret --defaultSchemaName=u_flood --liquibaseSchemaName=u_flood --driver=org.postgresql.Driver --changeLogFile=db.changelog-master.xml --contexts=dev --url=jdbc:postgresql://flood-db:5432/flooddev --searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood update
+        liquibase --username=u_flood --password=secret --defaultSchemaName=u_flood --liquibaseSchemaName=u_flood --driver=org.postgresql.Driver --changeLogFile=db.changelog-master.xml --contexts=local --url=jdbc:postgresql://flood-db:5432/flooddev --searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood update
       "
