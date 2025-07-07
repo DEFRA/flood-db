@@ -4,7 +4,7 @@ xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns:ora="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-	<changeSet id="0-set-search-path" author="liquibase" runAlways="true" runOnChange="true">
+	<changeSet id="0-set-search-path" author="liquibase" runAlways="true" runOnChange="true" context="dev">
 		<sql>SET search_path = u_flood, public, postgis, topology;</sql>
 	</changeSet>
 	<changeSet author="tjmason" id="1">

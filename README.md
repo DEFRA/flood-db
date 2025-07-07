@@ -53,9 +53,9 @@ cd database/flooddev/u_flood/setup/docker
 ./populate.sh <remote_postgres_url>
 ```
 
-### Changelog 5.0.0
+### changelog-local
 
-This changelog contains SQL statements that was missing between local and remote, i.e. the discrepancies after running changelogs 0.4.0 and 4.9.0.
+This changelog contains SQL tables that are missing between local and remote.
 
 ### Files Added
 
