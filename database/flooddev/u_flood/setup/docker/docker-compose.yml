@@ -5,6 +5,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+    image: flood-db
     shm_size: 1g
     platform: linux/amd64
     environment:
