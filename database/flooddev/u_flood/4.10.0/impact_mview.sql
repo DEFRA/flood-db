@@ -21,7 +21,7 @@ AS
     s.processed_value AS telemetrylatest,
     s.processed_value >= i.value AS telemetryactive,
     ffoi.value AS forecastmax,
-    sdts.display_time_series AS forecast
+    ffoi.value >= i.value AND sdts.display_time_series IS NOT NULL AS forecastactive
    FROM impact i
      JOIN telemetry_context tc ON i.rloi_id = tc.rloi_id
      LEFT JOIN ( SELECT DISTINCT ON (stations_overview_mview.rloi_id) stations_overview_mview.rloi_id,

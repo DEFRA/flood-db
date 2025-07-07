@@ -25,12 +25,12 @@ The data set needs to be updated at the same time as the target area data load i
 	a.  Run ./dump_station_ta_8km.sh in terminal
 		If following error received: 
 
-		pg_dump: error: server version: 13.4; pg_dump version: 12.11 (Ubuntu 12.11-0ubuntu0.20.04.1)
+		pg_dump: error: server version: 15.10; pg_dump version: 13.21 (Ubuntu 13.21-1.pgdg24.04+1)
 		pg_dump: error: aborting because of server version mismatch
 
 		Prefix the run command as follows:
 
-		/usr/lib/postgresql/13/bin/pg_dump
+		/usr/lib/postgresql/15/bin/pg_dump
 
 	b.  Check that $FLOOD_SERVICE_CONNECTION_STRING is correctly set to database
 	c.  Exports file to this directory called station_ta_8km.sql
