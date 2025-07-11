@@ -15,7 +15,13 @@ To create `flooddev` database from scratch, do the following:
 ```bash
 cd database/flooddev/u_flood/setup/docker
 
-docker compose -f docker-compose.yml -f docker-compose-liquibase.yml up --build
+# do this to allow docker to execute the file
+chmod +x ./wait-for-postgis.sh
+
+docker compose \
+  -f docker-compose.yml \
+  -f docker-compose-liquibase.yml \
+  up --build
 ```
 
 This will create the `flood-db` and `liquibase` containers and run through the commands to setup the database, permissions and the tables.
