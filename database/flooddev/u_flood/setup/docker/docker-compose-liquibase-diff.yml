@@ -1,0 +1,19 @@
+services:
+  liquibase-diff:
+    image: liquibase/liquibase
+    env_file:
+      - .env
+    depends_on:
+      flood-db:
+        condition: service_healthy
+    networks:
+      - cff-internal
+    command: >
+      --url=jdbc:postgresql://flood-db:5432/${DB_NAME}
+      --username=u_flood
+      --password=secret
+      --referenceUrl=jdbc:postgresql://${REMOTE_DB_URL}
+      --referenceUsername=${REMOTE_DB_USERNAME}
+      --referencePassword=${REMOTE_DB_PASSWORD}
+      --changeLogFile=changelog/diff-output.xml
+      diffChangeLog
