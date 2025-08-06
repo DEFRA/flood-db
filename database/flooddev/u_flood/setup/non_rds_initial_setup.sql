@@ -1,30 +1,41 @@
-﻿-- Schema: u_flood
+﻿-- Connect to the database
+\connect :"DB_NAME"
 
---DROP SCHEMA u_flood;
+-- === Step 1: Create schemas ===
+CREATE SCHEMA IF NOT EXISTS u_flood AUTHORIZATION u_flood;
+COMMENT ON SCHEMA u_flood IS 'Flood schema';
 
-CREATE SCHEMA u_flood
-  AUTHORIZATION u_flood;
+CREATE SCHEMA IF NOT EXISTS postgis AUTHORIZATION postgres;
+CREATE SCHEMA IF NOT EXISTS topology AUTHORIZATION postgres;
 
-COMMENT ON SCHEMA u_flood
-  IS 'Flood schema';
+-- === Step 2: Set search_path to avoid defaulting to u_flood during extension creation ===
+SET search_path = postgis;
 
--- Schema: postgis
+-- === Step 3: Install PostGIS in 'postgis' schema ===
+CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA postgis;
 
--- DROP SCHEMA postgis;
+-- === Step 4: Install postgis_topology in 'topology' schema ===
+CREATE EXTENSION IF NOT EXISTS postgis_topology WITH SCHEMA topology;
 
-CREATE SCHEMA postgis
-  AUTHORIZATION postgres;
+-- === Step 5: Grant schema-level usage ===
+GRANT USAGE ON SCHEMA u_flood TO u_flood;
+GRANT USAGE ON SCHEMA public TO u_flood;
+GRANT USAGE ON SCHEMA postgis TO u_flood;
+GRANT USAGE ON SCHEMA topology TO u_flood;
 
-GRANT ALL ON SCHEMA postgis TO u_flood;
+-- === Step 6: Grant object-level privileges ===
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO u_flood;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA u_flood TO u_flood;
 
-CREATE EXTENSION IF NOT EXISTS postgis;
-CREATE EXTENSION IF NOT EXISTS postgis_topology;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO u_flood;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA u_flood TO u_flood;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA postgis TO u_flood;
 
-ALTER DATABASE flooddev SET search_path = "$user", public, postgis, topology;
+-- === Step 7: Default privileges for new objects ===
+ALTER DEFAULT PRIVILEGES IN SCHEMA u_flood
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO u_flood;
+ALTER DEFAULT PRIVILEGES IN SCHEMA postgis GRANT EXECUTE ON FUNCTIONS TO u_flood;
 
-UPDATE pg_extension 
-  SET extrelocatable = TRUE 
-    WHERE extname = 'postgis';
- 
-ALTER EXTENSION postgis 
-  SET SCHEMA postgis;
+-- === Step 8: Set search paths ===
+ALTER DATABASE :"DB_NAME" SET search_path = u_flood, public, postgis, topology;
+ALTER ROLE u_flood SET search_path = u_flood, public, postgis, topology;

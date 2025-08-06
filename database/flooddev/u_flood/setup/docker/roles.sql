@@ -1,57 +1,53 @@
--- Additional initialistation setup for use when running the db in a postgis docker container
--- This script was created empirically by adding role creation statements using pgAdmin everytime 
--- a 'role not found' error occured on DB restore until there were no more errors.
--- pg_dumpall would be a better way to go but the only credentials dev have access to are for the
--- u_flood user not postgres which generates a permissions error when trying to dump roles
-
--- there is almost certainly a better ways of doing this
-
 \set ON_ERROR_STOP 0
 
--- Role: rds_replication
--- DROP ROLE IF EXISTS rds_replication;
+-- === Step 1: Create RDS-style system roles (simulated locally) ===
 
-CREATE ROLE rds_replication WITH
-  NOLOGIN
-  NOSUPERUSER
-  INHERIT
-  NOCREATEDB
-  NOCREATEROLE
-  NOREPLICATION;
+DO $$
+BEGIN
+  CREATE ROLE rds_replication NOLOGIN;
+EXCEPTION WHEN duplicate_object THEN
+  RAISE NOTICE 'Role rds_replication already exists.';
+END
+$$;
 
--- Role: rds_password
--- DROP ROLE IF EXISTS rds_password;
+DO $$
+BEGIN
+  CREATE ROLE rds_password NOLOGIN;
+EXCEPTION WHEN duplicate_object THEN
+  RAISE NOTICE 'Role rds_password already exists.';
+END
+$$;
 
-CREATE ROLE rds_password WITH
-  NOLOGIN
-  NOSUPERUSER
-  INHERIT
-  NOCREATEDB
-  NOCREATEROLE
-  NOREPLICATION;
+DO $$
+BEGIN
+  CREATE ROLE rds_superuser NOLOGIN;
+EXCEPTION WHEN duplicate_object THEN
+  RAISE NOTICE 'Role rds_superuser already exists.';
+END
+$$;
 
-CREATE ROLE rds_superuser WITH
-  NOLOGIN
-  NOSUPERUSER
-  INHERIT
-  NOCREATEDB
-  NOCREATEROLE
-  NOREPLICATION;
+-- Grant RDS typical role set to rds_superuser
+GRANT pg_monitor, pg_signal_backend, rds_password, rds_replication TO rds_superuser;
 
-GRANT pg_monitor, pg_signal_backend, rds_password, rds_replication TO rds_superuser WITH ADMIN OPTION;
+-- === Step 2: Create u_flood user role (like RDS) ===
 
--- Role: u_flood
--- DROP ROLE IF EXISTS u_flood;
+DO $$
+BEGIN
+  CREATE ROLE u_flood WITH
+    LOGIN
+    NOSUPERUSER
+    INHERIT
+    CREATEDB
+    CREATEROLE
+    NOREPLICATION
+    PASSWORD 'secret';
+EXCEPTION WHEN duplicate_object THEN
+  RAISE NOTICE 'Role u_flood already exists.';
+END
+$$;
 
-CREATE ROLE u_flood WITH
-  LOGIN
-  NOSUPERUSER
-  INHERIT
-  CREATEDB
-  CREATEROLE
-  NOREPLICATION
-  VALID UNTIL 'infinity';
-
+-- Grant rds_superuser to u_flood (as RDS allows via IAM policies or grants)
 GRANT rds_superuser TO u_flood;
 
+-- Set role's default search path like in RDS
 ALTER ROLE u_flood SET search_path TO u_flood, postgis, topology, public;

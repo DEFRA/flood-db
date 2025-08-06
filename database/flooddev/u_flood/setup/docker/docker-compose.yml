@@ -1,17 +1,19 @@
-version: "3.6"
 name: cff
 
 services:
   flood-db:
+    ports:
+      - "5433:5432"
     build:
       context: ..
       dockerfile: docker/Dockerfile
     image: flood-db
     shm_size: 1g
+    platform: linux/amd64
+    env_file:
+      - .env
     environment:
       PGDATA: /pgdata
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
     volumes:
       - pgdata:/pgdata
       - wiyby:/wiyby
@@ -32,3 +34,4 @@ volumes:
 
 networks:
   cff-internal:
+    driver: bridge

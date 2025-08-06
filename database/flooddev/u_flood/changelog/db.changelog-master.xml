@@ -67,6 +67,10 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 	<include file="./changelog/db.changelog-4.5.0.xml" />
 	<include file="./changelog/db.changelog-4.6.0.xml" />
 	<include file="./changelog/db.changelog-4.7.0.xml" />
-	<include file="./changelog/db.changelog-4.8.0.xml" />
 	<include file="./changelog/db.changelog-4.9.0.xml" />
+	<include file="./changelog/db.changelog-4.8.0.xml" />
+	<include file="./changelog/db.changelog-4.10.0.xml" />
+
+	<!-- Local only -->
+	<include file="./changelog/db.changelog-local.xml"/>
 </databaseChangeLog>
