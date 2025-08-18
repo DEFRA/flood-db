@@ -1,6 +1,6 @@
 -- View: u_flood.fwa_mview
 
-DROP MATERIALIZED VIEW u_flood.fwa_mview;
+DROP MATERIALIZED VIEW IF EXISTS u_flood.fwa_mview;
 
 CREATE MATERIALIZED VIEW u_flood.fwa_mview
 TABLESPACE pg_default

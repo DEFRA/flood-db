@@ -4,6 +4,8 @@
 
 -- Select * from u_flood.station_split_mview where rloi_id = 7206 and qualifier = 'd'
 
+SET search_path = u_flood, postgis, topology, public;
+
 CREATE MATERIALIZED VIEW u_flood.station_split_mview AS 
 
 SELECT *
