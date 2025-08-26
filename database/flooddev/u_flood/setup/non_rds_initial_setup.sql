@@ -7,6 +7,7 @@ COMMENT ON SCHEMA u_flood IS 'Flood schema';
 
 CREATE SCHEMA IF NOT EXISTS postgis AUTHORIZATION postgres;
 CREATE SCHEMA IF NOT EXISTS topology AUTHORIZATION postgres;
+CREATE SCHEMA IF NOT EXISTS river_topo AUTHORIZATION postgres;
 
 -- === Step 2: Set search_path to avoid defaulting to u_flood during extension creation ===
 SET search_path = postgis;
@@ -22,6 +23,7 @@ GRANT USAGE ON SCHEMA u_flood TO u_flood;
 GRANT USAGE ON SCHEMA public TO u_flood;
 GRANT USAGE ON SCHEMA postgis TO u_flood;
 GRANT USAGE ON SCHEMA topology TO u_flood;
+GRANT USAGE ON SCHEMA river_topo TO u_flood;
 
 -- === Step 6: Grant object-level privileges ===
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO u_flood;

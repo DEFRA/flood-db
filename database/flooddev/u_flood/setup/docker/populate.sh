@@ -16,7 +16,7 @@ if [ -z "$REMOTE_DB_URL" ]; then
 fi
 
 # -- Wait for DB to be ready --
-echo "Waiting for local flooddev database to be available..."
+echo "Waiting for local $LOCAL_DB database to be available..."
 until docker compose exec -T $LOCAL_CONTAINER_NAME \
   psql -U $LOCAL_USER -d $LOCAL_DB -c "SELECT 1;" > /dev/null 2>&1; do
   sleep 2

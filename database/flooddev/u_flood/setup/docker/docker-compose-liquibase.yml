@@ -17,5 +17,6 @@ services:
     command: >
       -c "
         /wait-for-postgis.sh && \
+        liquibase --username=${DB_USER} --password=${DB_PASSWORD} --defaultSchemaName=u_flood --liquibaseSchemaName=u_flood --driver=org.postgresql.Driver --changeLogFile=db.changelog-master.xml --contexts=local --url=jdbc:postgresql://${DB_HOST}:5432/${DB_NAME} --searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood clearCheckSums && \
         liquibase --username=${DB_USER} --password=${DB_PASSWORD} --defaultSchemaName=u_flood --liquibaseSchemaName=u_flood --driver=org.postgresql.Driver --changeLogFile=db.changelog-master.xml --contexts=local --url=jdbc:postgresql://${DB_HOST}:5432/${DB_NAME} --searchPath=/liquibase/u_flood/changelog,/liquibase/u_flood update
       "
