@@ -2,6 +2,7 @@
 -- Fixes double-counting in 1h / 6h / 24h totals when multiple identical
 -- rainfall readings exist for the same (station, region, timestamp)  as identified in FSR-1564
 
+DROP MATERIALIZED VIEW IF EXISTS stations_list_mview;
 DROP MATERIALIZED VIEW IF EXISTS rainfall_stations_mview;
 
 CREATE MATERIALIZED VIEW rainfall_stations_mview AS
