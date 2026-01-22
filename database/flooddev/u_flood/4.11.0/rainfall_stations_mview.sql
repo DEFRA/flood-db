@@ -149,3 +149,11 @@ LEFT JOIN (
     GROUP BY p_1.station, p_1.region
 ) onehr ON onehr.station = s.station_reference AND onehr.region = s.region
 ORDER BY s.region, s.station_name;
+
+-- Create unique index required for CONCURRENT refresh
+CREATE UNIQUE INDEX idx_rainfall_stations_mview_unique
+    ON rainfall_stations_mview (telemetry_value_parent_id);
+
+CREATE UNIQUE INDEX idx_stations_list_unique
+ON u_flood.stations_list_mview USING btree (id)
+TABLESPACE flood_indexes;
