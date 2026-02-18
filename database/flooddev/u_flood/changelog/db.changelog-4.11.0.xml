@@ -6,7 +6,7 @@ xmlns:ora="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 	<changeSet author="Lee" id="4.11.0-1">
 		<validCheckSum>9:5323d5455018c30e45525615a01d8a6f</validCheckSum>
+		<sqlFile path="./4.10.0/stations_list_mview.sql" splitStatements="false"/>
 		<sqlFile path="./4.11.0/rainfall_stations_mview.sql" splitStatements="false"/>
-    <sqlFile path="./4.10.0/stations_list_mview.sql" splitStatements="false"/>
 	</changeSet>
 </databaseChangeLog>
