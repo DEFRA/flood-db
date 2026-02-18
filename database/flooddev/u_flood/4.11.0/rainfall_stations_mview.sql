@@ -154,6 +154,3 @@ ORDER BY s.region, s.station_name;
 CREATE UNIQUE INDEX idx_rainfall_stations_mview_unique
     ON rainfall_stations_mview (telemetry_value_parent_id);
 
-CREATE UNIQUE INDEX idx_stations_list_unique
-ON u_flood.stations_list_mview USING btree (id)
-TABLESPACE flood_indexes;
