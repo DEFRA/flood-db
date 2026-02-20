@@ -132,7 +132,6 @@ CREATE INDEX idx_stations_list_mview_river_id
     (river_id COLLATE pg_catalog."default")
     TABLESPACE flood_indexes;
 
-DROP INDEX IF EXISTS u_flood.idx_stations_list_unique;
 CREATE UNIQUE INDEX idx_stations_list_unique
     ON u_flood.stations_list_mview USING btree
     (id)
