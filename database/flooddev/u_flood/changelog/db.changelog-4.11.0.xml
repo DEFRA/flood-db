@@ -8,9 +8,10 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 		<sql>DROP INDEX IF EXISTS u_flood.idx_stations_list_unique;</sql>
 	</changeSet>
 	<changeSet author="Lee" id="4.11.0-1">
+		<validCheckSum>ANY</validCheckSum>
 		<validCheckSum>9:5323d5455018c30e45525615a01d8a6f</validCheckSum>
-		<sqlFile path="./4.10.0/stations_list_mview.sql" splitStatements="false"/>
 		<sqlFile path="./4.11.0/rainfall_stations_mview.sql" splitStatements="false"/>
+		<sqlFile path="./4.11.0/stations_list_mview.sql" splitStatements="false"/>
 	</changeSet>
 	<changeSet author="Lee" id="4.11.0-2">
 		<sqlFile path="./4.11.0/recreate_stations_list_index.sql" splitStatements="false"/>
