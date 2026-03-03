@@ -52,11 +52,10 @@ JOIN (
 LEFT JOIN (
     -- Day total with deduplication
     SELECT 
-        p_1.station,
-        p_1.region,
+        dedup.station,
+        dedup.region,
         SUM(dedup.value) AS total
-    FROM sls_telemetry_value_parent p_1
-    JOIN (
+    FROM (
         -- Deduplicate: keep only one row per (station, region, timestamp)
         SELECT DISTINCT ON (p_2.station, p_2.region, v_1.value_timestamp)
             p_2.station,
@@ -67,7 +66,7 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_1 ON p_2.telemetry_value_parent_id = v_1.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         ORDER BY p_2.station, p_2.region, v_1.value_timestamp, p_2.end_timestamp DESC
-    ) dedup ON dedup.station = p_1.station AND dedup.region = p_1.region
+    ) dedup
     JOIN (
         SELECT 
             p_2.region,
@@ -77,19 +76,17 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_2 ON p_2.telemetry_value_parent_id = v_2.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         GROUP BY p_2.region, p_2.station
-    ) latest ON latest.region = p_1.region AND latest.station = p_1.station
+    ) latest ON latest.region = dedup.region AND latest.station = dedup.station
     WHERE dedup.value_timestamp > (latest.latest_timestamp - '1 day'::interval)
-      AND p_1.parameter = 'Rainfall'
-    GROUP BY p_1.station, p_1.region
+    GROUP BY dedup.station, dedup.region
 ) daysum ON daysum.station = s.station_reference AND daysum.region = s.region
 LEFT JOIN (
     -- 6 hour total with deduplication
     SELECT 
-        p_1.station,
-        p_1.region,
+        dedup.station,
+        dedup.region,
         SUM(dedup.value) AS total
-    FROM sls_telemetry_value_parent p_1
-    JOIN (
+    FROM (
         -- Deduplicate: keep only one row per (station, region, timestamp)
         SELECT DISTINCT ON (p_2.station, p_2.region, v_1.value_timestamp)
             p_2.station,
@@ -100,7 +97,7 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_1 ON p_2.telemetry_value_parent_id = v_1.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         ORDER BY p_2.station, p_2.region, v_1.value_timestamp, p_2.end_timestamp DESC
-    ) dedup ON dedup.station = p_1.station AND dedup.region = p_1.region
+    ) dedup
     JOIN (
         SELECT 
             p_2.region,
@@ -110,19 +107,17 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_2 ON p_2.telemetry_value_parent_id = v_2.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         GROUP BY p_2.region, p_2.station
-    ) latest ON latest.region = p_1.region AND latest.station = p_1.station
+    ) latest ON latest.region = dedup.region AND latest.station = dedup.station
     WHERE dedup.value_timestamp > (latest.latest_timestamp - '06:00:00'::interval)
-      AND p_1.parameter = 'Rainfall'
-    GROUP BY p_1.station, p_1.region
+    GROUP BY dedup.station, dedup.region
 ) sixhr ON sixhr.station = s.station_reference AND sixhr.region = s.region
 LEFT JOIN (
     -- 1 hour total with deduplication
     SELECT 
-        p_1.station,
-        p_1.region,
+        dedup.station,
+        dedup.region,
         SUM(dedup.value) AS total
-    FROM sls_telemetry_value_parent p_1
-    JOIN (
+    FROM (
         -- Deduplicate: keep only one row per (station, region, timestamp)
         SELECT DISTINCT ON (p_2.station, p_2.region, v_1.value_timestamp)
             p_2.station,
@@ -133,7 +128,7 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_1 ON p_2.telemetry_value_parent_id = v_1.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         ORDER BY p_2.station, p_2.region, v_1.value_timestamp, p_2.end_timestamp DESC
-    ) dedup ON dedup.station = p_1.station AND dedup.region = p_1.region
+    ) dedup
     JOIN (
         SELECT 
             p_2.region,
@@ -143,10 +138,9 @@ LEFT JOIN (
         JOIN sls_telemetry_value v_2 ON p_2.telemetry_value_parent_id = v_2.telemetry_value_parent_id
         WHERE p_2.parameter = 'Rainfall'
         GROUP BY p_2.region, p_2.station
-    ) latest ON latest.region = p_1.region AND latest.station = p_1.station
+        ) latest ON latest.region = dedup.region AND latest.station = dedup.station
     WHERE dedup.value_timestamp > (latest.latest_timestamp - '01:00:00'::interval)
-      AND p_1.parameter = 'Rainfall'
-    GROUP BY p_1.station, p_1.region
+        GROUP BY dedup.station, dedup.region
 ) onehr ON onehr.station = s.station_reference AND onehr.region = s.region
 ORDER BY s.region, s.station_name;
 
