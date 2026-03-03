@@ -122,17 +122,17 @@ WITH DATA;
 ALTER TABLE IF EXISTS u_flood.stations_list_mview
     OWNER TO u_flood;
 
-CREATE INDEX idx_stations_list_mview_geom_gist
+CREATE INDEX IF NOT EXISTS idx_stations_list_mview_geom_gist
     ON u_flood.stations_list_mview USING gist
     (centroid)
     TABLESPACE flood_indexes;
 
-CREATE INDEX idx_stations_list_mview_river_id
+CREATE INDEX IF NOT EXISTS idx_stations_list_mview_river_id
     ON u_flood.stations_list_mview USING btree
     (river_id COLLATE pg_catalog."default")
     TABLESPACE flood_indexes;
 
-CREATE UNIQUE INDEX idx_stations_list_unique
+CREATE UNIQUE INDEX IF NOT EXISTS idx_stations_list_unique
     ON u_flood.stations_list_mview USING btree
     (id)
     TABLESPACE flood_indexes;
