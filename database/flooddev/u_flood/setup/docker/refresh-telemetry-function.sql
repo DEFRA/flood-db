@@ -51,4 +51,4 @@ $$;
 
 CREATE EXTENSION IF NOT EXISTS pg_cron;
 SELECT cron.schedule('telemetry-refresh', '0,15,30,45 * * * *', 'SELECT adjust_telemetry_timestamps();');
-UPDATE cron.job SET active = FALSE WHERE jobname = 'telemetry-refresh';
+UPDATE cron.job SET active = TRUE WHERE jobname = 'telemetry-refresh';
