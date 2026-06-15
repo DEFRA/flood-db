@@ -4,11 +4,12 @@ set -e
 
 # Note: the db_setup.sh script expects this file name
 FILE=flood-db.bak
+NAME=cff
 
 function liquibase-update {
-  docker compose -f docker-compose.yml -f docker-compose-liquibase.yml run --rm liquibase
+  docker compose -p $NAME -f docker-compose.yml -f docker-compose-liquibase.yml run --rm liquibase
   # shut down the db container as we only need the backup volume during initialisation
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --remove-orphans
+  docker compose -p $NAME -f docker-compose.yml -f docker-compose-restore.yml down --remove-orphans
 }
 
 while getopts "d:e" opt
@@ -25,22 +26,22 @@ if [ -n "$DB_CONNECTION" ]
 then
   # Clear out the existing volumes and create dump from db
   # Note: use docker for pg_dump so there is no requirement for postgres to be installed
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
+  docker compose -p $NAME -f docker-compose.yml -f docker-compose-restore.yml down --volumes  --remove-orphans
   # shellcheck disable=SC2086 disable=SC2090 #EXCLUDE_OPTIONS should not be quoted
-  docker compose -f docker-compose.yml -f docker-compose-restore.yml \
+  docker compose -p $NAME -f docker-compose.yml -f docker-compose-restore.yml \
     run --rm flood-db pg_dump ${EXCLUDE_OPTIONS} "${DB_CONNECTION}" --file /backup/$FILE --verbose --format plain
 else
   # by ommiting the `-f docker-compose-restore.yml` option only the pgdata and wiyby volumes are deleted and
   # not the flood-db-backup volume
-  docker compose -f docker-compose.yml down --volumes --remove-orphans
+  docker compose -p $NAME -f docker-compose.yml down --volumes --remove-orphans
   echo "Restoring from existing backup"
 fi
 
 # Start app which will trigger DB population from initilisation scripts (see ./Dockerfile)
-docker compose -f docker-compose.yml -f docker-compose-restore.yml up --build -d
+docker compose -p $NAME -f docker-compose.yml -f docker-compose-restore.yml up --build -d
 
 read -rp "$(printf 'Press enter to follow the DB logs\nPress CTRL-C when the logs report that the DB is accepting connections\nAny pending liquibase updates will then be applied and the container shut down')"
 
 trap liquibase-update INT
 
-docker compose logs -f
+docker compose -p $NAME logs -f

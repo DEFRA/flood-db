@@ -6,6 +6,16 @@ This directory contains all the files necessary to run the flood DB locally in a
 
 * docker
 
+# Create .env file
+
+```bash
+cp .env.example .env
+```
+
+.env.example is prepopulated with values that can be used to create a local containerised database from a cloud database snapshot.
+
+**WARNING** - Any change to these values could result in breakage when attempting to create a local containerised database.
+
 # Build and run docker DB container
 
 To see usage:
