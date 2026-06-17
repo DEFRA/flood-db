@@ -1,0 +1,17 @@
+# Minimal repo-level exclusions for Copilot indexing.
+# Keep source indexed; exclude only low-value bulk data content.
+
+# Large SQL data dumps (pg_dump INSERT rows, no learning value)
+station_ta_8km.sql
+data-load/station_ta_8km/station_ta_8km.sql
+
+# Binary archives
+database/flooddev/u_flood/0.4.0/data/*.zip
+
+# Bulk CSV/TSV data files
+data-load/**/*.csv
+data-load/**/*.tsv
+database/flooddev/u_flood/private-beta/*.csv
+
+# Package lock
+data-load/station_imtd_threshold/package-lock.json
