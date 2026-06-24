@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 20
+    target-branch: dev
+    # Minimum age before suggesting updates (supply chain security).
+    # Security updates bypass the cooldown.
+    cooldown:
+      default-days: 7
