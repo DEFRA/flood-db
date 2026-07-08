@@ -52,79 +52,27 @@ To fix this, either:
 4. Update column `md5sum` with the new checksum and save the changes
 5. Run the Jenkins update job again
 
-#### Clear the checksums (Jenkins)
+#### Clear the checksums
 
-1. Go the Database Update jenkins job
-2. Under `Configure`, update the flood-pipelines branch to `clearchecksums`
-3. Run the update job
+1. In the GitLab repo `flood-pipelines/jenkins/database/updateDatabaseJenkinsfile`, add the line above the `mvn liquibase:update` command:
 
-This will clear all checksums from the envs database, allowing for new and updated changelog files to be processed
-
+```bash
+mvn -Denvironment=rds liquibase:clearCheckSums -f ${DB_REPO_DIRECTORY}/database/flooddev/u_flood/pom.xml
+```
+2. Run the Jenkins update job
 
 ## Create database (local)
 
-To create a database from scratch, do the following:
-
-```bash
-cd database/flooddev/u_flood/setup/docker
-```
-
-Update `DB_NAME` in the `.env` file.
-
-Allow docker to execute the file:
-```bash
-chmod +x ./wait-for-postgis.sh
-```
-
-To build:
-```bash
-docker compose \
-  -f docker-compose.yml \
-  -f docker-compose-liquibase.yml \
-  up --build
-```
-
-To teardown:
-```bash
-docker compose \
-  -f docker-compose.yml \
-  -f docker-compose-liquibase.yml \
-  down --remove-orphans -v
-```
-
-This will create the `flood-db` and `liquibase` containers and run through the commands to setup the database, permissions and the tables.
-
-Note: The `docker-compose.yml` file contains the setting: `platform: linux/amd64`. This may be Mac specific, so I think this can be commented out for windows machines.
-
-
-### Populate data from remote
-
-Once the database has been re-created locally, this file will populate it, streaming data from the remote instance.
-
-```bash
-cd database/flooddev/u_flood/setup/docker
-
-./populate.sh <remote_postgres_url>
-```
-
-### Files Added
-
-- `.env.example`
-  - env vars to set postgres credentials
-- `populate.sh`
-  - used to stream data from a remote instance in to local
-- `wait-for-postgis.sh`
-  - when running `docker compose`, liquibase container will wait for the flood-db container to finish and have postgis installed, before running. This ensures its functions are ready to be used within the sql files
-- `Dockerfile.liquibase`
-  - Installs `psql` on to the liquibase container so we can check when postgis has been installed an ready
+Use the instructions in the [Docker README](database/flooddev/u_flood/setup/docker/README.md) to create a local containerised database from a
+snapshot of a cloud database.
 
 ---
 
-# Pre requisites
+# Legacy Pre requisites (DO NOT USE - information retained for historical reference only)
 
 The database has been copied from the production live flood warnings application, so either a snapshot of that database is required or the installation instructions need following
 
-# Installation
+# Legacy Installation (DO NOT USE - information retained for historical reference only)
 (these have not been tested recently, and have been copied from the legacy database installation)
 
 ## tablespaces
