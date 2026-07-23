@@ -8,5 +8,4 @@ The legacy Node.js loader that called the IMTD API and generated
 Population of `u_flood.station_imtd_threshold` is now handled outside this repo
 by a lambda-based process.
 
-The remaining files in this directory are retained only for historical/manual
-operational support.
+This directory is retained only for historical/manual operational support.
