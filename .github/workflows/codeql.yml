@@ -1,0 +1,63 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "master", "dev" ]
+  pull_request:
+    branches: [ "master", "dev" ]
+  schedule:
+    - cron: '20 3 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: javascript-typescript
+            patterns: '*.js *.jsx *.mjs *.cjs *.ts *.tsx'
+          - language: actions
+            patterns: '.github/workflows/*.yml .github/workflows/*.yaml'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # CodeQL's default setup fails the whole job when a configured language
+      # has no matching source files in the repository (e.g. after code for
+      # that language has been removed). This step checks first, so that the
+      # analysis is skipped instead of failing when there is nothing to scan,
+      # and resumes automatically once matching source reappears.
+      - name: Check for ${{ matrix.language }} source
+        id: check-source
+        run: |
+          if git ls-files -- ${{ matrix.patterns }} | grep -q .; then
+            echo "has_source=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_source=false" >> "$GITHUB_OUTPUT"
+            echo "No ${{ matrix.language }} source files found, skipping analysis."
+          fi
+
+      - name: Initialize CodeQL
+        if: steps.check-source.outputs.has_source == 'true'
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: Autobuild
+        if: steps.check-source.outputs.has_source == 'true'
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform CodeQL Analysis
+        if: steps.check-source.outputs.has_source == 'true'
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"
