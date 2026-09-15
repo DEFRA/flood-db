@@ -25,4 +25,4 @@ WHERE NOT EXISTS (
 -- Optional: confirmation message
 \echo Checked database :DB_NAME (created if it didnt exist)
 
-ALTER DATABASE :'DB_NAME' SET search_path = u_flood, public, postgis, topology;
+ALTER DATABASE :DB_NAME SET search_path = u_flood, public, postgis, topology;
