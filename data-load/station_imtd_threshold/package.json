@@ -4,7 +4,7 @@
   "description": "Station threshold values imported from the IMTD API.",
   "main": "get-imtd-api-threshold.js",
   "scripts": {
-    "lint": "standard",
+    "lint": "eslint .",
     "unit-test": "lab -v -c -r console -o stdout -r lcov -o coverage/lcov.info",
     "test": "npm run lint && npm run unit-test"
   },
@@ -14,8 +14,11 @@
   "dependencies": {
     "@hapi/code": "^9.0.3",
     "@hapi/lab": "^25.1.2",
-    "axios": "^0.27.2",
-    "pg": "^8.8.0",
-    "standard": "^17.1.0"
+    "axios": "^1.20.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "neostandard": "^0.13.0"
   }
 }
